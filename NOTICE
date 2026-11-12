@@ -6,6 +6,7 @@ Third-party material:
   (Igor Zharov, Apache 2.0), see agents/agent_e18/SOURCE-pub22.md.
 - The rb64, N32 and H36 task lists refer to tasks from SWE-rebench (nebius, CC-BY-4.0).
   No SWE-rebench content (issues, patches, tests) is redistributed here;
-  scripts/build_rebench.py rebuilds the tasks from the public dataset.
+  scripts/build_rebench.py rebuilds the tasks from the public dataset. The requirement lists in
+  data/foresight/ are derived from SWE-rebench test patches (CC-BY-4.0, attribution: nebius/SWE-rebench).
 - OOD-45 task ids refer to fixes in public open-source projects under their own licences;
   no project code is redistributed.

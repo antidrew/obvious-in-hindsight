@@ -1,0 +1,1005 @@
+{
+ "actualpy_117": [
+  {
+   "req": "BankSyncTransactionResponseDTO validates GoCardless payload whose transactions lack transactionId (only entryReference); transactionId optional/None."
+  },
+  {
+   "req": "BalanceType enum accepts 'previouslyClosedBooked' (and similar new values) without validation error."
+  },
+  {
+   "req": "run_bank_sync with GoCardless response returns created transactions and commit succeeds."
+  },
+  {
+   "req": "Transaction id falls back to entryReference or internalTransactionId when transactionId missing."
+  },
+  {
+   "req": "Existing SimpleFIN/GoCardless responses with transactionId still parse unchanged."
+  },
+  {
+   "req": "BankSyncErrorDTO still parsed for error payloads with error_type and error_code."
+  }
+ ],
+ "c_star_227": [
+  {
+   "req": "Assigning roms_base_model.checkout_hash raises AttributeError (read-only property)."
+  },
+  {
+   "req": "Assigning source_repo / checkout_target on base model raises AttributeError."
+  },
+  {
+   "req": "Reading checkout_hash still returns the hash derived from git via mocked subprocess."
+  },
+  {
+   "req": "Git-related properties exposed as properties without setters; values set only at init."
+  },
+  {
+   "req": "Repr/str of base model still includes source repo and checkout target."
+  }
+ ],
+ "canopen_613": [
+  {
+   "req": "pdo.tx[0x1A00] / node.tpdo[0x1A00] returns the same map as tpdo[1]."
+  },
+  {
+   "req": "pdo.rx[0x1600] returns the same map as rpdo[1]; 0x1601 returns map 2."
+  },
+  {
+   "req": "Access by communication parameter index 0x1800 (TPDO) / 0x1400 (RPDO) returns corresponding map."
+  },
+  {
+   "req": "Integer index 1..512 still returns map by number."
+  },
+  {
+   "req": "Invalid key (e.g. 0x2000 or 0) raises KeyError."
+  },
+  {
+   "req": "PdoBase.__getitem__ with string/variable name still finds mapped variable."
+  }
+ ],
+ "cfn_python_lint_4368": [
+  {
+   "req": "Template with Fn::Transform inside AWS::CloudFormation::Init files entry produces no E3009 error."
+  },
+  {
+   "req": "Snapshot/template test for cfn-init with Fn::Transform AWS::Include yields zero matches."
+  },
+  {
+   "req": "Genuinely unknown property in cfn-init files still reports E3009 additional property error."
+  },
+  {
+   "req": "Fn::Transform skipped/allowed during JSON schema validation of metadata objects."
+  }
+ ],
+ "conan_19750": [
+  {
+   "req": "Profile [platform_requires] with version range (e.g. pkg/[>=1.0]) raises ConanException naming section and reference."
+  },
+  {
+   "req": "Profile [platform_tool_requires] with version range raises ConanException mentioning platform_tool_requires and offending ref."
+  },
+  {
+   "req": "conan install with such profile fails with clean ERROR message, no AssertionError or Traceback in output."
+  },
+  {
+   "req": "Exact references in platform_requires still work and resolve the dependency normally."
+  },
+  {
+   "req": "Error raised at profile loading/reading time, before graph expansion."
+  }
+ ],
+ "copier_2646": [
+  {
+   "req": "Temporary clone directories (copier._vcs.clone*) removed after copier update fails with exception."
+  },
+  {
+   "req": "Temp dirs removed after successful copy/update as before."
+  },
+  {
+   "req": "Temp dirs removed on KeyboardInterrupt during update."
+  },
+  {
+   "req": "Option/env to keep temp dirs for debugging leaves them in place."
+  },
+  {
+   "req": "Worker context manager cleans up clone in __exit__ even when error raised."
+  }
+ ],
+ "dissect_cstruct_120": [
+  {
+   "req": "Structure/type classes created by cstruct are hashable: hash(TypeClass) works without error."
+  },
+  {
+   "req": "Type classes compare equal to themselves; different types unequal; usable as dict keys / in sets."
+  },
+  {
+   "req": "Metaclass __eq__/__hash__ do not break struct instance equality comparisons."
+  },
+  {
+   "req": "Array type classes (e.g. uint8[4]) hashable and equal when same element type and count."
+  },
+  {
+   "req": "Debugger-like introspection (getattr on class, dir) does not raise."
+  }
+ ],
+ "edk2_pytool_library_698": [
+  {
+   "req": "!ifdef $(MACRO) with MACRO defined as \"\" evaluates True; block contents processed."
+  },
+  {
+   "req": "!ifndef $(MACRO) with MACRO defined as empty evaluates False."
+  },
+  {
+   "req": "ProcessConditional with '!ifdef' and empty/blank value does not raise."
+  },
+  {
+   "req": "Undefined macro in !ifdef still evaluates False; !ifndef True."
+  },
+  {
+   "req": "Defined non-empty macro behaviour unchanged."
+  }
+ ],
+ "foamlib_315": [
+  {
+   "req": "controlDict['functions']['#includeFunc'] = 'funcName' writes without ParseException."
+  },
+  {
+   "req": "File serializes '#includeFunc funcName' directive and reading back returns 'funcName'."
+  },
+  {
+   "req": "Other directives like #include/#includeEtc serialized as directives without semicolon."
+  },
+  {
+   "req": "Parsing an existing file containing #includeFunc in a dict yields key '#includeFunc'."
+  },
+  {
+   "req": "Dumps of dict with '#includeFunc' key produces correct string."
+  }
+ ],
+ "gitpython_2075": [
+  {
+   "req": "includeIf \"hasconfig:remote.*.url:<pattern>\" section is recognized by CONDITIONAL_INCLUDE regex."
+  },
+  {
+   "req": "Config reader includes the file when a remote url matches the glob pattern."
+  },
+  {
+   "req": "Config not included when no remote url matches."
+  },
+  {
+   "req": "Existing gitdir:, gitdir/i:, onbranch: conditions still work."
+  }
+ ],
+ "hats_648": [
+  {
+   "req": "New function (e.g. skymap coverage) returns np.mean(skymap > 0) fraction for catalog at default skymap order."
+  },
+  {
+   "req": "Passing explicit order uses read_skymap at that order and returns coverage at that order."
+  },
+  {
+   "req": "Result is between 0 and 1 and close to partition fractional coverage for test catalog."
+  },
+  {
+   "req": "Raises error/ValueError when catalog has no skymap file."
+  },
+  {
+   "req": "Order higher than available skymap order raises ValueError."
+  }
+ ],
+ "isort_2491": [
+  {
+   "req": "from-import with alias, wrapped across lines and trailing comment after '(' keeps comment on first line unchanged."
+  },
+  {
+   "req": "isort.code on the issue example returns input unchanged."
+  },
+  {
+   "req": "Non-aliased wrapped import with comment after '(' still keeps comment on first line."
+  },
+  {
+   "req": "Comments attached to alias lines remain on alias line."
+  },
+  {
+   "req": "Idempotency: running isort twice yields same output."
+  }
+ ],
+ "lmstudio_python_110": [
+  {
+   "req": "parse_server_config skips fields without 'value' key instead of raising KeyError."
+  },
+  {
+   "req": "parse_llm_load_config on config with {'key': 'llm.load.llama.acceleration.offloadRatio'} succeeds; that field absent/None."
+  },
+  {
+   "req": "Other fields with values parsed correctly (contextLength 80000, flashAttention True)."
+  },
+  {
+   "req": "act/prediction handling with incomplete load config no longer fails."
+  }
+ ],
+ "loguru_1306": [
+  {
+   "req": "With FORCE_COLOR set (non-empty) and non-tty stream, colorize defaults to True."
+  },
+  {
+   "req": "NO_COLOR takes precedence over FORCE_COLOR (or FORCE_COLOR empty string ignored)."
+  },
+  {
+   "req": "FORCE_COLOR='' (empty) does not force colors."
+  },
+  {
+   "req": "Explicit colorize=False in logger.add overrides FORCE_COLOR."
+  },
+  {
+   "req": "should_colorize(stream) returns True for non-tty when FORCE_COLOR=1."
+  }
+ ],
+ "microsoft_authentication_library_for_python_795": [
+  {
+   "req": "ManagedIdentityClient IMDS request uses AZURE_POD_IDENTITY_AUTHORITY_HOST endpoint when env var set."
+  },
+  {
+   "req": "Endpoint built as <host>/metadata/identity/oauth2/token, trailing slash stripped."
+  },
+  {
+   "req": "Without env var, default http://169.254.169.254/metadata/identity/oauth2/token used."
+  },
+  {
+   "req": "Request still includes api-version and resource params and Metadata: true header."
+  }
+ ],
+ "moto_9903": [
+  {
+   "req": "update_continuous_backups enabling PITR returns PointInTimeRecoveryDescription with RecoveryPeriodInDays == 35 by default."
+  },
+  {
+   "req": "Specifying RecoveryPeriodInDays in PointInTimeRecoverySpecification returns that value."
+  },
+  {
+   "req": "describe_continuous_backups also includes RecoveryPeriodInDays after enabling."
+  },
+  {
+   "req": "Disabled PITR response omits RecoveryPeriodInDays or status DISABLED."
+  },
+  {
+   "req": "EarliestRestorableDateTime and LatestRestorableDateTime are datetimes; status ENABLED."
+  }
+ ],
+ "nested_pandas_261": [
+  {
+   "req": "ndf[['a','b','nested.c','nested.d']] returns NestedFrame with base columns and nested subset."
+  },
+  {
+   "req": "Selecting only nested dot columns from same nest returns nested column with only those fields."
+  },
+  {
+   "req": "Mixing columns from two different nests works."
+  },
+  {
+   "req": "Nonexistent nested field in list raises KeyError."
+  },
+  {
+   "req": "Plain list of base columns unchanged behaviour."
+  }
+ ],
+ "py_webauthn_241": [
+  {
+   "req": "verify_android_safetynet with basicIntegrity True and ctsProfileMatch False passes when new flag (verify_cts_profile_match=False / default) set."
+  },
+  {
+   "req": "With ctsProfileMatch False and flag requiring CTS, raises InvalidRegistrationResponse."
+  },
+  {
+   "req": "basicIntegrity False always raises InvalidRegistrationResponse."
+  },
+  {
+   "req": "verify_registration_response passes flag through to safetynet verifier."
+  },
+  {
+   "req": "Existing valid safetynet attestation still verifies."
+  }
+ ],
+ "python_markdownify_230": [
+  {
+   "req": "md('<code>We have to `manage` this.</code>') == '``We have to `manage` this.``'."
+  },
+  {
+   "req": "Code containing double backticks wrapped with triple backticks."
+  },
+  {
+   "req": "Code beginning or ending with backtick padded with space inside delimiters."
+  },
+  {
+   "req": "Code without backticks still wrapped in single backticks."
+  },
+  {
+   "req": "Code inside <pre> unaffected."
+  }
+ ],
+ "qupulse_900": [
+  {
+   "req": "Program builder not supporting volatile parameters raises error (NotImplementedError/ValueError) when volatile parameters passed."
+  },
+  {
+   "req": "LoopBuilder still accepts volatile parameters and produces program."
+  },
+  {
+   "req": "create_program with volatile set and non-supporting builder raises."
+  },
+  {
+   "req": "Builders without volatile params work as before."
+  }
+ ],
+ "sdg_461": [
+  {
+   "req": "LLMMessagesBlock.generate calls OpenAI chat completions with messages column for each sample."
+  },
+  {
+   "req": "Output dataset has output_col containing model response content."
+  },
+  {
+   "req": "Generation kwargs (temperature, max_tokens, n, model_id) passed to client.chat.completions.create."
+  },
+  {
+   "req": "n>1 produces list of outputs per sample."
+  },
+  {
+   "req": "Block constructible from YAML config/registered in BlockRegistry as LLMMessagesBlock."
+  }
+ ],
+ "sql_metadata_625_interface": [
+  {
+   "req": "Parser on query with B.[id] inside FOR XML PATH subquery returns same columns as unbracketed B.id form."
+  },
+  {
+   "req": "Parser(...).tables returns correct tables for bracketed query."
+  },
+  {
+   "req": "No warnings emitted (pytest.warns none / recwarn empty) when accessing columns/tables."
+  },
+  {
+   "req": "Bracketed identifiers stripped of brackets in column names, e.g. 'id' or 'B.id' resolved to table."
+  },
+  {
+   "req": "Subquery aliases and columns resolved for bracketed form."
+  }
+ ],
+ "sqlglot_7457": [
+  {
+   "req": "validate_identity of 'SELECT * FROM AI.FORECAST(TABLE citibike_trips, data_col => \"num_trips\", timestamp_col => \"date\", horizon => 30)' round-trips in BigQuery."
+  },
+  {
+   "req": "AI.FORECAST with subquery '(SELECT ...)' first argument parses and round-trips."
+  },
+  {
+   "req": "Parsed node is a typed expression (e.g. exp.ForecastTVF/AIForecast) with table and named args."
+  },
+  {
+   "req": "Other ML TVFs (ML.FORECAST/ML.PREDICT) still parse."
+  },
+  {
+   "req": "AI.FORECAST with only TABLE and data_col/timestamp_col parses."
+  }
+ ],
+ "sqlglot_7479": [
+  {
+   "req": "parse_one('SELECT AI.EMBED(\"hello\")', dialect='bigquery') yields typed node (exp.AIEmbed or similar), round-trips identical."
+  },
+  {
+   "req": "AI.SIMILARITY(\"a\",\"b\") parses into typed node and round-trips."
+  },
+  {
+   "req": "AI.GENERATE(\"Write a haiku\") parses into typed node and round-trips."
+  },
+  {
+   "req": "Named arguments (e.g. endpoint => 'x', connection_id) preserved in round-trip."
+  },
+  {
+   "req": "Type annotation: AI.SIMILARITY returns FLOAT64; AI.EMBED returns struct/array type."
+  },
+  {
+   "req": "Generic unknown AI.* functions still fall back to Anonymous and round-trip."
+  }
+ ],
+ "stationbench_41": [
+  {
+   "req": "Benchmarking/calculate_metrics accepts xr.DataArray forecast and converts to Dataset using its name."
+  },
+  {
+   "req": "Result for DataArray input equals result for Dataset with same single variable."
+  },
+  {
+   "req": "Unnamed DataArray raises ValueError or uses default/variable name argument."
+  },
+  {
+   "req": "Dataset input still works unchanged."
+  }
+ ],
+ "streamlink_6439": [
+  {
+   "req": "TF1 plugin matcher 'stream' matches https://www.tf1.fr/thriller-fiction-89242722/direct capturing stream name."
+  },
+  {
+   "req": "Old URL forms (https://www.tf1.fr/stream/<name>) no longer matched or still matched per new format."
+  },
+  {
+   "req": "Live channels https://www.tf1.fr/tf1/direct and tmc/direct still match 'live' matcher."
+  },
+  {
+   "req": "lci.fr URLs still match."
+  },
+  {
+   "req": "Non-direct pages (e.g. https://www.tf1.fr/tf1/replay) do not match."
+  }
+ ],
+ "sympy_28660": [
+  {
+   "req": "integrate(1/(4*pi**2*f**4 + ... ) with q=10 over (f,0,oo)) returns 5/2 exactly."
+  },
+  {
+   "req": "Bandpass integrand with q=100 integrates to 25, without spurious sqrt term."
+  },
+  {
+   "req": "Symbolic omega_p, q_p positive: integral equals omega_p*q_p/4 (after simplify)."
+  },
+  {
+   "req": "Rational function definite integral over (0,oo) of positive integrand returns positive correct value for q=1,2."
+  },
+  {
+   "req": "Indefinite integral of rational function differentiates back to integrand (log/atan terms correct)."
+  }
+ ],
+ "toqito_1538": [
+  {
+   "req": "sandwiched_renyi_conditional_entropy(rho, alpha, variant='uparrow') exists; unknown variant raises ValueError."
+  },
+  {
+   "req": "variant='uparrow' with alpha < 1/2 raises ValueError mentioning 'alpha >= 1/2'."
+  },
+  {
+   "req": "alpha=1 both variants return conditional von Neumann entropy H(A|B)."
+  },
+  {
+   "req": "Product state rho_A \u2297 rho_B: both variants return Renyi entropy of rho_A."
+  },
+  {
+   "req": "Maximally entangled two-qubit state: both variants return -1."
+  },
+  {
+   "req": "Uparrow value >= downarrow value within tolerance for random small states."
+  },
+  {
+   "req": "Classical-quantum state uparrow matches closed form alpha/(1-alpha) log sum_x p_x^... within tolerance."
+  },
+  {
+   "req": "Default variant downarrow behaviour unchanged."
+  }
+ ],
+ "twine_1309": [
+  {
+   "req": "Upload failing with nonstandard status 499 prints error without ValueError; main returns error message."
+  },
+  {
+   "req": "Status phrase for unknown codes falls back to response.reason or empty/'Unknown' string."
+  },
+  {
+   "req": "Known status codes (e.g. 403) still include HTTPStatus phrase in message."
+  },
+  {
+   "req": "__main__.main returns 1 / error string containing '499'."
+  }
+ ],
+ "uxarray_1423": [
+  {
+   "req": "zonal_mean returns NaN (not 0) for latitudes with no intersecting faces/data."
+  },
+  {
+   "req": "Latitudes with data still yield correct mean values."
+  },
+  {
+   "req": "Output length matches requested latitude array; NaNs at e.g. poles when no coverage."
+  },
+  {
+   "req": "Works for face-centered data variable with lat range outside grid coverage."
+  }
+ ],
+ "valohai_cli_321": [
+  {
+   "req": "'vh exec run step --priority' with no value sets priority 1 in API payload."
+  },
+  {
+   "req": "'--priority 5' sets priority 5."
+  },
+  {
+   "req": "Omitting --priority sends no priority (or default 0/None)."
+  },
+  {
+   "req": "Non-integer value e.g. '--priority foo' gives usage error."
+  }
+ ],
+ "xsdata_1126": [
+  {
+   "req": "Generated code has two distinct enums for UniqueName1.Value.Status and UniqueName2.Value.Status with respective values."
+  },
+  {
+   "req": "Second enum renamed to avoid conflict (e.g. ValueStatus and ValueStatus1 / nested inner enums)."
+  },
+  {
+   "req": "Root.UniqueName2.Value.status field typed with Pending/Approved enum."
+  },
+  {
+   "req": "Parsing the example XML yields Completed and Pending enum members correctly."
+  },
+  {
+   "req": "Identical enums with same values still may be merged/deduplicated."
+  }
+ ],
+ "alpenhorn_196": [
+  {
+   "req": "LustreHSMNodeIO _restore_wait gives up after timeout and returns False/stops waiting, logging warning."
+  },
+  {
+   "req": "Timeout configurable via node io_config key (e.g. 'restore_timeout') with sensible default."
+  },
+  {
+   "req": "File restored before timeout returns True and proceeds."
+  },
+  {
+   "req": "After timeout the restore request is forgotten/removed from restore set so it can be retried."
+  },
+  {
+   "req": "Invalid timeout config value raises ValueError."
+  }
+ ],
+ "alpenhorn_226": [
+  {
+   "req": "Daemon update deletes copies with has_file='X' and wants_file='N'."
+  },
+  {
+   "req": "Daemon deletes has_file='M', wants_file='N' copies and does not run check on them."
+  },
+  {
+   "req": "has_file='M', wants_file='Y' copies are still checked."
+  },
+  {
+   "req": "CLI 'node clean --include-bad' marks suspect/corrupt copies for deletion (wants_file='N')."
+  },
+  {
+   "req": "Without --include-bad, clean skips X/M copies."
+  },
+  {
+   "req": "Deletion still requires sufficient other good copies (archive count) per existing rules."
+  }
+ ],
+ "alpenhorn_269": [
+  {
+   "req": "Daemon CLI option (e.g. --once / --exit-after-update) runs one update loop then exits."
+  },
+  {
+   "req": "In once mode daemon waits for queued I/O tasks to finish before exiting."
+  },
+  {
+   "req": "Exit status 0 after successful single run."
+  },
+  {
+   "req": "Without option daemon continues looping (main loop not terminated)."
+  },
+  {
+   "req": "Config file option equivalent may set the mode."
+  }
+ ],
+ "auth0_python_500": [
+  {
+   "req": "Connections.all(name='foo') sends GET /connections with params including name='foo'."
+  },
+  {
+   "req": "Without name, params name is None/absent and other params unchanged."
+  },
+  {
+   "req": "name combined with strategy, fields, page, per_page passed correctly."
+  },
+  {
+   "req": "Async variant also accepts name."
+  }
+ ],
+ "aws_doc_sdk_examples_tools_39": [
+  {
+   "req": "Metadata YAML with ai_level/'AI level' field parsed into example/excerpt attribute."
+  },
+  {
+   "req": "Accepted values none/some/most/all mapped to enum or strings."
+  },
+  {
+   "req": "Invalid AI level value produces validation error."
+  },
+  {
+   "req": "Missing field defaults to None/'none' without error."
+  },
+  {
+   "req": "Serialized output (to_dict/JSON) includes ai level."
+  }
+ ],
+ "borgstore_87": [
+  {
+   "req": "store() into missing nesting dir succeeds by creating directory on retry."
+  },
+  {
+   "req": "Store.create() without pre-creating nesting dirs; create option flag to pre-create."
+  },
+  {
+   "req": "Objects stored then loaded from nested paths round-trip after lost dir."
+  },
+  {
+   "req": "list/iteration works when some nesting dirs don't exist."
+  },
+  {
+   "req": "Posixfs/sftp backends store fallback mkdir on FileNotFoundError."
+  }
+ ],
+ "ccflow_24": [
+  {
+   "req": "model(x=1, y=2) builds context from kwargs and returns same result as model(Context(x=1,y=2))."
+  },
+  {
+   "req": "Passing both context and kwargs raises TypeError/ValueError."
+  },
+  {
+   "req": "Invalid kwargs raise pydantic ValidationError."
+  },
+  {
+   "req": "Passing dict context still works."
+  },
+  {
+   "req": "Calling with no args uses default context if all fields default."
+  }
+ ],
+ "csv2md_16": [
+  {
+   "req": "CLI option (e.g. -c/--columns '0,2') outputs only selected columns in markdown table."
+  },
+  {
+   "req": "Ranges like '1-3' expanded inclusively."
+  },
+  {
+   "req": "Table.parse_csv/markdown with columns param filters header and rows."
+  },
+  {
+   "req": "Invalid column spec raises error/argparse error."
+  },
+  {
+   "req": "No option outputs all columns."
+  }
+ ],
+ "dakara_base_63": [
+  {
+   "req": "Resource helper uses importlib.resources.files/as_file and returns valid existing Path."
+  },
+  {
+   "req": "No DeprecationWarning raised when getting resource path."
+  },
+  {
+   "req": "get_file/resource function returns path to the named resource file contents."
+  },
+  {
+   "req": "Missing resource raises error (e.g. FileNotFoundError / custom error)."
+  }
+ ],
+ "dfindexeddb_50": [
+  {
+   "req": "JSON output of JS array includes extra properties (e.g. array with named props) as well as values."
+  },
+  {
+   "req": "Encoder serializes JSArray with 'values' and 'properties' keys."
+  },
+  {
+   "req": "Sparse arrays / holes serialized (Undefined/null) correctly."
+  },
+  {
+   "req": "JSONL output matches JSON output per record."
+  },
+  {
+   "req": "Other JS types (Map, Set, Date) still serialize."
+  }
+ ],
+ "fitbenchmarking_1336": [
+  {
+   "req": "Performance profile failure count identical in accuracy and runtime plots for same solver."
+  },
+  {
+   "req": "Failures counted as inf/NaN values, not by fixed 1e20 upper bound."
+  },
+  {
+   "req": "create_plot legend label includes '(n failures)' with correct n."
+  },
+  {
+   "req": "Solvers with large but finite values not counted as failures."
+  }
+ ],
+ "fitbenchmarking_1338": [
+  {
+   "req": "Dash app for loaded old checkpoint serves pp plots at its own URL/path."
+  },
+  {
+   "req": "display_page returns layout for older result set instead of error."
+  },
+  {
+   "req": "Unknown path in display_page returns warning/404 message instead of blank."
+  },
+  {
+   "req": "Multiple result sets registered in Dash app simultaneously."
+  }
+ ],
+ "herepy_84": [
+  {
+   "req": "route_v8 with avoid={'features':['tollRoad','ferry']} produces avoid[features]=tollRoad,ferry in URL."
+  },
+  {
+   "req": "truck={'height':['15000'],'width':['3000']} yields truck[height]=15000&truck[width]=3000 (all keys)."
+  },
+  {
+   "req": "exclude={'countries':['DEU','FRA']} yields exclude[countries]=DEU,FRA."
+  },
+  {
+   "req": "Multiple keys in avoid dict all included, not only first."
+  },
+  {
+   "req": "Other params unchanged."
+  }
+ ],
+ "ipykernel_1271": [
+  {
+   "req": "ParentPollerUnix exits when parent PID changes from original (not only when ppid==1)."
+  },
+  {
+   "req": "Poller initialized with parent pid; os.getppid() != parent_pid triggers exit."
+  },
+  {
+   "req": "No exit while ppid unchanged."
+  },
+  {
+   "req": "ppid==1 still triggers exit."
+  }
+ ],
+ "leo_editor_3678": [
+  {
+   "req": "Reading @file with mixed blackened ('#@+node') and legacy sentinels parses correctly."
+  },
+  {
+   "req": "Sentinel regexes accept optional space after comment delimiter for all sentinel kinds."
+  },
+  {
+   "req": "Files written with --black-sentinels read back identical outline."
+  },
+  {
+   "req": "Non-black files still read correctly; round trip unchanged."
+  }
+ ],
+ "lkml_74": [
+  {
+   "req": "lkml.dump(d) does not mutate input dict; 'name' keys remain afterwards."
+  },
+  {
+   "req": "Output of dump unchanged (names as block names)."
+  },
+  {
+   "req": "Calling dump twice yields identical output."
+  },
+  {
+   "req": "Nested views/dimensions keep 'name' after dump."
+  }
+ ],
+ "m3u8_290": [
+  {
+   "req": "Segment with #EXT-OATCLS-SCTE35 preserved when dumped (dumps contains tag)."
+  },
+  {
+   "req": "Segment.oatcls_scte35 attribute preserved after building new SegmentList and reassigning."
+  },
+  {
+   "req": "#EXT-X-CUE-OUT/CUE-IN with SCTE35 data emitted on dumps."
+  },
+  {
+   "req": "Round trip loads->dumps of playlist with OATCLS-SCTE35 unchanged."
+  }
+ ],
+ "mobilus_client_18": [
+  {
+   "req": "Config no longer has client_id attribute/arg."
+  },
+  {
+   "req": "MqttClient generates unique client_id on init (e.g. random prefix), differing between two instances."
+  },
+  {
+   "req": "App creates MQTT client without passing client_id from config."
+  },
+  {
+   "req": "Client id format e.g. starts with expected prefix and fixed length."
+  }
+ ],
+ "monty_635": [
+  {
+   "req": "compress_file(path, 'gz', target_dir=...) writes compressed file into target directory."
+  },
+  {
+   "req": "decompress_file(path, target_dir=...) writes decompressed file there and returns its path."
+  },
+  {
+   "req": "Default (no target) keeps original behaviour, in-place next to source."
+  },
+  {
+   "req": "Original file removed after compress/decompress."
+  },
+  {
+   "req": "Unsupported compression raises ValueError."
+  }
+ ],
+ "operator_1024": [
+  {
+   "req": "Container.pull_path copies empty directories into destination."
+  },
+  {
+   "req": "Container.push_path pushes empty local directories (make_dir on remote)."
+  },
+  {
+   "req": "Nested files still copied with correct structure."
+  },
+  {
+   "req": "Works with testing harness filesystem."
+  },
+  {
+   "req": "_list_recursive yields directories as well as files."
+  }
+ ],
+ "operator_1268": [
+  {
+   "req": "Harness testing pebble get_plan combines layers: later layer override=merge merges service fields."
+  },
+  {
+   "req": "get_plan includes checks merged across layers (pebble.Check._merge)."
+  },
+  {
+   "req": "get_plan includes log-targets merged across layers (LogTarget._merge)."
+  },
+  {
+   "req": "override: replace replaces check/log-target entirely."
+  },
+  {
+   "req": "Check._merge combines http/tcp/exec subfields properly."
+  },
+  {
+   "req": "Plan.to_yaml includes services, checks, log-targets."
+  }
+ ],
+ "py3status_2286": [
+  {
+   "req": "core no longer imports pkg_resources; uses importlib.metadata entry_points for modules."
+  },
+  {
+   "req": "Entry-point py3status modules loaded via importlib.metadata.entry_points(group='py3status')."
+  },
+  {
+   "req": "Module loading works when setuptools/pkg_resources unavailable."
+  }
+ ],
+ "python_makefun_78": [
+  {
+   "req": "wraps/create_function on async generator returns function where inspect.isasyncgenfunction is True."
+  },
+  {
+   "req": "Calling wrapped async gen yields same items via async for."
+  },
+  {
+   "req": "Regular coroutines and generators still handled correctly."
+  },
+  {
+   "req": "Signature preserved for async generator."
+  }
+ ],
+ "python_storage_1275": [
+  {
+   "req": "Bucket.list_blobs(page_size=N) passes page_size to client.list_blobs."
+  },
+  {
+   "req": "Default page_size None."
+  },
+  {
+   "req": "Other args unchanged."
+  }
+ ],
+ "robotframework_5188": [
+  {
+   "req": "ExecutionResult(output.xml).generated returns datetime from <robot generated=...>."
+  },
+  {
+   "req": "Generated parsed with milliseconds and timezone-less format, e.g. datetime(2024,...)."
+  },
+  {
+   "req": "generation_time / generator attribute also available."
+  },
+  {
+   "req": "Results without generated attribute return None."
+  },
+  {
+   "req": "Combined results (multiple outputs) generated is None or latest."
+  }
+ ],
+ "scadnano_python_package_284": [
+  {
+   "req": "Design with 5' and 3' modifications sharing vendor code [BIOTEG] serializes without collision."
+  },
+  {
+   "req": "JSON output stores modifications in separate dicts: modifications_5p, modifications_3p, modifications_int."
+  },
+  {
+   "req": "Round trip from_scadnano_json restores both modifications correctly on strands."
+  },
+  {
+   "req": "Legacy JSON with single 'modifications_in_design' still loads."
+  },
+  {
+   "req": "Same code used as both 5' and internal mod works."
+  }
+ ],
+ "scitacean_262": [
+  {
+   "req": "Upload with remote_path '../outside/file' raises ValueError/error preventing upload."
+  },
+  {
+   "req": "Absolute remote path outside source folder rejected."
+  },
+  {
+   "req": "Normal relative remote paths within source folder accepted."
+  },
+  {
+   "req": "Paths normalizing back inside (a/../b) accepted."
+  },
+  {
+   "req": "File.make_model / dataset add_files validates remote path."
+  }
+ ],
+ "sievelib_113": [
+  {
+   "req": "addfilter with vacation ':days', 7 int argument builds filter without AttributeError."
+  },
+  {
+   "req": "Generated sieve text contains ':days 7'."
+  },
+  {
+   "req": "Int args assigned atype 'number'."
+  },
+  {
+   "req": "String args still treated as tags or strings correctly."
+  }
+ ],
+ "starlette_exporter_70": [
+  {
+   "req": "Async label callback in labels dict is awaited; metric label value equals returned value."
+  },
+  {
+   "req": "Sync callbacks still work."
+  },
+  {
+   "req": "Async callback reading request body works with endpoint still able to read body."
+  },
+  {
+   "req": "Mixed static string, sync and async labels all present in metrics output."
+  }
+ ],
+ "text2num_113": [
+  {
+   "req": "alpha2digit('forty five hundred thirty dollars and ninety cents','en') == '4530 dollars and 90 cents'."
+  },
+  {
+   "req": "text2num('forty five hundred thirty','en') == 4530."
+  },
+  {
+   "req": "'twenty one hundred' -> 2100."
+  },
+  {
+   "req": "'nineteen hundred eighty four' -> 1984 still works."
+  },
+  {
+   "req": "'fifty five' etc. unchanged."
+  }
+ ]
+}

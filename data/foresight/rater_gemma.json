@@ -1,0 +1,1156 @@
+{
+ "actualpy_117": [
+  {
+   "req": "transactionId should be optional in transaction DTOs",
+   "class": "I",
+   "why": "Log explicitly reports transactionId as a required field that is missing from the response."
+  },
+  {
+   "req": "Transaction DTOs should support a 'booked' boolean field",
+   "class": "R",
+   "why": "Added to test data; complements the 'booked' transaction list mentioned in the logs."
+  },
+  {
+   "req": "Transactions with 'booked=False' should be ignored even if required fields are missing",
+   "class": "C",
+   "why": "Explicitly stated in the test patch comment as the intended behavior for these cases."
+  }
+ ],
+ "c_star_227": [
+  {
+   "req": "The `checkout_hash` property should be read-only.",
+   "class": "I",
+   "why": "Explicitly mentioned in the issue text."
+  },
+  {
+   "req": "The `checkout_target` property should be read-only.",
+   "class": "R",
+   "why": "Inferred as 'Git information' mentioned in the issue."
+  },
+  {
+   "req": "The `file_hash` property should be read-only.",
+   "class": "R",
+   "why": "Inferred as versioning/source metadata similar to Git information."
+  }
+ ],
+ "canopen_613": [
+  {
+   "req": "Access PDOs by Mapping Parameter Index.",
+   "class": "I",
+   "why": "Explicitly mentioned as a missing feature in the issue."
+  },
+  {
+   "req": "Access PDOs by Communication Parameter Index.",
+   "class": "I",
+   "why": "Explicitly suggested as a useful addition in the issue."
+  },
+  {
+   "req": "Iteration over `node.pdo.items()` must yield RPDOs then TPDOs with strictly increasing indices.",
+   "class": "R",
+   "why": "Ensures iterator consistency when adding alias keys to the PDO collection."
+  }
+ ],
+ "cfn_python_lint_4368": [
+  {
+   "req": "find_additional_properties should identify properties not defined in the schema's properties or patternProperties.",
+   "class": "R",
+   "why": "Standard JSON schema additional properties logic, inferred as the purpose of the utility function."
+  },
+  {
+   "req": "find_additional_properties should ignore properties listed in the validator's functions context.",
+   "class": "R",
+   "why": "Inferred as the correct way to allow intrinsic functions like Fn::Transform without modifying schemas."
+  }
+ ],
+ "conan_19750": [
+  {
+   "req": "[platform_requires] and [platform_tool_requires] must only accept exact package references, not version ranges.",
+   "class": "I",
+   "why": "Explicitly stated in the additional acceptance criteria."
+  },
+  {
+   "req": "Version ranges in [platform_requires] or [platform_tool_requires] must trigger a profile-reading error identifying the section and reference.",
+   "class": "I",
+   "why": "Explicitly stated in the additional acceptance criteria."
+  },
+  {
+   "req": "The error output must not expose AssertionError or an internal traceback as the primary failure.",
+   "class": "I",
+   "why": "Explicitly stated in the additional acceptance criteria."
+  },
+  {
+   "req": "The error message must use the specific phrasing 'ERROR: Error reading... Profile [platform_requires]/[platform_tool_requires] must be exact versions...'.",
+   "class": "C",
+   "why": "The issue requires identifying the section/reference, but the exact wording is a developer choice."
+  }
+ ],
+ "copier_2646": [
+  {
+   "req": "Temporary directories must be deleted when `copier update` is interrupted.",
+   "class": "I",
+   "why": "Directly stated in the issue text and reproduction steps."
+  },
+  {
+   "req": "Temporary directories must be deleted when `copier copy` is interrupted.",
+   "class": "R",
+   "why": "Both copy and update use the same VCS cloning mechanism mentioned in the issue."
+  }
+ ],
+ "dissect_cstruct_120": [
+  {
+   "req": "Ensure that the code objects of generated __init__ methods for structures are hashable.",
+   "class": "I",
+   "why": "The issue explicitly suggests adding __hash__ to base metaclasses to resolve VSCode debugging issues."
+  },
+  {
+   "req": "Ensure that the code objects of generated __init__ methods for unions are hashable.",
+   "class": "I",
+   "why": "The issue explicitly suggests adding __hash__ to base metaclasses to resolve VSCode debugging issues."
+  },
+  {
+   "req": "The generated __init__ method should use _n_default variables for default values instead of hardcoded integers.",
+   "class": "C",
+   "why": "Not mentioned in the issue; a design choice made during the implementation of the fix."
+  }
+ ],
+ "edk2_pytool_library_698": [
+  {
+   "req": "!ifdef evaluates to true when the macro is defined, even if the value is an empty string.",
+   "class": "I",
+   "why": "Explicitly stated in the issue description."
+  },
+  {
+   "req": "!ifndef evaluates to false when the macro is defined, even if the value is an empty string.",
+   "class": "I",
+   "why": "Directly implied by the requirement for !ifdef to evaluate to true."
+  },
+  {
+   "req": "ReplaceVariables replaces macros in !ifdef/!ifndef with '1' (defined) or '0' (undefined) instead of the macro value.",
+   "class": "C",
+   "why": "A specific implementation choice to avoid empty strings; not mandated by the issue text."
+  },
+  {
+   "req": "!ifdef and !ifndef directives should be robust to extra whitespace.",
+   "class": "R",
+   "why": "Standard expectation for parser robustness in a competent implementation."
+  }
+ ],
+ "foamlib_315": [
+  {
+   "req": "Support parsing of #include directives.",
+   "class": "R",
+   "why": "Standard OpenFOAM directive; a competent developer would ensure basic directive support."
+  },
+  {
+   "req": "Support parsing of #includeFunc directives.",
+   "class": "I",
+   "why": "Explicitly mentioned as the cause of the crash in the issue."
+  }
+ ],
+ "gitpython_2075": [
+  {
+   "req": "includeIf should support hasconfig:remote.*.url for exact remote URL matches.",
+   "class": "I",
+   "why": "Directly stated as missing in the issue text."
+  },
+  {
+   "req": "includeIf should not trigger hasconfig:remote.*.url for non-matching remote URLs.",
+   "class": "I",
+   "why": "Directly implied by the requirement to support a conditional match."
+  },
+  {
+   "req": "hasconfig:remote.*.url should support glob patterns for the URL value.",
+   "class": "R",
+   "why": "Inferred from the linked git-scm documentation provided in the issue."
+  }
+ ],
+ "hats_648": [
+  {
+   "req": "Implement a function `skymap_coverage(catalog, order=None)`.",
+   "class": "I",
+   "why": "Explicitly requested in the issue pseudocode."
+  },
+  {
+   "req": "Calculate coverage as the fraction of pixels in the skymap that are greater than zero.",
+   "class": "I",
+   "why": "Explicitly requested in the issue pseudocode."
+  },
+  {
+   "req": "Use the provided `order` argument or default to the catalog's skymap order if `order` is None.",
+   "class": "I",
+   "why": "Explicitly requested in the issue pseudocode."
+  },
+  {
+   "req": "Raise a `ValueError` if the catalog does not contain skymap information.",
+   "class": "R",
+   "why": "Standard error handling for missing required metadata in this repository."
+  }
+ ],
+ "isort_2491": [
+  {
+   "req": "Comments on the opening line of a multi-line aliased import must not move to the attribute line.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "Comments on the attribute line of a multi-line aliased import must not move to the opening line.",
+   "class": "R",
+   "why": "Ensures symmetry and prevents regressions in existing correct behavior."
+  },
+  {
+   "req": "Comments on the opening line of a multi-line non-aliased import must not move.",
+   "class": "R",
+   "why": "Consistency across similar import structures."
+  },
+  {
+   "req": "Comments on single-line imports must be preserved.",
+   "class": "R",
+   "why": "Basic expected behavior for a formatter."
+  },
+  {
+   "req": "The fix must work for various wrap modes and profiles beyond the Black profile.",
+   "class": "R",
+   "why": "isort supports multiple configuration profiles and wrap modes."
+  },
+  {
+   "req": "When collapsing multi-line imports to a single line, all comments must be preserved at the end.",
+   "class": "R",
+   "why": "Standard isort behavior for collapsing lines while preserving metadata."
+  }
+ ],
+ "lmstudio_python_110": [
+  {
+   "req": "parse_server_config must not raise KeyError when a field in the fields list is missing the 'value' key.",
+   "class": "I",
+   "why": "Directly stated as the cause of the crash in the issue text."
+  },
+  {
+   "req": "Fields missing the 'value' key should be parsed as None in the resulting configuration.",
+   "class": "R",
+   "why": "Standard way to handle missing values in key-value configuration pairs."
+  },
+  {
+   "req": "The mainGpu field should be absent from the configuration when the GPU split strategy is 'evenly'.",
+   "class": "R",
+   "why": "Logical consequence of an even split strategy across all GPUs."
+  },
+  {
+   "req": "parse_server_config should correctly handle cases where optional fields are entirely missing from the server config.",
+   "class": "R",
+   "why": "Standard expectation for optional configuration fields."
+  }
+ ],
+ "loguru_1306": [
+  {
+   "req": "FORCE_COLOR='1' enables colorization in non-TTY environments.",
+   "class": "I",
+   "why": "Explicitly requested in the issue text."
+  },
+  {
+   "req": "FORCE_COLOR='' does not enable colorization.",
+   "class": "R",
+   "why": "Standard convention for environment variable flags to treat empty strings as false/unset."
+  },
+  {
+   "req": "NO_COLOR='1' disables colorization.",
+   "class": "R",
+   "why": "Implied by 'Similar to #1178 / #1299' and the NO_COLOR standard."
+  },
+  {
+   "req": "NO_COLOR='' does not disable colorization.",
+   "class": "R",
+   "why": "Consistency with FORCE_COLOR and standard environment variable handling."
+  },
+  {
+   "req": "Colorization settings should apply to both stdout and stderr.",
+   "class": "R",
+   "why": "Standard expectation for a logging library's color support."
+  }
+ ],
+ "microsoft_authentication_library_for_python_795": [
+  {
+   "req": "Use the `AZURE_POD_IDENTITY_AUTHORITY_HOST` environment variable to override the default IMDS authority host.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "Use `http://169.254.169.254` as the default IMDS authority host when the environment variable is not set.",
+   "class": "R",
+   "why": "Standard IMDS behavior and preserved existing functionality."
+  },
+  {
+   "req": "Construct the request URL by appending `/metadata/identity/oauth2/token` to the authority host.",
+   "class": "R",
+   "why": "Standard IMDS token endpoint path."
+  },
+  {
+   "req": "Normalize trailing slashes in the authority host to prevent double slashes in the final request URL.",
+   "class": "R",
+   "why": "Standard practice for robust URL construction in SDKs."
+  },
+  {
+   "req": "Include `api-version=2018-02-01`, the resource, and the `Metadata: true` header in the IMDS request.",
+   "class": "R",
+   "why": "Standard IMDS request requirements and preserved existing functionality."
+  }
+ ],
+ "moto_9903": [
+  {
+   "req": "The `RecoveryPeriodInDays` key must be present in the `update_continuous_backups` response.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "The `RecoveryPeriodInDays` key must default to 35 if not provided in the request.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "The `RecoveryPeriodInDays` key must return the value specified in the request.",
+   "class": "I",
+   "why": "Directly implied by the statement about the default value when none is provided."
+  },
+  {
+   "req": "The `update_continuous_backups` endpoint must correctly disable Point In Time Recovery when requested.",
+   "class": "R",
+   "why": "Standard API behavior for this endpoint, inferable from AWS documentation."
+  }
+ ],
+ "nested_pandas_261": [
+  {
+   "req": "__getitem__ supports lists of columns containing nested dot notation.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "Selecting nested columns returns the parent column containing only the requested sub-columns.",
+   "class": "R",
+   "why": "Standard behavior for subsetting nested data structures."
+  },
+  {
+   "req": "__getitem__ supports mixing top-level and nested columns in the selection list.",
+   "class": "I",
+   "why": "Directly implied by the provided example."
+  },
+  {
+   "req": "Selecting a parent column name directly returns all its sub-columns.",
+   "class": "R",
+   "why": "Standard behavior for column selection in pandas-like objects."
+  },
+  {
+   "req": "Raise KeyError when a requested top-level column is missing.",
+   "class": "R",
+   "why": "Standard pandas behavior for missing columns."
+  },
+  {
+   "req": "Raise KeyError when a requested sub-column is missing.",
+   "class": "R",
+   "why": "Consistent error handling for nested access."
+  }
+ ],
+ "py_webauthn_241": [
+  {
+   "req": "Allow Android SafetyNet attestation to be verified if basicIntegrity is true and ctsProfileMatch is false.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "Reject Android SafetyNet attestation if basicIntegrity is false.",
+   "class": "I",
+   "why": "Directly implied by the requirement to 'only require that basicIntegrity to be true'."
+  },
+  {
+   "req": "Raise InvalidRegistrationResponse with the message 'Could not verify device integrity' when basic integrity is false.",
+   "class": "A",
+   "why": "Exact error message not specified in the issue."
+  }
+ ],
+ "python_markdownify_230": [
+  {
+   "req": "<code> tags containing backticks should be wrapped in double backticks.",
+   "class": "I",
+   "why": "Explicitly requested in the issue text and example."
+  },
+  {
+   "req": "<code> tags containing double backticks should be wrapped in triple backticks.",
+   "class": "I",
+   "why": "Directly implemented in the suggested fix provided in the issue."
+  },
+  {
+   "req": "Surrounding text and internal whitespace should be preserved during conversion.",
+   "class": "R",
+   "why": "Standard expected behavior for a markdown conversion library."
+  }
+ ],
+ "qupulse_900": [
+  {
+   "req": "VM output for sequenced repetitions must correctly include all repeated entries.",
+   "class": "R",
+   "why": "Inferred from the context of testing volatile parameters and the existing test's purpose."
+  }
+ ],
+ "sdg_461": [
+  {
+   "req": "LLMMessagesBlock must be instantiable with input_col and output_col parameters.",
+   "class": "R",
+   "why": "Standard block instantiation pattern in the repository."
+  },
+  {
+   "req": "LLMMessagesBlock must ensure temperature is non-zero when n > 1 in gen_kwargs.",
+   "class": "R",
+   "why": "Directly relates to 'adjust to fit our upstream conventions and params'."
+  },
+  {
+   "req": "LLMMessagesBlock.generate must call the chat completion API and return the result in the output column.",
+   "class": "R",
+   "why": "Core intended functionality of a messages block."
+  }
+ ],
+ "sql_metadata_625_interface": [
+  {
+   "req": "Support SQL Server bracketed identifiers in subquery column references.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "Ensure no user-visible parser warnings (e.g., from sqlglot) are emitted when processing these queries.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  }
+ ],
+ "sqlglot_7457": [
+  {
+   "req": "Parse and round-trip AI.FORECAST with TABLE keyword and named arguments.",
+   "class": "I",
+   "why": "Explicitly requested in the issue text and regression test."
+  },
+  {
+   "req": "Parse and round-trip AI.FORECAST with a subquery and named arguments.",
+   "class": "R",
+   "why": "Standard BigQuery TVF behavior to accept either a table or a subquery."
+  }
+ ],
+ "sqlglot_7479": [
+  {
+   "req": "AI.EMBED should be parsed into a specific AST node (e.g., exp.AIEmbed) within an exp.Dot node.",
+   "class": "I",
+   "why": "Issue requests richer typed AST nodes for AI.EMBED and maintaining existing parse behavior."
+  },
+  {
+   "req": "AI.SIMILARITY should be parsed into a specific AST node (e.g., exp.AISimilarity) within an exp.Dot node.",
+   "class": "I",
+   "why": "Issue requests richer typed AST nodes for AI.SIMILARITY and maintaining existing parse behavior."
+  },
+  {
+   "req": "AI.GENERATE should be parsed into a specific AST node (e.g., exp.AIGenerate) within an exp.Dot node.",
+   "class": "I",
+   "why": "Issue requests richer typed AST nodes for AI.GENERATE and maintaining existing parse behavior."
+  },
+  {
+   "req": "AI.EMBED, AI.SIMILARITY, and AI.GENERATE must maintain round-trip identity.",
+   "class": "I",
+   "why": "Issue explicitly requests that existing parse/round trip behavior remains backward compatible."
+  }
+ ],
+ "stationbench_41": [
+  {
+   "req": "load_dataset must accept xr.DataArray and return an xr.Dataset",
+   "class": "I",
+   "why": "Directly stated: the code breaks with DataArray because it expects a Dataset."
+  },
+  {
+   "req": "Named xr.DataArray should use its name as the variable name in the resulting xr.Dataset",
+   "class": "R",
+   "why": "Standard xarray behavior when converting a named DataArray to a Dataset."
+  },
+  {
+   "req": "Unnamed xr.DataArray should be assigned a default name (e.g., 'data') in the resulting xr.Dataset",
+   "class": "C",
+   "why": "xarray requires a name for Dataset conversion; the specific default name is a developer choice."
+  },
+  {
+   "req": "load_dataset must continue to support xr.Dataset inputs",
+   "class": "R",
+   "why": "Standard regression testing to ensure existing functionality is not broken."
+  },
+  {
+   "req": "load_dataset should return the original xr.Dataset object if a dataset is passed",
+   "class": "R",
+   "why": "Standard efficiency practice for functions ensuring a specific return type."
+  }
+ ],
+ "streamlink_6439": [
+  {
+   "req": "The plugin should match URLs of the form `https://www.tf1.fr/<id>/direct` as 'stream' type.",
+   "class": "I",
+   "why": "Stated in the issue title and implied by the example URL."
+  },
+  {
+   "req": "The plugin should extract the stream ID from URLs of the form `https://www.tf1.fr/<id>/direct`.",
+   "class": "I",
+   "why": "Implied by the issue text and the debug log showing the extracted channel ID."
+  }
+ ],
+ "sympy_28660": [
+  {
+   "req": "The integral of the rational function p = 400*pi**2*x**2/(1600*pi**4*x**4 - 796*pi**2*x**2 + 100) must be correct.",
+   "class": "I",
+   "why": "The issue reports a bug for this specific function (derived from the provided parameters) and expected result."
+  }
+ ],
+ "toqito_1538": [
+  {
+   "req": "sandwiched_renyi_conditional_entropy supports variant=\"uparrow\" and variant=\"downarrow\"",
+   "class": "C",
+   "why": "The issue asks for an API for uparrow; using a variant parameter is a choice."
+  },
+  {
+   "req": "Unknown variant values raise a ValueError",
+   "class": "I",
+   "why": "Directly implied by 'the API fails clearly for unsupported regimes'."
+  },
+  {
+   "req": "variant=\"uparrow\" raises ValueError for alpha < 1/2",
+   "class": "I",
+   "why": "Implied by 'fails clearly for unsupported regimes' and 'document the supported alpha range'."
+  },
+  {
+   "req": "Both variants return conditional von Neumann entropy at alpha=1",
+   "class": "R",
+   "why": "Fundamental mathematical property of R\u00e9nyi entropies."
+  },
+  {
+   "req": "Product states recover the R\u00e9nyi entropy of subsystem A",
+   "class": "R",
+   "why": "Fundamental property of conditional entropies."
+  },
+  {
+   "req": "Maximally entangled two-qubit pure states return -1",
+   "class": "R",
+   "why": "Fundamental property of conditional entropies for maximally entangled qubits."
+  },
+  {
+   "req": "The uparrow variant value is at least the downarrow variant value",
+   "class": "R",
+   "why": "Fundamental mathematical property of sandwiched conditional R\u00e9nyi entropies."
+  },
+  {
+   "req": "Classical-quantum states match the closed-form expression from the cited reference",
+   "class": "R",
+   "why": "Standard benchmark derived from the cited paper's definition."
+  }
+ ],
+ "twine_1309": [
+  {
+   "req": "Handle HTTP status codes not defined in `http.HTTPStatus` without raising `ValueError`.",
+   "class": "I",
+   "why": "Directly implied by the reported crash 'ValueError: 499 is not a valid HTTPStatus'."
+  },
+  {
+   "req": "Include the status code and a phrase in the error message for non-standard status codes.",
+   "class": "R",
+   "why": "The traceback shows the original code intended to display the status phrase."
+  },
+  {
+   "req": "Use 'Unknown Status' as the phrase for non-standard HTTP status codes.",
+   "class": "C",
+   "why": "The issue doesn't specify a phrase; 'Unknown Status' is a reasonable fallback choice."
+  }
+ ],
+ "uxarray_1423": [
+  {
+   "req": "zonal_mean must return NaN instead of 0 when no data is available for a latitude.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "The NaN behavior for missing data must also apply when conservative=True.",
+   "class": "R",
+   "why": "A developer would ensure the fix applies to all modes of the function."
+  },
+  {
+   "req": "Integer input data must be promoted to floating-point to allow NaN values in the output.",
+   "class": "R",
+   "why": "Necessary because integer arrays cannot store NaN values."
+  }
+ ],
+ "valohai_cli_321": [
+  {
+   "req": "Using --priority as a flag sets the priority value to 1",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  }
+ ],
+ "xsdata_1126": [
+  {
+   "req": "find_dependency should return the referenced class when a reference is provided",
+   "class": "R",
+   "why": "Necessary to distinguish types with the same name using the existing reference system."
+  },
+  {
+   "req": "update_types should preserve the reference and qname when a class object is provided",
+   "class": "R",
+   "why": "Necessary to distinguish types with the same name during type updating."
+  }
+ ],
+ "alpenhorn_196": [
+  {
+   "req": "LustreHSMNodeIO._restore_wait must implement a timeout.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "On timeout, the restore task must be requeued/deferred to avoid worker lock-up.",
+   "class": "I",
+   "why": "Directly implied by the goal to avoid locking up workers."
+  },
+  {
+   "req": "hsm_restore must return None to indicate a timeout.",
+   "class": "R",
+   "why": "Standard implementation detail for timeouts in this codebase's command wrappers."
+  },
+  {
+   "req": "hsm_restore must return False to indicate a failure.",
+   "class": "R",
+   "why": "Necessary to distinguish failure from timeout for correct task handling."
+  },
+  {
+   "req": "On hsm_restore failure, the task must be abandoned.",
+   "class": "R",
+   "why": "Competent developer would not retry a hard failure indefinitely."
+  },
+  {
+   "req": "util.run_command must return None as the return value when a timeout occurs.",
+   "class": "R",
+   "why": "Low-level implementation detail required to support the timeout functionality."
+  }
+ ],
+ "alpenhorn_226": [
+  {
+   "req": "Daemon deletes files where has_file is 'X' or 'M' and wants_file is 'N'.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "Daemon skips checking files where has_file is 'M' and wants_file is 'N'.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "The 'node clean' command supports an '--include-bad' option to process suspect/corrupt files.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "The 'node clean' command ignores suspect files (has_file 'X' or 'M') by default.",
+   "class": "I",
+   "why": "Directly implied by the requirement for an '--include-bad' flag."
+  }
+ ],
+ "alpenhorn_269": [
+  {
+   "req": "The daemon must support a `--once` command-line option.",
+   "class": "I",
+   "why": "Directly requested in the issue text."
+  },
+  {
+   "req": "The daemon must exit after one iteration of its main loop when `--once` is used.",
+   "class": "I",
+   "why": "Directly requested in the issue text."
+  },
+  {
+   "req": "The daemon must complete pending I/O operations before exiting in `--once` mode.",
+   "class": "I",
+   "why": "Directly requested in the issue text."
+  },
+  {
+   "req": "The `update_loop` function must accept a parameter to control whether it continues looping.",
+   "class": "R",
+   "why": "Necessary internal change to implement the requested loop-once behavior."
+  }
+ ],
+ "auth0_python_500": [
+  {
+   "req": "Connections.all() accepts a 'name' argument.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "The 'name' argument is passed as a query parameter to the API request.",
+   "class": "I",
+   "why": "Directly implied by 'retrieve a Connection by name' via the Management API."
+  },
+  {
+   "req": "The 'name' parameter is included in the request parameters as None when not provided.",
+   "class": "R",
+   "why": "Follows the existing pattern in the test suite for other parameters like 'page' and 'per_page'."
+  }
+ ],
+ "aws_doc_sdk_examples_tools_39": [
+  {
+   "req": "Add a 'genai' metadata field to track AI usage level.",
+   "class": "I",
+   "why": "Directly requested in the issue text."
+  },
+  {
+   "req": "Validate that 'genai' only accepts the values: None, Some, Most, All.",
+   "class": "I",
+   "why": "The issue explicitly lists these four levels."
+  },
+  {
+   "req": "Place the 'genai' field within the excerpt metadata structure.",
+   "class": "R",
+   "why": "Consistent with existing metadata fields like 'description' and 'snippet_tags'."
+  },
+  {
+   "req": "Ensure 'sdk_version' is included in metadata error objects.",
+   "class": "R",
+   "why": "Corrects a discrepancy where available metadata was missing from error reports."
+  }
+ ],
+ "borgstore_87": [
+  {
+   "req": "store() must succeed when nesting directories are missing, regardless of the precreate_dirs setting.",
+   "class": "I",
+   "why": "Explicitly requested for storing objects in the issue text."
+  },
+  {
+   "req": "move() must succeed when destination nesting directories are missing, regardless of the precreate_dirs setting.",
+   "class": "R",
+   "why": "Inferred as move is a write-like operation similar to store."
+  }
+ ],
+ "ccflow_24": [
+  {
+   "req": "Allow passing context fields as keyword arguments directly to the call method.",
+   "class": "I",
+   "why": "Explicitly requested in the 'Describe the solution you'd like' section."
+  },
+  {
+   "req": "Allow passing the context via a 'context' keyword argument.",
+   "class": "R",
+   "why": "Standard Python practice to allow the primary positional argument to be passed by name."
+  },
+  {
+   "req": "Allow passing a dictionary as the context (positionally or via the 'context' keyword).",
+   "class": "I",
+   "why": "Mentioned as existing functionality in the problem description."
+  },
+  {
+   "req": "Raise TypeError when the model is called without any arguments.",
+   "class": "R",
+   "why": "A model call requires a context to execute."
+  },
+  {
+   "req": "Raise TypeError when both a context and additional keyword arguments are provided.",
+   "class": "R",
+   "why": "Prevents ambiguity regarding which source should be used to define the context."
+  }
+ ],
+ "csv2md_16": [
+  {
+   "req": "Filter columns to include based on a provided list of indices.",
+   "class": "I",
+   "why": "Directly requested as 'a list of columns to be used'."
+  },
+  {
+   "req": "Ignore column indices that are out of range.",
+   "class": "C",
+   "why": "The issue doesn't specify how to handle invalid indices; ignoring them is a design choice."
+  }
+ ],
+ "dakara_base_63": [
+  {
+   "req": "Use `importlib.resources.as_file` and `importlib.resources.files` instead of `importlib.resources.path` to access resources.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  }
+ ],
+ "dfindexeddb_50": [
+  {
+   "req": "JS arrays must support and preserve custom properties.",
+   "class": "I",
+   "why": "Issue explicitly mentions properties of JS arrays not being printed."
+  },
+  {
+   "req": "Safari/WebKit deserializer must return `webkit.JSArray` objects instead of Python lists.",
+   "class": "R",
+   "why": "Necessary to preserve JS-specific properties for subsequent serialization."
+  },
+  {
+   "req": "Safari/WebKit deserializer must return `webkit.JSSet` objects instead of Python sets.",
+   "class": "R",
+   "why": "Consistent with treating JS values as rich types rather than primitives."
+  }
+ ],
+ "fitbenchmarking_1336": [
+  {
+   "req": "Increase the failure detection threshold to avoid counting large finite values (e.g., 1e23) as failures.",
+   "class": "I",
+   "why": "The issue explicitly states the 1.0e20 threshold might be causing the problem."
+  },
+  {
+   "req": "Update solver labels to include the number of failures in the format 'Solver (N failures)'.",
+   "class": "I",
+   "why": "The issue mentions solvers being marked with failure counts in the plot legends."
+  },
+  {
+   "req": "Cap values in the solver_values output array at 1e20.",
+   "class": "R",
+   "why": "This is existing behavior of adjust_values_to_plot that must be preserved."
+  },
+  {
+   "req": "Append a constant value (1e20) to the end of the solver_values output array.",
+   "class": "R",
+   "why": "This is existing behavior of adjust_values_to_plot that must be preserved."
+  }
+ ],
+ "fitbenchmarking_1338": [
+  {
+   "req": "display_page must accept a run_id parameter to identify the specific run being visualized.",
+   "class": "I",
+   "why": "Issue states old results aren't shown because only the latest run's app is active."
+  },
+  {
+   "req": "The URL pathname must include the run_id to distinguish between different runs.",
+   "class": "R",
+   "why": "Issue mentions the correct app is at a 'different URL'; adding run_id to path is standard."
+  },
+  {
+   "req": "display_page must return a 404 error message for invalid or mismatched URL pathnames.",
+   "class": "I",
+   "why": "Issue explicitly complains that a 'blank space is shown' and 'no warning is given'."
+  },
+  {
+   "req": "The run_id must be persisted and handled within the options configuration.",
+   "class": "R",
+   "why": "Necessary for load_checkpoint to restore the correct run_id for the Dash app."
+  }
+ ],
+ "herepy_84": [
+  {
+   "req": "route_v8 must include all keys provided in the truck parameter in the request URL.",
+   "class": "I",
+   "why": "Directly stated in issue point 1."
+  },
+  {
+   "req": "Nested dictionary parameters (like truck in route_v8) must be formatted as 'key[subkey]=value' in the URL.",
+   "class": "I",
+   "why": "Directly stated in issue point 2."
+  },
+  {
+   "req": "Utils.build_url must correctly format nested dictionaries as 'key[subkey]=value' in the resulting URL.",
+   "class": "I",
+   "why": "Directly implied as the necessary fix for the reported issue."
+  }
+ ],
+ "ipykernel_1271": [
+  {
+   "req": "The poller must trigger an exit when the parent process ID (PPID) is 1.",
+   "class": "I",
+   "why": "Explicitly mentioned in the issue as the current assumption and suggested behavior."
+  },
+  {
+   "req": "The poller must trigger an exit when the PPID changes from the initial parent PID to any other value.",
+   "class": "I",
+   "why": "Directly implied by the problem description and the suggestion to handle non-1 reparenting."
+  }
+ ],
+ "leo_editor_3678": [
+  {
+   "req": "Support reading of both standard and Black-compatible sentinels.",
+   "class": "I",
+   "why": "Stated directly in the issue text."
+  },
+  {
+   "req": "Support writing sentinels in Black-compatible format via the `--black-sentinels` option.",
+   "class": "I",
+   "why": "Stated directly in the issue text."
+  },
+  {
+   "req": "Correctly identify invisible sentinels regardless of whether they are in standard or Black-compatible format.",
+   "class": "R",
+   "why": "Necessary for 'robust' reading and tested via g.is_invisible_sentinel."
+  },
+  {
+   "req": "Correctly navigate to file lines and nodes regardless of sentinel format.",
+   "class": "R",
+   "why": "Navigation depends on robust sentinel reading; tested via find_node_start and find_file_line."
+  }
+ ],
+ "lkml_74": [
+  {
+   "req": "lkml.dump must not mutate the input dictionary.",
+   "class": "I",
+   "why": "The issue explicitly states that lkml.dump mutates the input dict by removing 'name' fields."
+  }
+ ],
+ "m3u8_290": [
+  {
+   "req": "Parse and dump #EXT-OATCLS-SCTE35 and #EXT-X-SCTE35 tags.",
+   "class": "I",
+   "why": "Issue states SCTE tags were getting removed during parsing and dumping."
+  },
+  {
+   "req": "Only dump #EXT-OATCLS-SCTE35 at #EXT-X-CUE-OUT markers, not at #EXT-X-CUE-OUT-CONT.",
+   "class": "R",
+   "why": "Standard HLS/m3u8 behavior to avoid redundant tag repetition in continued cue-outs."
+  },
+  {
+   "req": "Propagate SCTE35 and OATCLS-SCTE35 data and durations across segments within a cue-out period.",
+   "class": "R",
+   "why": "Necessary for the internal model to correctly represent the duration of a cue-out."
+  }
+ ],
+ "mobilus_client_18": [
+  {
+   "req": "The Config class should no longer generate or store the client_id.",
+   "class": "I",
+   "why": "Directly stated: 'Move client_id generation out of Config class'."
+  },
+  {
+   "req": "The MqttClient should be initialized with a client_id independently of the Config class.",
+   "class": "I",
+   "why": "Directly stated: 'Generate unique client_id on each mqtt client initialization'."
+  }
+ ],
+ "monty_635": [
+  {
+   "req": "compress_file allows specifying an optional target path for the output file.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "decompress_file allows specifying an optional target path for the output file.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "The output file is created in the target path using its original basename.",
+   "class": "R",
+   "why": "Implied by the proposed solution to 'append a prefix' and standard file utility behavior."
+  },
+  {
+   "req": "The source file is deleted after successful compression or decompression to a target path.",
+   "class": "R",
+   "why": "Existing behavior of these functions that must be preserved."
+  }
+ ],
+ "operator_1024": [
+  {
+   "req": "pull_path must retrieve empty directories",
+   "class": "I",
+   "why": "Explicitly stated as a bug in the issue text."
+  },
+  {
+   "req": "push_path must retrieve empty directories",
+   "class": "I",
+   "why": "Stated as a likely similar problem in the issue text."
+  },
+  {
+   "req": "The recursive listing helper must include directories in its output",
+   "class": "I",
+   "why": "Explicitly suggested as the solution in the issue text."
+  }
+ ],
+ "operator_1268": [
+  {
+   "req": "Combine 'checks' when adding layers in _TestingPebbleClient.",
+   "class": "I",
+   "why": "Stated in the issue text."
+  },
+  {
+   "req": "Combine 'log-targets' when adding layers in _TestingPebbleClient.",
+   "class": "I",
+   "why": "Stated in the issue text."
+  },
+  {
+   "req": "Implement _merge methods for pebble.Check and pebble.LogTarget.",
+   "class": "I",
+   "why": "Stated in the issue text."
+  },
+  {
+   "req": "Support 'replace' override for checks and log targets.",
+   "class": "R",
+   "why": "Follows the existing pattern used for services in _TestingPebbleClient.add_layer."
+  },
+  {
+   "req": "Validate that the 'override' field is present and valid for checks and log targets.",
+   "class": "C",
+   "why": "Not in issue; differs from existing service implementation which doesn't strictly validate."
+  },
+  {
+   "req": "Initialize pebble.LogTarget.labels as an empty dictionary instead of None.",
+   "class": "R",
+   "why": "Necessary for the merge logic to operate on labels."
+  }
+ ],
+ "py3status_2286": [
+  {
+   "req": "Replace `pkg_resources` with `importlib.metadata` for entry point discovery.",
+   "class": "I",
+   "why": "The issue explicitly identifies `pkg_resources` as deprecated and links to the recommended replacement."
+  },
+  {
+   "req": "Handle the API difference of `importlib.metadata.entry_points` between Python versions < 3.10 and >= 3.10.",
+   "class": "R",
+   "why": "A competent developer knows `importlib.metadata.entry_points` changed its return type in Python 3.10."
+  }
+ ],
+ "python_makefun_78": [
+  {
+   "req": "Wrapping an async generator function with @wraps must result in an async generator function.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "Creating a partial of an async generator function must result in an async generator function.",
+   "class": "R",
+   "why": "partial is a core wrapping mechanism in makefun."
+  },
+  {
+   "req": "Wrapped or partial async generators must remain functional and yield values.",
+   "class": "R",
+   "why": "Implicit in fixing the report that the issue was 'causing code to break'."
+  }
+ ],
+ "python_storage_1275": [
+  {
+   "req": "bucket.list_blobs must accept a page_size argument.",
+   "class": "I",
+   "why": "Explicitly requested in the issue text."
+  },
+  {
+   "req": "bucket.list_blobs must forward the page_size argument to the underlying client.list_blobs call.",
+   "class": "I",
+   "why": "Directly implied by the request for consistency with client.list_blobs."
+  }
+ ],
+ "robotframework_5188": [
+  {
+   "req": "Expose the 'generated' attribute from output.xml in the result package.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "The exposed attribute should be named 'generation_time'.",
+   "class": "C",
+   "why": "Issue doesn't specify the Python attribute name; 'generation_time' is a reasonable choice."
+  },
+  {
+   "req": "The attribute value should be a datetime object.",
+   "class": "R",
+   "why": "Standard Python practice for representing date/time strings."
+  },
+  {
+   "req": "The attribute should be None if the 'generated' attribute is missing from the XML.",
+   "class": "R",
+   "why": "Standard practice for handling optional XML attributes in result objects."
+  }
+ ],
+ "scadnano_python_package_284": [
+  {
+   "req": "Allow modifications with the same vendor code if they are at different positions (5', 3', or internal).",
+   "class": "I",
+   "why": "Directly stated as the problem to solve in the issue text."
+  },
+  {
+   "req": "Raise an error if two modifications at the same position share the same vendor code.",
+   "class": "R",
+   "why": "Vendor codes are intended as unique IDs; uniqueness must be maintained within each position's scope."
+  },
+  {
+   "req": "The JSON output must store modifications in three separate dictionaries for 5', 3', and internal positions.",
+   "class": "I",
+   "why": "The issue explicitly proposes and expresses preference for this specific solution."
+  }
+ ],
+ "scitacean_262": [
+  {
+   "req": "Prevent uploads of files with paths leading outside the source folder.",
+   "class": "I",
+   "why": "Explicitly stated in the issue text."
+  },
+  {
+   "req": "Raise ValueError with message 'outside of the source folder' for invalid paths.",
+   "class": "C",
+   "why": "The error type and specific message are reasonable choices for implementing 'disallowing'."
+  },
+  {
+   "req": "RemotePath must resolve '..' segments to normalize paths.",
+   "class": "R",
+   "why": "Necessary to detect if a path 'goes up a level' as requested."
+  },
+  {
+   "req": "RemotePath must support checking if it is relative to another path.",
+   "class": "R",
+   "why": "Necessary to verify if a resolved path remains within the source folder."
+  }
+ ],
+ "sievelib_113": [
+  {
+   "req": "addfilter must accept integer parameters (e.g., for vacation :days) without raising AttributeError.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "tosieve must correctly render integer parameters in the resulting Sieve script.",
+   "class": "R",
+   "why": "Necessary to verify that integers are handled as 'number' types rather than strings."
+  },
+  {
+   "req": "dump must correctly represent integer parameters in the dump output.",
+   "class": "R",
+   "why": "Ensures consistency across the library's output methods."
+  },
+  {
+   "req": "addfilter must accept lists as parameters for conditions.",
+   "class": "I",
+   "why": "The issue states the method 'does not accept non-string parameters' generally."
+  },
+  {
+   "req": "The parser must provide specific error messages for unknown commands and unloaded extensions.",
+   "class": "A",
+   "why": "Not mentioned in the issue; unrelated to the reported bug."
+  }
+ ],
+ "starlette_exporter_70": [
+  {
+   "req": "Support async functions as label callbacks.",
+   "class": "I",
+   "why": "Explicitly requested in the issue text."
+  },
+  {
+   "req": "Pass the request object to the async callback.",
+   "class": "I",
+   "why": "Directly implied by the need to parse the request body."
+  },
+  {
+   "req": "Use the return value of the async callback as the label value.",
+   "class": "I",
+   "why": "Implied by the request for callbacks that 'produce metric label'."
+  }
+ ],
+ "text2num_113": [
+  {
+   "req": "text2num should parse 'X hundred Y' (e.g., 'forty five hundred thirty') as X*100 + Y.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "text2num should parse 'X hundred' (e.g., 'sixty hundred') as X*100.",
+   "class": "R",
+   "why": "Directly implied by the fix for 'forty five hundred'."
+  },
+  {
+   "req": "alpha2digit should correctly convert 'X hundred Y' patterns within a string to digits.",
+   "class": "I",
+   "why": "Directly stated in the issue text."
+  },
+  {
+   "req": "text2num should raise ValueError for invalid patterns like 'hundred hundreds'.",
+   "class": "R",
+   "why": "Competent developer ensures the parser remains restrictive against logically invalid number formats."
+  }
+ ]
+}

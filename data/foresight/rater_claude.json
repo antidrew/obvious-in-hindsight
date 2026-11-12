@@ -1,0 +1,1306 @@
+{
+ "actualpy_117": [
+  {
+   "req": "Bank sync response with transactions missing transactionId parses without validation error",
+   "class": "I",
+   "why": "Issue log shows missing-field errors must not fail"
+  },
+  {
+   "req": "Transactions with booked=False are skipped/excluded from imported results",
+   "class": "C",
+   "why": "Filtering unbooked entries is one of several possible fixes"
+  }
+ ],
+ "c_star_227": [
+  {
+   "req": "checkout_target becomes read-only (not assignable publicly)",
+   "class": "I",
+   "why": "Issue asks git information be read-only"
+  },
+  {
+   "req": "Read-only checkout_target backed by private attribute _checkout_target that tests set directly",
+   "class": "R",
+   "why": "Underscore-backed property is standard Python convention"
+  },
+  {
+   "req": "InputDataset source.file_hash also made read-only, backed by _file_hash",
+   "class": "C",
+   "why": "file_hash is not git info; scope extension chosen by author"
+  }
+ ],
+ "canopen_613": [
+  {
+   "req": "pdo/tpdo lookup by mapping parameter index (0x1A00) returns the corresponding PdoMap",
+   "class": "I",
+   "why": "Issue explicitly describes mapping-parameter access failing"
+  },
+  {
+   "req": "pdo/tpdo lookup by communication parameter index (0x1800) returns same PdoMap",
+   "class": "I",
+   "why": "Issue suggests communication parameter access too"
+  },
+  {
+   "req": "pdo.items() iterates RPDOs then TPDOs keyed by strictly increasing record index",
+   "class": "C",
+   "why": "Iteration key semantics not mentioned; author design choice"
+  },
+  {
+   "req": "Out-of-range keys like 0 and 0x1BFF still raise KeyError",
+   "class": "R",
+   "why": "Existing behaviour preserved"
+  }
+ ],
+ "cfn_python_lint_4368": [
+  {
+   "req": "New helper find_additional_properties(validator, instance, schema) in cfnlint.jsonschema._utils",
+   "class": "A",
+   "why": "New function name/signature not in issue"
+  },
+  {
+   "req": "Helper yields keys absent from properties and not matching patternProperties",
+   "class": "R",
+   "why": "Standard JSON-schema additionalProperties semantics"
+  },
+  {
+   "req": "Fn::Transform key is not reported as additional property when allowed",
+   "class": "I",
+   "why": "Issue: Fn::Transform must not trigger E3009"
+  },
+  {
+   "req": "Exclusion keyed on validator.context.functions; Fn::Transform reported when not in functions",
+   "class": "C",
+   "why": "Mechanism via context functions is an implementation choice"
+  }
+ ],
+ "conan_19750": [
+  {
+   "req": "Version range in [platform_tool_requires] fails without exposing AssertionError",
+   "class": "I",
+   "why": "Acceptance criteria state no AssertionError"
+  },
+  {
+   "req": "Failure is a profile-reading error naming section and offending reference",
+   "class": "I",
+   "why": "Acceptance criteria require identifying section and reference"
+  },
+  {
+   "req": "Message prefixed \"ERROR: Error reading 'profile' profile:\"",
+   "class": "R",
+   "why": "Existing profile loading error convention"
+  },
+  {
+   "req": "Exact text \"Profile [platform_requires]/[platform_tool_requires] must be exact versions, not version ranges: [cmake/[*]]\"",
+   "class": "A",
+   "why": "Exact wording arbitrary"
+  }
+ ],
+ "copier_2646": [
+  {
+   "req": "Temp clone dirs removed when interrupted (SIGINT) during copy task execution",
+   "class": "I",
+   "why": "Issue: tmp dirs always deleted on failure/kill"
+  },
+  {
+   "req": "Temp clone dirs removed when interrupted during update task execution",
+   "class": "I",
+   "why": "Issue scenario is interrupted update"
+  },
+  {
+   "req": "Temp dirs removed when interrupted during the git clone itself",
+   "class": "I",
+   "why": "Kill-before-finish includes clone phase"
+  },
+  {
+   "req": "KeyboardInterrupt still propagates to caller after cleanup",
+   "class": "R",
+   "why": "Normal Python cleanup convention, don't swallow interrupts"
+  }
+ ],
+ "dissect_cstruct_120": [
+  {
+   "req": "Generated __init__ references per-field default names (_N_default) instead of inlining default values",
+   "class": "C",
+   "why": "Code-generation approach chosen by author"
+  },
+  {
+   "req": "Exact generated __init__ source text with \"_0_default\" identifiers",
+   "class": "A",
+   "why": "Test-specific string of generated code"
+  },
+  {
+   "req": "Generated structure/union __init__ code objects are hashable even with unhashable defaults",
+   "class": "C",
+   "why": "Issue suggests __hash__/__eq__ on metaclasses; code-object hashability is different choice"
+  },
+  {
+   "req": "Array default values remain unhashable (TypeError \"unhashable type: 'uint8[2]'\")",
+   "class": "R",
+   "why": "Existing behaviour of list-based defaults"
+  }
+ ],
+ "edk2_pytool_library_698": [
+  {
+   "req": "!ifdef/!ifndef on macro defined as empty string evaluates as defined (no exception)",
+   "class": "I",
+   "why": "Issue states expected EDKII behaviour"
+  },
+  {
+   "req": "Undefined macros in !ifdef/!ifndef evaluate as not defined",
+   "class": "I",
+   "why": "Implied mirror case of issue"
+  },
+  {
+   "req": "ReplaceVariables rewrites defined macros in !ifdef/!ifndef to \"1\" instead of value",
+   "class": "C",
+   "why": "Replacement token choice; issue does not specify"
+  },
+  {
+   "req": "Undefined macro replaced with \"0\" in ifdef lines",
+   "class": "R",
+   "why": "Existing behaviour retained"
+  },
+  {
+   "req": "Works for both $(VAR) and bare VAR forms and extra spaces",
+   "class": "R",
+   "why": "Existing parser supports both forms"
+  }
+ ],
+ "foamlib_315": [
+  {
+   "req": "Parsing \"#includeFunc funcName\" inside functions dict yields key \"#includeFunc\" with value \"funcName\"",
+   "class": "I",
+   "why": "Issue's exact use case"
+  },
+  {
+   "req": "Top-level '#include \"filename\"' parsed as key \"#include\" with quoted string value",
+   "class": "R",
+   "why": "Analogous FOAM directive, follows same pattern"
+  }
+ ],
+ "gitpython_2075": [
+  {
+   "req": "includeIf \"hasconfig:remote.*.url:<url>\" includes path when a repo remote URL matches",
+   "class": "I",
+   "why": "Issue requests support for this condition"
+  },
+  {
+   "req": "Non-matching remote URL does not include path",
+   "class": "I",
+   "why": "Implied by git semantics referenced in issue"
+  },
+  {
+   "req": "URL pattern matched as glob (supports ** wildcards)",
+   "class": "R",
+   "why": "Git docs linked in issue specify glob matching"
+  },
+  {
+   "req": "Remote URLs obtained from repo.remotes[].url",
+   "class": "R",
+   "why": "Existing GitPython repo API"
+  }
+ ],
+ "hats_648": [
+  {
+   "req": "New function skymap_coverage(catalog, order=None) in hats.io.skymap",
+   "class": "I",
+   "why": "Issue gives name and signature pseudocode"
+  },
+  {
+   "req": "Coverage = fraction of skymap pixels with count > 0 at default skymap order",
+   "class": "I",
+   "why": "Issue pseudocode"
+  },
+  {
+   "req": "Optional order argument changes the order used for estimate",
+   "class": "I",
+   "why": "Issue pseudocode has order parameter"
+  },
+  {
+   "req": "Raises ValueError when catalog lacks skymap information",
+   "class": "C",
+   "why": "Error behaviour unspecified"
+  },
+  {
+   "req": "Error message contains \"does not have skymap information\"",
+   "class": "A",
+   "why": "Exact wording arbitrary"
+  }
+ ],
+ "isort_2491": [
+  {
+   "req": "Comment on opening \"from ... import (\" line of aliased wrapped import stays there",
+   "class": "I",
+   "why": "Issue's exact case"
+  },
+  {
+   "req": "Attribute-line comment of aliased import stays on attribute line",
+   "class": "R",
+   "why": "Existing isort comment preservation"
+  },
+  {
+   "req": "Both opening and attribute comments each stay on own lines",
+   "class": "R",
+   "why": "Natural extension of issue expectation"
+  },
+  {
+   "req": "Non-alias wrapped import keeps opening-line comment",
+   "class": "R",
+   "why": "Existing behaviour for non-alias imports"
+  },
+  {
+   "req": "Fix also holds with use_parentheses and multi_line_output=3 without trailing comma",
+   "class": "R",
+   "why": "Fix should be wrap-mode agnostic"
+  },
+  {
+   "req": "When collapsed to one line, both comments appended with attribute comment first then opening comment",
+   "class": "C",
+   "why": "Ordering of merged comments is author choice"
+  }
+ ],
+ "lmstudio_python_110": [
+  {
+   "req": "parse_server_config tolerates offloadRatio field missing its \"value\" key (no KeyError)",
+   "class": "I",
+   "why": "Issue's exact crash"
+  },
+  {
+   "req": "Malformed offloadRatio field is dropped so parsed GPU config omits ratio",
+   "class": "C",
+   "why": "Ignoring vs defaulting the field is an author choice"
+  },
+  {
+   "req": "Load config without explicit ratio maps to KV stack without offloadRatio field, and round-trips",
+   "class": "R",
+   "why": "Existing bidirectional mapping conventions"
+  },
+  {
+   "req": "\"evenly\" split strategy without mainGpu round-trips both directions",
+   "class": "C",
+   "why": "Test extension beyond issue; mapping choice for even split"
+  }
+ ],
+ "loguru_1306": [
+  {
+   "req": "FORCE_COLOR set to non-empty value forces colorization on non-TTY streams",
+   "class": "I",
+   "why": "Issue requests FORCE_COLOR support per force-color.org"
+  },
+  {
+   "req": "Empty FORCE_COLOR value is ignored (no forced color)",
+   "class": "R",
+   "why": "force-color.org spec referenced in issue"
+  },
+  {
+   "req": "Empty NO_COLOR value is ignored, colorizing a TTY stream",
+   "class": "C",
+   "why": "Change to existing NO_COLOR handling not requested"
+  }
+ ],
+ "microsoft_authentication_library_for_python_795": [
+  {
+   "req": "IMDS request uses AZURE_POD_IDENTITY_AUTHORITY_HOST as base URL when set",
+   "class": "I",
+   "why": "Issue explicitly requests honoring this variable"
+  },
+  {
+   "req": "Trailing slashes in env host stripped to form \".../metadata/identity/oauth2/token\"",
+   "class": "R",
+   "why": "Linked azure-identity implementation behaviour"
+  },
+  {
+   "req": "Without env var, default 169.254.169.254 endpoint, params and headers unchanged",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "moto_9903": [
+  {
+   "req": "Enabling PITR without period returns RecoveryPeriodInDays 35",
+   "class": "I",
+   "why": "Issue states default 35"
+  },
+  {
+   "req": "Explicit RecoveryPeriodInDays in request is echoed in response",
+   "class": "I",
+   "why": "Implied by AWS API linked in issue"
+  },
+  {
+   "req": "Repeat update preserves RecoveryPeriodInDays 35",
+   "class": "R",
+   "why": "Existing idempotence behaviour"
+  },
+  {
+   "req": "Disabling PITR returns description with only status DISABLED, no period field",
+   "class": "R",
+   "why": "AWS API behaviour/existing pattern"
+  }
+ ],
+ "nested_pandas_261": [
+  {
+   "req": "List __getitem__ with base and \"nested.x\" columns returns frame with selected nested subcolumns",
+   "class": "I",
+   "why": "Issue's example"
+  },
+  {
+   "req": "Multiple subcolumns of same nested group combined into one nested column in order",
+   "class": "R",
+   "why": "Natural nested-frame representation"
+  },
+  {
+   "req": "Selecting whole nested column in list keeps all fields; plain lists unchanged",
+   "class": "R",
+   "why": "Existing behaviour"
+  },
+  {
+   "req": "Nested column placed after base columns, named by nested group",
+   "class": "C",
+   "why": "Column ordering/naming choice"
+  },
+  {
+   "req": "Missing base or nested subcolumns raise KeyError",
+   "class": "R",
+   "why": "pandas convention"
+  }
+ ],
+ "py_webauthn_241": [
+  {
+   "req": "SafetyNet with basicIntegrity true but ctsProfileMatch false accepted by default without any flag",
+   "class": "C",
+   "why": "Issue proposes a flag; relaxing default is author choice"
+  },
+  {
+   "req": "basicIntegrity false still rejected with InvalidRegistrationResponse",
+   "class": "I",
+   "why": "Issue keeps basicIntegrity requirement"
+  },
+  {
+   "req": "Rejection message contains \"Could not verify device integrity\"",
+   "class": "R",
+   "why": "Likely existing error message for integrity check"
+  }
+ ],
+ "python_markdownify_230": [
+  {
+   "req": "Inline code containing backticks wrapped with a longer backtick delimiter",
+   "class": "I",
+   "why": "Issue's example"
+  },
+  {
+   "req": "Delimiter length is one more than longest internal backtick run",
+   "class": "R",
+   "why": "CommonMark code span rules"
+  },
+  {
+   "req": "Space padding inside delimiters when content starts/ends with backtick",
+   "class": "R",
+   "why": "CommonMark requirement for such spans"
+  },
+  {
+   "req": "Leading/trailing whitespace of code content moved outside the span",
+   "class": "R",
+   "why": "Existing markdownify whitespace handling"
+  }
+ ],
+ "qupulse_900": [
+  {
+   "req": "LinSpace VM history records an output entry at each repetition iteration in sequenced repetition test",
+   "class": "A",
+   "why": "Unrelated to issue's volatile-parameter error; incidental expectation change"
+  }
+ ],
+ "sdg_461": [
+  {
+   "req": "LLMMessagesBlock constructor accepts ctx, pipe, block_name, input_col, output_col, gen_kwargs",
+   "class": "R",
+   "why": "Issue: adapt commented research code to upstream conventions"
+  },
+  {
+   "req": "temperature 0 with n>1 is changed to a nonzero value",
+   "class": "R",
+   "why": "Behaviour from commented research code"
+  },
+  {
+   "req": "temperature 0 kept when n=1",
+   "class": "R",
+   "why": "Research code logic"
+  },
+  {
+   "req": "generate calls ctx.client.chat.completions.create with messages from input_col, writes output_col",
+   "class": "R",
+   "why": "Intended block functionality in research stub"
+  }
+ ],
+ "sql_metadata_625_interface": [
+  {
+   "req": "FOR XML PATH query with bracketed identifiers parses and Parser.columns works",
+   "class": "I",
+   "why": "Issue: query should be accepted"
+  },
+  {
+   "req": "Accessing columns emits no sqlglot WARNING log records",
+   "class": "I",
+   "why": "Issue: no user-visible parser warnings"
+  }
+ ],
+ "sqlglot_7457": [
+  {
+   "req": "BigQuery AI.FORECAST(TABLE t, named => args) parses and round-trips",
+   "class": "I",
+   "why": "Issue's example"
+  },
+  {
+   "req": "AI.FORECAST with subquery first argument parses and round-trips",
+   "class": "R",
+   "why": "Linked BigQuery docs allow query argument"
+  }
+ ],
+ "sqlglot_7479": [
+  {
+   "req": "AI.EMBED, AI.SIMILARITY, AI.GENERATE parse into typed function nodes and round-trip unchanged",
+   "class": "I",
+   "why": "Issue requests typed AST and backward-compatible roundtrip"
+  },
+  {
+   "req": "Node classes named exp.AIEmbed, exp.AISimilarity, exp.AIGenerate",
+   "class": "R",
+   "why": "Follows existing AI*/ML* expression naming in sqlglot"
+  },
+  {
+   "req": "Typed node remains wrapped as expression of a Dot node",
+   "class": "C",
+   "why": "Representation choice; could be a single node"
+  }
+ ],
+ "stationbench_41": [
+  {
+   "req": "load_dataset accepts a named DataArray and returns Dataset with that variable",
+   "class": "I",
+   "why": "Issue: support single-variable DataArray"
+  },
+  {
+   "req": "Unnamed DataArray converted using variable name \"data\"",
+   "class": "A",
+   "why": "Arbitrary default name"
+  },
+  {
+   "req": "Dataset input returned unchanged as the same object",
+   "class": "R",
+   "why": "Existing pass-through behaviour"
+  }
+ ],
+ "streamlink_6439": [
+  {
+   "req": "tf1 \"stream\" matcher matches https://www.tf1.fr/<slug-id>/direct capturing slug",
+   "class": "I",
+   "why": "Issue shows new URL format"
+  },
+  {
+   "req": "Channel URLs like /tf1/direct still match \"live\" not \"stream\"",
+   "class": "R",
+   "why": "Existing matcher tests retained"
+  },
+  {
+   "req": "Old /stream/<slug> format no longer required to match",
+   "class": "C",
+   "why": "Dropping old format is author choice"
+  }
+ ],
+ "sympy_28660": [
+  {
+   "req": "ratint of the issue's rational function gives correct definite integral 2.5 over [0, inf)",
+   "class": "I",
+   "why": "Issue reports wrong integral result"
+  }
+ ],
+ "toqito_1538": [
+  {
+   "req": "sandwiched_renyi_conditional_entropy accepts variant=\"uparrow\" and \"downarrow\"",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "Product state: both variants recover Renyi entropy of A",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "Maximally entangled two-qubit state: both variants return -1",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "Uparrow value >= downarrow value within tolerance on random states",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "Classical-quantum state uparrow matches closed-form expression",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "alpha=1 both variants equal conditional von Neumann entropy",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "Uparrow with alpha < 1/2 raises ValueError mentioning \"alpha >= 1/2\"",
+   "class": "I",
+   "why": "Stated in acceptance criteria"
+  },
+  {
+   "req": "Unknown variant raises ValueError whose message mentions \"downarrow\"",
+   "class": "R",
+   "why": "Clear error listing supported variants; existing message pattern"
+  }
+ ],
+ "twine_1309": [
+  {
+   "req": "HTTPError with non-standard status code (e.g. 599) handled without ValueError crash",
+   "class": "I",
+   "why": "Issue's crash"
+  },
+  {
+   "req": "Unknown codes shown with phrase \"Unknown Status\"",
+   "class": "A",
+   "why": "Exact placeholder wording arbitrary"
+  },
+  {
+   "req": "Known codes keep \"HTTPError: <code> <phrase> from <url> <reason>\" format",
+   "class": "R",
+   "why": "Existing output format"
+  }
+ ],
+ "uxarray_1423": [
+  {
+   "req": "zonal_mean returns NaN for latitudes with no face coverage",
+   "class": "I",
+   "why": "Issue's request"
+  },
+  {
+   "req": "Conservative zonal_mean also returns NaN at uncovered latitudes",
+   "class": "I",
+   "why": "Same function, issue applies generally"
+  },
+  {
+   "req": "Covered latitudes still return finite values",
+   "class": "R",
+   "why": "Existing behaviour"
+  },
+  {
+   "req": "No RuntimeWarning emitted while computing missing latitudes",
+   "class": "C",
+   "why": "Warning suppression not mentioned in issue"
+  },
+  {
+   "req": "Integer input promoted to floating dtype to hold NaN",
+   "class": "R",
+   "why": "Necessary consequence of returning NaN"
+  }
+ ],
+ "valohai_cli_321": [
+  {
+   "req": "--priority given without value sets execution priority 1",
+   "class": "I",
+   "why": "Issue states flag sets priority to 1"
+  },
+  {
+   "req": "--priority=<int> still passes given integer",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "xsdata_1126": [
+  {
+   "req": "find_dependency returns class matched by attr_type.reference when set",
+   "class": "C",
+   "why": "Resolution mechanism chosen by author"
+  },
+  {
+   "req": "UnnestInnerClasses.update_types takes the inner class object instead of a qname",
+   "class": "A",
+   "why": "New signature not dictated by issue"
+  },
+  {
+   "req": "update_types sets qname, reference to inner class and clears forward",
+   "class": "C",
+   "why": "Using reference to disambiguate is design choice"
+  }
+ ],
+ "alpenhorn_196": [
+  {
+   "req": "util.run_command accepts timeout and returns retval None on timeout",
+   "class": "C",
+   "why": "Where/how timeout implemented not specified"
+  },
+  {
+   "req": "LFS.run_lfs returns False (not None) on failure",
+   "class": "C",
+   "why": "Sentinel change to distinguish timeout"
+  },
+  {
+   "req": "LFS.hsm_restore returns None on command timeout, False on failure",
+   "class": "C",
+   "why": "Tri-state return design choice"
+  },
+  {
+   "req": "Second check while restore in progress does not queue another restore",
+   "class": "C",
+   "why": "Dedup behaviour not in issue"
+  },
+  {
+   "req": "Bookkeeping in private attributes _restoring, _restore_start, _restore_retry",
+   "class": "A",
+   "why": "Internal names test-specific"
+  },
+  {
+   "req": "Restore timeout leaves task deferred/requeued with bookkeeping retained",
+   "class": "C",
+   "why": "Timeout handling policy author choice"
+  },
+  {
+   "req": "Restore failure abandons task and clears bookkeeping",
+   "class": "C",
+   "why": "Failure policy author choice"
+  }
+ ],
+ "alpenhorn_226": [
+  {
+   "req": "Daemon update_delete deletes copies with has_file M or X and wants_file N",
+   "class": "I",
+   "why": "Issue states this directly"
+  },
+  {
+   "req": "Bad copies deleted in a single io.delete call with list of copies",
+   "class": "R",
+   "why": "Existing delete API takes list"
+  },
+  {
+   "req": "Daemon does not check has_file M copies with wants_file N",
+   "class": "I",
+   "why": "Issue corollary"
+  },
+  {
+   "req": "node clean --include-bad marks suspect/corrupt copies for cleaning",
+   "class": "I",
+   "why": "Issue requests this option"
+  },
+  {
+   "req": "Without --include-bad, clean leaves M/X copies untouched",
+   "class": "R",
+   "why": "Implied default from opt-in flag"
+  }
+ ],
+ "alpenhorn_269": [
+  {
+   "req": "Daemon CLI option named --once triggers run-then-exit mode",
+   "class": "C",
+   "why": "Option name not specified"
+  },
+  {
+   "req": "In once mode daemon waits for queued I/O (e.g. HSM restore) to finish before exit",
+   "class": "I",
+   "why": "Issue: run once, wait for I/O, exit"
+  },
+  {
+   "req": "update_loop takes a third positional argument for once mode",
+   "class": "A",
+   "why": "Internal signature not dictated"
+  },
+  {
+   "req": "Daemon exits with code 0 after once run",
+   "class": "R",
+   "why": "Normal CLI convention"
+  }
+ ],
+ "auth0_python_500": [
+  {
+   "req": "Connections.all(name=\"foo\") sends name=\"foo\" in request params",
+   "class": "I",
+   "why": "Issue explicitly requests name argument"
+  },
+  {
+   "req": "name defaults to None and is always included in params",
+   "class": "R",
+   "why": "Existing pattern for other params"
+  }
+ ],
+ "aws_doc_sdk_examples_tools_39": [
+  {
+   "req": "Excerpt metadata accepts an AI-level value such as \"some\"",
+   "class": "I",
+   "why": "Issue requests tracking AI level"
+  },
+  {
+   "req": "Metadata field named \"genai\"",
+   "class": "A",
+   "why": "Field name not given in issue"
+  },
+  {
+   "req": "Allowed values are lowercase none/some/most/all",
+   "class": "R",
+   "why": "Derived from issue's level list and YAML conventions"
+  },
+  {
+   "req": "Invalid value reported as FieldError with field \"genai\" and value",
+   "class": "R",
+   "why": "Existing FieldError validation pattern"
+  },
+  {
+   "req": "Metadata errors now populated with sdk_version instead of None",
+   "class": "A",
+   "why": "Incidental change unrelated to issue"
+  }
+ ],
+ "borgstore_87": [
+  {
+   "req": "store into missing nesting dir succeeds when precreate_dirs is False (mkdir then write)",
+   "class": "I",
+   "why": "Issue: don't require pre-created dirs"
+  },
+  {
+   "req": "store with precreate_dirs True retries with mkdir when nesting dir is missing",
+   "class": "I",
+   "why": "Issue: try write, on failure mkdir and retry"
+  },
+  {
+   "req": "move into missing nesting dir succeeds in both modes",
+   "class": "R",
+   "why": "Same fault-tolerance applied to analogous operation"
+  },
+  {
+   "req": "precreate_dirs defaults to False",
+   "class": "C",
+   "why": "Issue only muses precreation may be unnecessary"
+  }
+ ],
+ "ccflow_24": [
+  {
+   "req": "Calling model with context field kwargs (m(a=\"foo\")) validates context from them",
+   "class": "I",
+   "why": "Issue's requested feature"
+  },
+  {
+   "req": "Positional/keyword context and dict context still accepted",
+   "class": "R",
+   "why": "Existing behaviour"
+  },
+  {
+   "req": "Calling with no arguments raises TypeError",
+   "class": "C",
+   "why": "Error type choice not specified"
+  },
+  {
+   "req": "Passing both context and kwargs raises TypeError",
+   "class": "C",
+   "why": "Conflict handling chosen by author"
+  }
+ ],
+ "csv2md_16": [
+  {
+   "req": "Table can be restricted to a subset of columns",
+   "class": "I",
+   "why": "Issue requests column filtering"
+  },
+  {
+   "req": "Exposed as Table.parse_csv(columns=[...]) with 0-based indices",
+   "class": "C",
+   "why": "Issue suggests 1-based CLI ranges; API shape chosen by author"
+  },
+  {
+   "req": "Widths computed from the kept columns only",
+   "class": "R",
+   "why": "Follows existing width computation"
+  },
+  {
+   "req": "Negative or out-of-range column indices silently ignored",
+   "class": "C",
+   "why": "Invalid-index policy author choice"
+  }
+ ],
+ "dakara_base_63": [
+  {
+   "req": "Resources accessed via importlib.resources files().joinpath() with as_file instead of path",
+   "class": "I",
+   "why": "Issue requests as_file"
+  },
+  {
+   "req": "as_file and files imported into dakara_base.config namespace",
+   "class": "R",
+   "why": "Existing code imported path directly the same way"
+  },
+  {
+   "req": "copyfile imported directly into dakara_base.config instead of via shutil",
+   "class": "A",
+   "why": "Incidental refactor not in issue"
+  },
+  {
+   "req": "Config dir created with parents/exist_ok and target existence checked as before",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "dfindexeddb_50": [
+  {
+   "req": "V8 JS arrays retain named non-index properties (e.g. propa) alongside elements",
+   "class": "I",
+   "why": "Issue: array properties lost"
+  },
+  {
+   "req": "Array properties stored in separate .properties dict; equality compares elements and properties",
+   "class": "C",
+   "why": "Representation design choice"
+  },
+  {
+   "req": "Safari/WebKit arrays decoded as webkit.JSArray objects instead of lists",
+   "class": "C",
+   "why": "Representation change chosen by author"
+  },
+  {
+   "req": "WebKit sets decoded as webkit.JSSet instead of Python set",
+   "class": "C",
+   "why": "Representation change beyond issue"
+  },
+  {
+   "req": "New API names: JSArray() with Append, JSSet with Add",
+   "class": "A",
+   "why": "Method names not dictated by issue"
+  },
+  {
+   "req": "Array properties remain accessible as attributes",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "fitbenchmarking_1336": [
+  {
+   "req": "Values at/above upper bound (finite like 1e23, 1e29, or inf) counted as failures consistently",
+   "class": "I",
+   "why": "Issue: failure counts inconsistent due to 1e20 bound"
+  },
+  {
+   "req": "Labels show \"(n failures)\" / \"(1 failure)\", unchanged when none",
+   "class": "R",
+   "why": "Existing label format in create_plot"
+  },
+  {
+   "req": "Failed values clipped to 1e20 with trailing bound point appended",
+   "class": "R",
+   "why": "Existing plotting convention"
+  },
+  {
+   "req": "plot_points are cumulative fractions with final repeated 1.0",
+   "class": "R",
+   "why": "Existing adjust_values_to_plot output"
+  }
+ ],
+ "fitbenchmarking_1338": [
+  {
+   "req": "display_page takes run_id and URL includes run id segment before group",
+   "class": "C",
+   "why": "Mechanism to disambiguate runs chosen by author"
+  },
+  {
+   "req": "Valid URL with matching run id returns expected plot layout components",
+   "class": "R",
+   "why": "Existing layout behaviour"
+  },
+  {
+   "req": "URL with mismatched run id returns string starting with \"404\"",
+   "class": "C",
+   "why": "Error reporting form chosen by author"
+  },
+  {
+   "req": "Malformed URLs (bad plot segment, missing group) return \"404\" string",
+   "class": "C",
+   "why": "Error handling choice not in issue"
+  },
+  {
+   "req": "Options object carries a run_id attribute",
+   "class": "A",
+   "why": "New attribute name not dictated"
+  }
+ ],
+ "herepy_84": [
+  {
+   "req": "route_v8 truck dict with multiple keys sends every key as truck[key]=value",
+   "class": "I",
+   "why": "Issue describes both bugs"
+  },
+  {
+   "req": "Utils.build_url serialises nested dict as key[sub]=val parameters",
+   "class": "I",
+   "why": "Issue gives target format"
+  },
+  {
+   "req": "Brackets percent-encoded in built URL",
+   "class": "R",
+   "why": "Standard URL encoding in existing build_url"
+  },
+  {
+   "req": "Single-element list values flattened to scalar",
+   "class": "R",
+   "why": "Issue example uses lists mapping to scalars"
+  }
+ ],
+ "ipykernel_1271": [
+  {
+   "req": "Unix parent poller exits kernel when reparented to a non-1 PID",
+   "class": "I",
+   "why": "Issue: orphaned kernel not killed when PPID not 1"
+  },
+  {
+   "req": "ParentPollerUnix accepts parent_pid argument to compare against current ppid",
+   "class": "C",
+   "why": "Detection mechanism/param chosen by author"
+  },
+  {
+   "req": "Poller still exits when ppid becomes 1",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "leo_editor_3678": [
+  {
+   "req": "putBody writes \"# @\" or \"#@\" sentinels according to g.app.write_black_sentinels",
+   "class": "R",
+   "why": "Existing --black-sentinels option drives writer"
+  },
+  {
+   "req": "Reader parses file regardless of open-sentinel form; rewriting follows current blacken setting",
+   "class": "I",
+   "why": "Issue: read sentinels robustly, not assuming uniform form"
+  },
+  {
+   "req": "@verbatim-protected \"#@others doesn't...\" line preserved unblackened on round trip",
+   "class": "R",
+   "why": "Existing verbatim semantics"
+  },
+  {
+   "req": "Files with non-# comment delims (@comment) round-trip unchanged under either setting",
+   "class": "R",
+   "why": "Black form applies only to Python-style delims"
+  },
+  {
+   "req": "goto-global-line/show-file-line helpers keep existing behaviour",
+   "class": "R",
+   "why": "Test refactor only"
+  }
+ ],
+ "lkml_74": [
+  {
+   "req": "lkml.dump does not mutate input dict; repeated dumps produce identical output",
+   "class": "I",
+   "why": "Issue states the mutation bug"
+  }
+ ],
+ "m3u8_290": [
+  {
+   "req": "Dumping playlist re-emits #EXT-OATCLS-SCTE35 line before #EXT-X-CUE-OUT",
+   "class": "I",
+   "why": "Issue: tag removed on dump"
+  },
+  {
+   "req": "OATCLS-SCTE35 not re-emitted before #EXT-X-CUE-OUT-CONT segments",
+   "class": "C",
+   "why": "Placement policy chosen by author"
+  },
+  {
+   "req": "Parsed segments expose new key \"oatcls_scte35\"",
+   "class": "A",
+   "why": "New field name not in issue"
+  },
+  {
+   "req": "cue_out true from CUE-OUT up to (not including) CUE-IN segment",
+   "class": "R",
+   "why": "Existing cue state semantics"
+  },
+  {
+   "req": "scte35 and oatcls_scte35 values retained on all segments through CUE-IN inclusive",
+   "class": "C",
+   "why": "Propagation range author choice"
+  },
+  {
+   "req": "scte35_duration \"50.000\" on cue-out segment then \"50\" on later ones",
+   "class": "A",
+   "why": "Incidental string formats"
+  }
+ ],
+ "mobilus_client_18": [
+  {
+   "req": "Config no longer accepts or exposes client_id",
+   "class": "I",
+   "why": "Issue: move client_id out of Config"
+  },
+  {
+   "req": "Client id generated at MQTT client initialization in App",
+   "class": "I",
+   "why": "Issue states this"
+  },
+  {
+   "req": "MqttClient uses passed client_id for subscription topic",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "monty_635": [
+  {
+   "req": "compress_file and decompress_file accept optional third target argument",
+   "class": "I",
+   "why": "Issue requests optional output location"
+  },
+  {
+   "req": "Target argument is a directory; output named basename(+.fmt) inside it",
+   "class": "C",
+   "why": "Issue says file path/prefix; directory semantics chosen"
+  },
+  {
+   "req": "Target directory created if missing",
+   "class": "R",
+   "why": "Needed for usable target-dir option"
+  },
+  {
+   "req": "Source file removed after (de)compression as before",
+   "class": "R",
+   "why": "Existing behaviour"
+  }
+ ],
+ "operator_1024": [
+  {
+   "req": "pull_path recreates empty directories at destination",
+   "class": "I",
+   "why": "Issue's bug"
+  },
+  {
+   "req": "push_path recreates empty directories at destination",
+   "class": "I",
+   "why": "Issue predicts same problem"
+  },
+  {
+   "req": "_list_recursive also yields directory paths",
+   "class": "I",
+   "why": "Issue suggests this implementation"
+  },
+  {
+   "req": "Testing harness filesystem supports same push/pull of empty dirs",
+   "class": "R",
+   "why": "Harness mirrors real container"
+  }
+ ],
+ "operator_1268": [
+  {
+   "req": "Testing add_layer combine with override replace replaces whole checks in plan",
+   "class": "I",
+   "why": "Issue: combine/merge checks"
+  },
+  {
+   "req": "Check override merge merges nested exec/http/tcp fields (dicts merged, scalars overwritten)",
+   "class": "R",
+   "why": "Mirrors existing Service._merge and Pebble semantics"
+  },
+  {
+   "req": "Combine with override replace replaces whole log targets",
+   "class": "I",
+   "why": "Issue: combine/merge log targets"
+  },
+  {
+   "req": "Log target merge appends services list and keeps existing fields",
+   "class": "R",
+   "why": "Pebble merge semantics like Service._merge"
+  },
+  {
+   "req": "LogTarget default labels is {} instead of None",
+   "class": "C",
+   "why": "Default value change not requested"
+  },
+  {
+   "req": "get_plan reflects the combined layers",
+   "class": "I",
+   "why": "Issue: get_plan must combine layers"
+  }
+ ],
+ "py3status_2286": [
+  {
+   "req": "Entry-point discovery uses importlib.metadata.entry_points instead of pkg_resources",
+   "class": "I",
+   "why": "Issue: replace deprecated pkg_resources"
+  },
+  {
+   "req": "Handles both Python >=3.10 group-selection API and <3.10 dict API",
+   "class": "R",
+   "why": "stdlib importlib.metadata version differences"
+  },
+  {
+   "req": "Entry points looked up under \"py3status\" group, loading Py3status classes",
+   "class": "R",
+   "why": "Existing entry point group"
+  }
+ ],
+ "python_makefun_78": [
+  {
+   "req": "wraps applied to async generator function yields an async generator function",
+   "class": "I",
+   "why": "Issue's bug"
+  },
+  {
+   "req": "Wrapped async generator yields values correctly",
+   "class": "I",
+   "why": "Implied by issue"
+  },
+  {
+   "req": "makefun.partial of async generator returns async generator function with presets applied",
+   "class": "R",
+   "why": "Consistent with existing generator handling in partial"
+  }
+ ],
+ "python_storage_1275": [
+  {
+   "req": "Bucket.list_blobs accepts page_size and forwards it to client.list_blobs",
+   "class": "I",
+   "why": "Issue requests page_size parity"
+  },
+  {
+   "req": "page_size defaults to None and is always passed as keyword",
+   "class": "R",
+   "why": "Existing forwarding pattern for other args"
+  }
+ ],
+ "robotframework_5188": [
+  {
+   "req": "ExecutionResult exposes the output.xml generated timestamp",
+   "class": "I",
+   "why": "Issue requests exposing generated"
+  },
+  {
+   "req": "Attribute named generation_time",
+   "class": "C",
+   "why": "Name choice; issue calls it generated"
+  },
+  {
+   "req": "Value parsed into datetime",
+   "class": "R",
+   "why": "RF 7 result timestamps are datetimes"
+  },
+  {
+   "req": "generation_time is None when attribute absent",
+   "class": "R",
+   "why": "Natural default for optional attribute"
+  },
+  {
+   "req": "Legacy \"YYYYMMDD HH:MM:SS.mmm\" format also parsed",
+   "class": "R",
+   "why": "Existing RF legacy timestamp parsing"
+  }
+ ],
+ "scadnano_python_package_284": [
+  {
+   "req": "Design JSON stores modifications in separate 5', 3', internal dicts",
+   "class": "I",
+   "why": "Issue's preferred solution"
+  },
+  {
+   "req": "Keys exposed as design_modifications_5p_key/_3p_key/_int_key constants",
+   "class": "R",
+   "why": "Follows existing design_modifications_key naming"
+  },
+  {
+   "req": "Two distinct 5' modifications sharing vendor code raise IllegalDesignError",
+   "class": "R",
+   "why": "Uniqueness retained within each category"
+  },
+  {
+   "req": "Per-modification JSON fields (vendor code, display text, connector length) unchanged",
+   "class": "R",
+   "why": "Existing serialization"
+  }
+ ],
+ "scitacean_262": [
+  {
+   "req": "Upload raises ValueError for remote_path escaping source folder via \"..\"",
+   "class": "I",
+   "why": "Issue's example"
+  },
+  {
+   "req": "Upload rejects absolute remote paths outside source folder",
+   "class": "I",
+   "why": "Issue: disallow any path leading outside"
+  },
+  {
+   "req": "Error message contains \"outside of the source folder\"",
+   "class": "A",
+   "why": "Exact wording arbitrary"
+  },
+  {
+   "req": "New RemotePath.resolve() lexically collapses \"..\" segments, keeping leading \"..\"",
+   "class": "C",
+   "why": "Helper API not required by issue; pathlib-like design"
+  },
+  {
+   "req": "New RemotePath.is_relative_to() checks path prefix containment",
+   "class": "C",
+   "why": "Helper API not required by issue; mirrors pathlib"
+  }
+ ],
+ "sievelib_113": [
+  {
+   "req": "addfilter accepts integer action argument (:days 7) and emits it unquoted in sieve output",
+   "class": "I",
+   "why": "Issue's exact case"
+  },
+  {
+   "req": "dump() shows integer argument as number under action",
+   "class": "R",
+   "why": "Existing dump format"
+  },
+  {
+   "req": "Header condition with list of headers and list of keys emits sieve string lists",
+   "class": "A",
+   "why": "Unrelated to issue; incidental extra feature"
+  },
+  {
+   "req": "Parser error \"extension 'fileinto' not loaded\" for unrequired extension command",
+   "class": "A",
+   "why": "New message wording unrelated to issue"
+  },
+  {
+   "req": "Parser error \"unknown command 'foobar'\" with quoted name",
+   "class": "A",
+   "why": "Exact wording arbitrary"
+  }
+ ],
+ "starlette_exporter_70": [
+  {
+   "req": "Async label callback is awaited and its result used as metric label value",
+   "class": "I",
+   "why": "Issue requests async label callbacks"
+  }
+ ],
+ "text2num_113": [
+  {
+   "req": "text2num \"forty five hundred thirty eight\" returns 4538",
+   "class": "I",
+   "why": "Issue's pattern"
+  },
+  {
+   "req": "alpha2digit converts \"forty five hundred thirty eight dollars\" to \"4538 dollars\"",
+   "class": "I",
+   "why": "Issue's example"
+  },
+  {
+   "req": "\"sixty hundred\" now returns 6000 instead of raising",
+   "class": "R",
+   "why": "Follows from generalising N hundred"
+  },
+  {
+   "req": "\"nineteen hundred seventy-three\" still 1973",
+   "class": "R",
+   "why": "Existing behaviour"
+  },
+  {
+   "req": "\"hundred hundreds\" raises ValueError",
+   "class": "R",
+   "why": "Existing invalid-sequence handling"
+  }
+ ]
+}

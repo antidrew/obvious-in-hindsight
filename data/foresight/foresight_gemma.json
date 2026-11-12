@@ -1,0 +1,1012 @@
+{
+ "actualpy_117": [
+  {
+   "req": "run_bank_sync response with balanceType='previouslyClosedBooked' should not raise a Pydantic validation error."
+  },
+  {
+   "req": "run_bank_sync response with missing transactionId in transactions.all should not raise a Pydantic validation error."
+  },
+  {
+   "req": "run_bank_sync response with missing transactionId in transactions.booked should not raise a Pydantic validation error."
+  }
+ ],
+ "c_star_227": [
+  {
+   "req": "Assigning a value to `roms_base_model.checkout_hash` raises `AttributeError`."
+  },
+  {
+   "req": "Reading `roms_base_model.checkout_hash` returns the expected git hash string."
+  },
+  {
+   "req": "Assigning a value to other git-related properties (e.g., `roms_base_model.branch`) raises `AttributeError`."
+  },
+  {
+   "req": "Reading other git-related properties (e.g., `roms_base_model.branch`) returns the expected value."
+  }
+ ],
+ "canopen_613": [
+  {
+   "req": "Access a TPDO using its Communication Parameter ID (0x1A00 <= key <= 0x1BFF) via PdoMaps.__getitem__ returns the correct PdoMap."
+  },
+  {
+   "req": "Access an RPDO using its Communication Parameter ID (0x1600 <= key <= 0x17FF) via PdoMaps.__getitem__ returns the correct PdoMap."
+  },
+  {
+   "req": "Access a PDO using its Mapping Parameter Index (1 <= key <= 512) via PdoMaps.__getitem__ returns the correct PdoMap."
+  },
+  {
+   "req": "Accessing PdoMaps with a key outside the valid ranges (e.g., 0 or 0x2000) raises a KeyError."
+  },
+  {
+   "req": "Accessing PdoMaps with a Communication Parameter ID that is not assigned to any PDO raises a KeyError."
+  }
+ ],
+ "cfn_python_lint_4368": [
+  {
+   "req": "The reproduction template provided in the issue should be parsed without triggering error E3009."
+  },
+  {
+   "req": "A template using 'Fn::Transform' within 'AWS::CloudFormation::Init' metadata 'files' section should not trigger E3009."
+  },
+  {
+   "req": "A template with an invalid property (e.g., 'UnknownProp: value') in 'AWS::CloudFormation::Init' metadata 'files' should still trigger E3009."
+  },
+  {
+   "req": "A template using 'Fn::Transform' in other valid CloudFormation locations should continue to be parsed without error."
+  }
+ ],
+ "conan_19750": [
+  {
+   "req": "Profile with a version range in [platform_requires] should fail with a clear error message identifying the section and reference, not an AssertionError."
+  },
+  {
+   "req": "Profile with a version range in [platform_tool_requires] should fail with a clear error message identifying the section and reference, not an AssertionError."
+  },
+  {
+   "req": "Profile with exact package references in both [platform_requires] and [platform_tool_requires] should complete without an AssertionError."
+  }
+ ],
+ "copier_2646": [
+  {
+   "req": "copier update fails due to a template error; verify that temporary directories starting with 'copier._vcs.clone' are deleted."
+  },
+  {
+   "req": "copier update is interrupted by a KeyboardInterrupt; verify that temporary directories starting with 'copier._vcs.clone' are deleted."
+  },
+  {
+   "req": "copier update fails during the VCS cloning process (e.g., invalid URL); verify that temporary directories starting with 'copier._vcs.clone' are deleted."
+  },
+  {
+   "req": "copier update completes successfully; verify that temporary directories starting with 'copier._vcs.clone' are deleted."
+  },
+  {
+   "req": "copier update fails due to a system-level exception (e.g., PermissionError); verify that temporary directories starting with 'copier._vcs.clone' are deleted."
+  }
+ ],
+ "dissect_cstruct_120": [
+  {
+   "req": "Verify that two identical classes created using the cstruct metaclass are equal (A == A is True)."
+  },
+  {
+   "req": "Verify that two different classes created using the cstruct metaclass are not equal (A == B is False)."
+  },
+  {
+   "req": "Verify that a class created using the cstruct metaclass is hashable (hash(A) does not raise TypeError)."
+  },
+  {
+   "req": "Verify that a class created using the cstruct metaclass can be used as a key in a dictionary."
+  },
+  {
+   "req": "Verify that a class created using the cstruct metaclass can be added to a set without raising TypeError."
+  }
+ ],
+ "edk2_pytool_library_698": [
+  {
+   "req": "Parse '!ifdef $(MACRO)' where MACRO is defined as an empty string; should evaluate to True and not crash."
+  },
+  {
+   "req": "Parse '!ifndef $(MACRO)' where MACRO is defined as an empty string; should evaluate to False and not crash."
+  },
+  {
+   "req": "Parse '!ifdef $(MACRO)' where MACRO is undefined; should evaluate to False."
+  },
+  {
+   "req": "Parse '!ifndef $(MACRO)' where MACRO is undefined; should evaluate to True."
+  },
+  {
+   "req": "Parse '!ifdef $(MACRO)' where MACRO is defined as a non-empty string; should evaluate to True."
+  },
+  {
+   "req": "Parse '!ifndef $(MACRO)' where MACRO is defined as a non-empty string; should evaluate to False."
+  }
+ ],
+ "foamlib_315": [
+  {
+   "req": "Adding a key starting with '#' (e.g., '#includeFunc') to a FoamFile dictionary and calling str() or saving should not raise pyparsing.ParseException."
+  },
+  {
+   "req": "Adding a key '#include' to a FoamFile dictionary and calling str() or saving should not raise pyparsing.ParseException."
+  },
+  {
+   "req": "Loading a FoamFile that already contains '#includeFunc' or '#include' directives and saving it should not raise pyparsing.ParseException."
+  },
+  {
+   "req": "Adding '#includeFunc' to a nested dictionary within a FoamFile and serializing it should not raise pyparsing.ParseException."
+  }
+ ],
+ "gitpython_2075": [
+  {
+   "req": "Verify that 'hasconfig:remote.origin.url' is matched by the includeIf regex in git/config.py."
+  },
+  {
+   "req": "Verify that 'hasconfig:remote.upstream.url' is matched by the includeIf regex in git/config.py."
+  },
+  {
+   "req": "Verify that 'hasconfig:remote.anyname.url' is matched by the includeIf regex in git/config.py."
+  },
+  {
+   "req": "Verify that existing supported hasconfig patterns (e.g., 'hasconfig:core.bare') are still matched by the regex."
+  },
+  {
+   "req": "Verify that unsupported hasconfig patterns (e.g., 'hasconfig:invalid.key') are still not matched by the regex."
+  }
+ ],
+ "hats_648": [
+  {
+   "req": "skymap_coverage(catalog, order) returns the correct fraction of pixels > 0 for a known skymap."
+  },
+  {
+   "req": "skymap_coverage(catalog, order=None) correctly infers the order and returns the correct coverage fraction."
+  },
+  {
+   "req": "skymap_coverage returns 0.0 when all pixels in the skymap are 0."
+  },
+  {
+   "req": "skymap_coverage returns 1.0 when all pixels in the skymap are greater than 0."
+  },
+  {
+   "req": "skymap_coverage raises an appropriate error (e.g., FileNotFoundError) when the skymap file for the catalog cannot be found."
+  }
+ ],
+ "isort_2491": [
+  {
+   "req": "Input `from a_long_name_to_enforce.splitting_across.two_lines import (  # type: ignore[attr-defined]\n    a_random_attribute as renamed_random_attribute,\n)` should remain unchanged."
+  },
+  {
+   "req": "Input `from long_module import (  # comment\n    a as b,\n    c as d,\n)` should remain unchanged."
+  },
+  {
+   "req": "Input `from long_module import (  # comment\n    a,\n    b,\n)` should remain unchanged."
+  },
+  {
+   "req": "Input `from long_module import (\n    a as b, # comment\n)` should remain unchanged."
+  }
+ ],
+ "lmstudio_python_110": [
+  {
+   "req": "parse_server_config called with a field missing the 'value' key (e.g., {'fields': [{'key': 'k1'}]}) should not raise KeyError."
+  },
+  {
+   "req": "parse_server_config called with multiple fields, some missing the 'value' key, should not raise KeyError."
+  },
+  {
+   "req": "parse_server_config called with an empty 'fields' list should not raise KeyError."
+  },
+  {
+   "req": "parse_server_config called with a dictionary missing the 'fields' key should not raise KeyError."
+  },
+  {
+   "req": "model.act() called with a mocked server response containing a loadModelConfig with fields missing 'value' keys should complete without KeyError."
+  },
+  {
+   "req": "parse_server_config called with fields containing 'value' keys should correctly parse the values into the resulting config."
+  },
+  {
+   "req": "parse_llm_load_config called with a config containing fields missing 'value' keys should not raise KeyError."
+  }
+ ],
+ "loguru_1306": [
+  {
+   "req": "When FORCE_COLOR=1 and the output is not a TTY, logs should contain ANSI color codes."
+  },
+  {
+   "req": "When FORCE_COLOR is not set and the output is not a TTY, logs should not contain ANSI color codes."
+  },
+  {
+   "req": "When FORCE_COLOR=1 and the output is a TTY, logs should contain ANSI color codes."
+  },
+  {
+   "req": "When FORCE_COLOR is not set and the output is a TTY, logs should contain ANSI color codes."
+  },
+  {
+   "req": "When both NO_COLOR=1 and FORCE_COLOR=1 are set, NO_COLOR should take precedence and logs should not contain ANSI color codes."
+  }
+ ],
+ "microsoft_authentication_library_for_python_795": [
+  {
+   "req": "Set 'AZURE_POD_IDENTITY_AUTHORITY_HOST' environment variable and verify that the authority used for token requests matches this value."
+  },
+  {
+   "req": "Ensure that when 'AZURE_POD_IDENTITY_AUTHORITY_HOST' is not set, the library falls back to the default IMDS authority behavior."
+  }
+ ],
+ "moto_9903": [
+  {
+   "req": "Call update_continuous_backups with PointInTimeRecoveryEnabled=True and verify the response contains 'RecoveryPeriodInDays' with a value of 35."
+  },
+  {
+   "req": "Call update_continuous_backups with PointInTimeRecoveryEnabled=False and verify the response contains 'RecoveryPeriodInDays' with a value of 35."
+  },
+  {
+   "req": "Verify update_continuous_backups response contains 'EarliestRestorableDateTime', 'LatestRestorableDateTime', and 'PointInTimeRecoveryStatus' keys."
+  }
+ ],
+ "nested_pandas_261": [
+  {
+   "req": "Pass a list containing both top-level and nested columns (e.g., ['ra', 'sources.ra']) and expect a DataFrame with all requested columns."
+  },
+  {
+   "req": "Pass a list containing only nested columns (e.g., ['sources.ra', 'sources.dec']) and expect a DataFrame with these columns."
+  },
+  {
+   "req": "Pass a list containing only top-level columns (e.g., ['ra', 'dec']) to ensure existing functionality is preserved."
+  },
+  {
+   "req": "Pass a list containing deeply nested columns (e.g., ['a.b.c', 'a.b.d']) and expect correct extraction."
+  },
+  {
+   "req": "Pass a list containing a non-existent nested column (e.g., ['sources.wrong']) and expect a KeyError."
+  },
+  {
+   "req": "Pass a list containing a non-existent top-level column (e.g., ['wrong']) and expect a KeyError."
+  }
+ ],
+ "py_webauthn_241": [
+  {
+   "req": "Verify that android-safetynet attestation passes when both basicIntegrity=True and ctsProfileMatch=True."
+  },
+  {
+   "req": "Verify that android-safetynet attestation fails when basicIntegrity=False, regardless of ctsProfileMatch value."
+  },
+  {
+   "req": "Verify that android-safetynet attestation fails when basicIntegrity=True and ctsProfileMatch=False, given the new flag is False (default behavior)."
+  },
+  {
+   "req": "Verify that android-safetynet attestation passes when basicIntegrity=True and ctsProfileMatch=False, given the new flag is True."
+  },
+  {
+   "req": "Verify that android-safetynet attestation fails when both basicIntegrity=False and ctsProfileMatch=False."
+  }
+ ],
+ "python_markdownify_230": [
+  {
+   "req": "md('<code>We have to `manage` this.</code>') == '``We have to `manage` this.``'"
+  },
+  {
+   "req": "md('<code>Simple code</code>') == '`Simple code`'"
+  },
+  {
+   "req": "md('<pre><code>`text`</code></pre>') == '`text`'"
+  },
+  {
+   "req": "md('<code>`one` `two`</code>') == '`` `one` `two` ``'"
+  },
+  {
+   "req": "md('<code>`</code>') == '`` ` ``'"
+  },
+  {
+   "req": "md('<code></code>') == '``'"
+  }
+ ],
+ "qupulse_900": [
+  {
+   "req": "Using LoopBuilder with volatile parameters should succeed without raising an error."
+  },
+  {
+   "req": "Using a ProgramBuilder that does not support volatile parameters with a volatile parameter should raise a ValueError or a specific support error."
+  },
+  {
+   "req": "Using a ProgramBuilder that does not support volatile parameters with non-volatile parameters should succeed."
+  }
+ ],
+ "sdg_461": [
+  {
+   "req": "LLMMessagesBlock should return a list of messages with 'role' and 'content' keys when provided with a valid prompt."
+  },
+  {
+   "req": "LLMMessagesBlock should correctly pass parameters like 'temperature' and 'max_tokens' to the underlying LLM call."
+  },
+  {
+   "req": "LLMMessagesBlock should handle system prompts correctly, ensuring the system message is the first element in the message sequence."
+  },
+  {
+   "req": "LLMMessagesBlock should correctly append LLM responses to an existing conversation history provided as input."
+  },
+  {
+   "req": "LLMMessagesBlock should raise a descriptive error or handle failures gracefully when the LLM API returns an error."
+  },
+  {
+   "req": "LLMMessagesBlock should correctly process and update the data object when integrated into the SDG pipeline flow."
+  },
+  {
+   "req": "LLMMessagesBlock should handle empty or invalid input prompts by returning an empty list or raising a ValueError."
+  }
+ ],
+ "sql_metadata_625_interface": [
+  {
+   "req": "SELECT [column] FROM [table] should return columns=['column'] and tables=['table']"
+  },
+  {
+   "req": "SELECT (SELECT [col] FROM [table2]) FROM [table1] should return columns=['col'] and tables=['table1', 'table2']"
+  },
+  {
+   "req": "SELECT (SELECT B.[col] FROM [table2] B) FROM [table1] should return columns=['col']"
+  },
+  {
+   "req": "SELECT (SELECT B.[col] FROM [table2] B FOR XML PATH('')) FROM [table1] should return columns=['col']"
+  },
+  {
+   "req": "SELECT (SELECT B.[col] FROM [table2] B FOR XML PATH('')) FROM [table1] should not emit any parser warnings"
+  },
+  {
+   "req": "SELECT [col1], [col2] FROM [table] should return columns=['col1', 'col2']"
+  },
+  {
+   "req": "SELECT (SELECT [col] FROM [table2] WHERE [col] = 1) FROM [table1] should return columns=['col']"
+  }
+ ],
+ "sqlglot_7457": [
+  {
+   "req": "Parse 'SELECT * FROM AI.FORECAST(TABLE citibike_trips, data_col => \"num_trips\", timestamp_col => \"date\", horizon => 30)' in BigQuery dialect and ensure it round-trips."
+  },
+  {
+   "req": "Parse 'SELECT * FROM AI.FORECAST(TABLE x, horizon => 30)' in BigQuery dialect and ensure it round-trips."
+  },
+  {
+   "req": "Parse 'SELECT * FROM AI.FORECAST(TABLE x, data_col => \"col\")' in BigQuery dialect and ensure it round-trips."
+  },
+  {
+   "req": "Parse 'SELECT * FROM AI.FORECAST(TABLE `project.dataset.table`, horizon => 30)' in BigQuery dialect and ensure it round-trips."
+  },
+  {
+   "req": "Parse 'SELECT * FROM AI.FORECAST(TABLE x)' in BigQuery dialect and ensure it round-trips."
+  },
+  {
+   "req": "Parse 'SELECT * FROM AI.FORECAST(TABLE x, horizon => 30, data_col => \"col\")' in BigQuery dialect and ensure it round-trips."
+  }
+ ],
+ "sqlglot_7479": [
+  {
+   "req": "parse 'SELECT AI.EMBED(\"hello\")' with dialect='bigquery' returns an exp.AIEmbed node and round-trips to the same SQL"
+  },
+  {
+   "req": "parse 'SELECT AI.SIMILARITY(\"a\", \"b\")' with dialect='bigquery' returns an exp.AISimilarity node and round-trips to the same SQL"
+  },
+  {
+   "req": "parse 'SELECT AI.GENERATE(\"Write a haiku\")' with dialect='bigquery' returns an exp.AIGenerate node and round-trips to the same SQL"
+  },
+  {
+   "req": "parse 'SELECT AI.EMBED(col)' with dialect='bigquery' returns an exp.AIEmbed node and round-trips to the same SQL"
+  },
+  {
+   "req": "parse 'SELECT AI.SIMILARITY(col1, col2)' with dialect='bigquery' returns an exp.AISimilarity node and round-trips to the same SQL"
+  },
+  {
+   "req": "parse 'SELECT AI.GENERATE(col)' with dialect='bigquery' returns an exp.AIGenerate node and round-trips to the same SQL"
+  },
+  {
+   "req": "parse 'SELECT ai.embed(\"hello\")' (lowercase) with dialect='bigquery' returns an exp.AIEmbed node and round-trips correctly"
+  },
+  {
+   "req": "parse 'SELECT AI.SIMILARITY(AI.EMBED(\"a\"), AI.EMBED(\"b\"))' with dialect='bigquery' returns nested AI-specific AST nodes and round-trips"
+  }
+ ],
+ "stationbench_41": [
+  {
+   "req": "Input: xr.Dataset with one or more variables. Expected: Successful benchmark execution."
+  },
+  {
+   "req": "Input: xr.DataArray. Expected: Successful benchmark execution without AttributeError or TypeError."
+  },
+  {
+   "req": "Input: xr.DataArray with a name attribute. Expected: Benchmark results correctly associated with the DataArray's name."
+  },
+  {
+   "req": "Input: xr.DataArray without a name attribute. Expected: Successful execution using a default variable name."
+  }
+ ],
+ "streamlink_6439": [
+  {
+   "req": "FAST channel URL 'https://www.tf1.fr/thriller-fiction-89242722/direct' should be processed without a 404 Client Error."
+  },
+  {
+   "req": "Normal TF1 channel URLs (e.g., 'https://www.tf1.fr/tf1/direct') should still be processed successfully."
+  },
+  {
+   "req": "The plugin should correctly resolve the stream URL for FAST channels by using the updated media info URL format."
+  },
+  {
+   "req": "The plugin should correctly extract the channel ID from FAST channel URLs like 'https://www.tf1.fr/thriller-fiction-89242722/direct'."
+  }
+ ],
+ "sympy_28660": [
+  {
+   "req": "integrate((wp**2 / (s**2 + wp/qp*s + wp**2)).subs(s, I*2*pi*f).abs()**2, (f, 0, oo)) == wp*qp/4 for positive wp, qp"
+  },
+  {
+   "req": "integrate((wp*s / (s**2 + wp/qp*s + wp**2)).subs(s, I*2*pi*f).abs()**2, (f, 0, oo)) == wp*qp/4 for positive wp, qp"
+  },
+  {
+   "req": "integrate((1**2 / (s**2 + 1/10*s + 1**2)).subs(s, I*2*pi*f).abs()**2, (f, 0, oo)) == 2.5"
+  },
+  {
+   "req": "integrate((1*s / (s**2 + 1/10*s + 1**2)).subs(s, I*2*pi*f).abs()**2, (f, 0, oo)) == 2.5"
+  },
+  {
+   "req": "integrate((1**2 / (s**2 + 1/100*s + 1**2)).subs(s, I*2*pi*f).abs()**2, (f, 0, oo)) == 25"
+  },
+  {
+   "req": "integrate((1*s / (s**2 + 1/100*s + 1**2)).subs(s, I*2*pi*f).abs()**2, (f, 0, oo)) == 25"
+  }
+ ],
+ "twine_1309": [
+  {
+   "req": "Mock a response with status code 499 and verify that twine does not raise ValueError when attempting to retrieve the status phrase."
+  },
+  {
+   "req": "Mock a response with a non-standard status code (e.g., 599) and verify that twine does not raise ValueError."
+  },
+  {
+   "req": "Mock a response with a standard status code (e.g., 404) and verify that the correct status phrase (e.g., 'Not Found') is still retrieved."
+  }
+ ],
+ "uxarray_1423": [
+  {
+   "req": "zonal_mean returns np.nan instead of 0 for latitude bins containing no data points."
+  },
+  {
+   "req": "zonal_mean returns np.nan for latitude bins where all available data points are np.nan."
+  },
+  {
+   "req": "zonal_mean correctly calculates the mean for latitude bins containing valid numeric data."
+  }
+ ],
+ "valohai_cli_321": [
+  {
+   "req": "vh exec run <job> --priority sets priority to 1"
+  },
+  {
+   "req": "vh exec run <job> --priority <int> sets priority to <int>"
+  },
+  {
+   "req": "vh exec run <job> without --priority uses default priority"
+  },
+  {
+   "req": "vh exec run <job> --priority <non-int> raises a parsing error"
+  }
+ ],
+ "xsdata_1126": [
+  {
+   "req": "XSD with two anonymous enums named 'Status' under different parents ('UniqueName1/Value' and 'UniqueName2/Value') should generate two distinct Enum classes."
+  },
+  {
+   "req": "Verify that the first generated Enum contains 'Rejected' and 'Completed' and the second contains 'Pending' and 'Approved'."
+  },
+  {
+   "req": "Verify that the generated Python classes for 'UniqueName1' and 'UniqueName2' reference different Enum types for their 'Status' field."
+  },
+  {
+   "req": "XSD with two anonymous enums at different paths having identical enumeration values should still result in two distinct Enum classes."
+  }
+ ],
+ "alpenhorn_196": [
+  {
+   "req": "_restore_wait returns successfully when the restore completes within the timeout period."
+  },
+  {
+   "req": "_restore_wait raises a TimeoutError (or similar) when the restore exceeds the specified timeout period."
+  },
+  {
+   "req": "_restore_wait respects a custom timeout value provided via the configuration file or initialization."
+  },
+  {
+   "req": "_restore_wait uses a default timeout value when no specific timeout is configured."
+  }
+ ],
+ "alpenhorn_226": [
+  {
+   "req": "Daemon deletes file when has_file='X' and wants_file='N'."
+  },
+  {
+   "req": "Daemon deletes file when has_file='M' and wants_file='N'."
+  },
+  {
+   "req": "Daemon does not delete file when has_file='X' and wants_file='Y'."
+  },
+  {
+   "req": "Daemon skips checking files where has_file='M' and wants_file='N'."
+  },
+  {
+   "req": "Client command 'node clean --include-bad' flags files with has_file='X' and wants_file='N' for deletion."
+  },
+  {
+   "req": "Client command 'node clean --include-bad' flags files with has_file='M' and wants_file='N' for deletion."
+  },
+  {
+   "req": "Client command 'node clean' without '--include-bad' does not flag files with has_file='X' or 'M' and wants_file='N'."
+  }
+ ],
+ "alpenhorn_269": [
+  {
+   "req": "Start the daemon with the new 'run once' flag; verify the process terminates after completing its initial tasks."
+  },
+  {
+   "req": "Start the daemon without the 'run once' flag; verify the process remains running as a background service."
+  },
+  {
+   "req": "Start the daemon with the 'run once' flag while I/O operations are pending; verify it waits for I/O to finish before exiting."
+  },
+  {
+   "req": "Verify that the new command-line argument for 'run once' mode is correctly recognized and parsed by the daemon's CLI."
+  }
+ ],
+ "auth0_python_500": [
+  {
+   "req": "Connections.all(name='test-connection') returns a list containing the connection with name 'test-connection'."
+  },
+  {
+   "req": "Connections.all() without arguments returns all available connections."
+  },
+  {
+   "req": "Connections.all(name='non-existent') returns an empty list."
+  },
+  {
+   "req": "The request sent to the Management API includes the 'name' query parameter when provided to Connections.all()."
+  }
+ ],
+ "aws_doc_sdk_examples_tools_39": [
+  {
+   "req": "Accept 'None' as a valid value for the AI level metadata."
+  },
+  {
+   "req": "Accept 'Some' as a valid value for the AI level metadata."
+  },
+  {
+   "req": "Accept 'Most' as a valid value for the AI level metadata."
+  },
+  {
+   "req": "Accept 'All' as a valid value for the AI level metadata."
+  },
+  {
+   "req": "Raise a validation error (e.g., ValueError or ValidationError) when an invalid AI level value is provided."
+  },
+  {
+   "req": "Handle cases where the AI level metadata is missing, either by assigning a default value or raising a required field error."
+  }
+ ],
+ "borgstore_87": [
+  {
+   "req": "Store an object in a nesting directory that already exists; verify the object is written successfully."
+  },
+  {
+   "req": "Store an object in a nesting directory that does not exist; verify the directory is created and the object is written successfully."
+  },
+  {
+   "req": "Create a store with nesting_level > 0 and disable pre-creation of nesting directories; verify objects can still be stored."
+  },
+  {
+   "req": "Store an object, delete its nesting directory, then store another object in the same directory; verify the directory is recreated and object written."
+  },
+  {
+   "req": "Store an object with nesting_level=0; verify it is written successfully to the store root."
+  },
+  {
+   "req": "Verify that store creation is fast when pre-creation of nesting directories is disabled."
+  }
+ ],
+ "ccflow_24": [
+  {
+   "req": "Call CallableModel.call with valid keyword arguments; verify the underlying callable receives a Context object containing those values."
+  },
+  {
+   "req": "Call CallableModel.call with keyword arguments that are not defined in the Context schema; verify it raises a validation error (e.g., TypeError)."
+  },
+  {
+   "req": "Call CallableModel.call with an explicit Context instance; verify it still works as expected."
+  },
+  {
+   "req": "Call CallableModel.call with no arguments (if the Context schema allows); verify it works as expected."
+  }
+ ],
+ "csv2md_16": [
+  {
+   "req": "CSV with 3 columns, --use-only=1,3: output markdown table contains only the 1st and 3rd columns."
+  },
+  {
+   "req": "CSV with 5 columns, --use-only=1-3: output markdown table contains columns 1, 2, and 3."
+  },
+  {
+   "req": "CSV with 10 columns, --use-only=1-3,5,7-8: output markdown table contains columns 1, 2, 3, 5, 7, and 8."
+  },
+  {
+   "req": "CSV with 3 columns, --use-only=5: handle out-of-bounds index by raising an error or ignoring the index."
+  },
+  {
+   "req": "Invalid format for --use-only (e.g., 'abc', '1-x'): raise a parsing error."
+  },
+  {
+   "req": "Invalid range order (e.g., --use-only=3-1): raise an error or handle gracefully."
+  },
+  {
+   "req": "CSV with 3 columns, --use-only=1,2,3: output markdown table contains all columns."
+  },
+  {
+   "req": "Empty selection (e.g., --use-only=): handle as an error or produce an empty table."
+  }
+ ],
+ "dakara_base_63": [
+  {
+   "req": "Verify that a valid resource is correctly retrieved as a pathlib.Path object using the updated as_file implementation."
+  },
+  {
+   "req": "Verify that the content of a retrieved resource file can be read successfully."
+  },
+  {
+   "req": "Verify that attempting to retrieve a non-existent resource raises a FileNotFoundError."
+  }
+ ],
+ "dfindexeddb_50": [
+  {
+   "req": "JS array with only indexed elements should serialize to a standard JSON array."
+  },
+  {
+   "req": "JS array with only named properties should serialize to a JSON object containing those properties."
+  },
+  {
+   "req": "JS array with both indexed elements and named properties should serialize to a JSON structure containing both."
+  },
+  {
+   "req": "Nested JS arrays containing named properties should be recursively serialized correctly in JSON output."
+  },
+  {
+   "req": "JSONL output mode should correctly serialize JS arrays with named properties for each record."
+  },
+  {
+   "req": "JS array with properties containing complex types (objects/arrays) should be serialized correctly."
+  }
+ ],
+ "fitbenchmarking_1336": [
+  {
+   "req": "Verify that the number of failures reported in the accuracy plot legend matches the number of failures reported in the runtime plot legend for the same solver."
+  },
+  {
+   "req": "Ensure that solvers with values exceeding the failure threshold (e.g., 1.0e20) are consistently marked as failures in both accuracy and runtime profiles."
+  },
+  {
+   "req": "Ensure that solvers with no values exceeding the failure threshold are consistently reported as having zero failures in both plots."
+  },
+  {
+   "req": "Verify that the failure count in the legend correctly reflects the number of failed problems for a solver across both plot types."
+  }
+ ],
+ "fitbenchmarking_1338": [
+  {
+   "req": "Call load_checkpoint() with a path to a previous run's results and verify that display_page() does not raise an exception."
+  },
+  {
+   "req": "Verify that after calling load_checkpoint() on an old run, the Dash app for performance profiles is started and accessible."
+  },
+  {
+   "req": "Check that the URL generated for the performance profile plot after load_checkpoint() points to a running Dash instance."
+  },
+  {
+   "req": "Verify that the 'online' button for an old checkpoint correctly renders the performance profile plot instead of a blank page."
+  }
+ ],
+ "herepy_84": [
+  {
+   "req": "route_v8 called with truck containing multiple keys (e.g., height and length) includes all keys in the request URL."
+  },
+  {
+   "req": "route_v8 called with avoid containing multiple keys includes all keys in the request URL."
+  },
+  {
+   "req": "route_v8 called with exclude containing multiple keys includes all keys in the request URL."
+  },
+  {
+   "req": "truck parameters in route_v8 are formatted as 'truck[key]=value' in the URL, not as a string representation of a dictionary."
+  },
+  {
+   "req": "avoid parameters in route_v8 are formatted as 'avoid[key]=value' in the URL, not as a string representation of a dictionary."
+  },
+  {
+   "req": "exclude parameters in route_v8 are formatted as 'exclude[key]=value' in the URL, not as a string representation of a dictionary."
+  }
+ ],
+ "ipykernel_1271": [
+  {
+   "req": "When current PPID equals initial PPID (e.g., 1234 == 1234), the kernel should not exit."
+  },
+  {
+   "req": "When current PPID changes to 1 (e.g., 1234 -> 1), the kernel should exit."
+  },
+  {
+   "req": "When current PPID changes to a value other than 1 (e.g., 1234 -> 5678), the kernel should exit."
+  },
+  {
+   "req": "When initial PPID is 1 and current PPID remains 1, the kernel should not exit."
+  }
+ ],
+ "leo_editor_3678": [
+  {
+   "req": "Parse a file containing a mix of standard sentinels (e.g., @+leo) and Black-compatible sentinels correctly."
+  },
+  {
+   "req": "Correctly identify a standard closing sentinel when the opening sentinel was Black-compatible."
+  },
+  {
+   "req": "Correctly identify a Black-compatible closing sentinel when the opening sentinel was standard."
+  },
+  {
+   "req": "Ensure standard sentinels are parsed correctly in a file with only standard sentinels."
+  },
+  {
+   "req": "Ensure Black-compatible sentinels are parsed correctly in a file with only Black-compatible sentinels when --black-sentinels is enabled."
+  },
+  {
+   "req": "Handle files where sentinels are inconsistently formatted due to a git merge without losing block structure."
+  }
+ ],
+ "lkml_74": [
+  {
+   "req": "lkml.dump({'name': 'test'}) should not remove the 'name' key from the input dictionary."
+  },
+  {
+   "req": "lkml.dump({'view': {'name': 'test'}}) should not remove the 'name' key from the nested dictionary."
+  },
+  {
+   "req": "lkml.dump({'name': 'test', 'type': 'string'}) should still return the expected LookML string output."
+  },
+  {
+   "req": "lkml.dump({'name': 'root', 'child': {'name': 'leaf'}}) should preserve 'name' keys at all nesting levels."
+  }
+ ],
+ "m3u8_290": [
+  {
+   "req": "m3u8.loads a manifest containing '#EXT-OATCLS-SCTE35:value', then m3u8.dump it; the output must contain the original tag and value."
+  },
+  {
+   "req": "m3u8.loads a manifest containing multiple '#EXT-OATCLS-SCTE35' tags, then m3u8.dump it; all tags must be preserved in the output."
+  },
+  {
+   "req": "m3u8.loads a manifest with '#EXT-OATCLS-SCTE35', modify the segments list, then m3u8.dump it; the tag must remain in the output."
+  },
+  {
+   "req": "m3u8.loads a manifest where '#EXT-OATCLS-SCTE35' is mixed with other tags (e.g., #EXTINF), then m3u8.dump it; all tags must be preserved."
+  }
+ ],
+ "mobilus_client_18": [
+  {
+   "req": "Create two MQTT clients using the same Config instance and verify that they have different client_id values."
+  },
+  {
+   "req": "Verify that the Config class no longer generates or stores a default client_id during its own initialization."
+  },
+  {
+   "req": "Verify that a unique client_id is automatically generated and assigned to the MQTT client upon initialization."
+  }
+ ],
+ "monty_635": [
+  {
+   "req": "compress_file(filepath) creates a compressed file at the default location (e.g., filepath + '.gz') when target_path is None."
+  },
+  {
+   "req": "compress_file(filepath, target_path=custom_path) creates the compressed file at the specified custom_path."
+  },
+  {
+   "req": "decompress_file(filepath) creates a decompressed file at the default location when target_path is None."
+  },
+  {
+   "req": "decompress_file(filepath, target_path=custom_path) creates the decompressed file at the specified custom_path."
+  },
+  {
+   "req": "compress_file with target_path in a different directory successfully creates the file in that directory."
+  },
+  {
+   "req": "decompress_file with target_path in a different directory successfully creates the file in that directory."
+  }
+ ],
+ "operator_1024": [
+  {
+   "req": "pull_path: source contains an empty directory; destination should contain that empty directory."
+  },
+  {
+   "req": "pull_path: source contains nested empty directories; destination should contain the full nested directory structure."
+  },
+  {
+   "req": "push_path: source contains an empty directory; destination should contain that empty directory."
+  },
+  {
+   "req": "push_path: source contains nested empty directories; destination should contain the full nested directory structure."
+  },
+  {
+   "req": "pull_path: source contains a mix of files and empty directories; both files and empty directories should be transferred."
+  },
+  {
+   "req": "push_path: source contains a mix of files and empty directories; both files and empty directories should be transferred."
+  }
+ ],
+ "operator_1268": [
+  {
+   "req": "_TestingPebbleClient.get_plan() returns a combined plan containing services from multiple added layers."
+  },
+  {
+   "req": "pebble.Service objects with the same name are merged correctly in the plan returned by _TestingPebbleClient.get_plan()."
+  },
+  {
+   "req": "pebble.Check objects with the same name are merged correctly in the plan returned by _TestingPebbleClient.get_plan()."
+  },
+  {
+   "req": "pebble.LogTarget objects with the same name are merged correctly in the plan returned by _TestingPebbleClient.get_plan()."
+  },
+  {
+   "req": "Verify that pebble.Check._merge correctly combines two Check instances."
+  },
+  {
+   "req": "Verify that pebble.LogTarget._merge correctly combines two LogTarget instances."
+  }
+ ],
+ "py3status_2286": [
+  {
+   "req": "py3status.__version__ returns the correct version string using importlib.metadata instead of pkg_resources."
+  },
+  {
+   "req": "Importing py3status.core does not trigger DeprecationWarning related to pkg_resources."
+  },
+  {
+   "req": "py3status can be initialized and run without errors after the removal of pkg_resources."
+  }
+ ],
+ "python_makefun_78": [
+  {
+   "req": "Wrap an async generator function (async def with yield); verify inspect.isasyncgenfunction(wrapped) is True."
+  },
+  {
+   "req": "Wrap an async generator function; verify that calling the wrapped function returns an object where inspect.isasyncgen(result) is True."
+  },
+  {
+   "req": "Wrap an async generator function yielding values; verify that 'async for' correctly iterates over the yielded values."
+  },
+  {
+   "req": "Wrap an async generator function with arguments; verify that the wrapped function accepts arguments and yields the expected values."
+  },
+  {
+   "req": "Wrap an async generator function; verify that calling await anext() on the result returns the expected yielded value."
+  },
+  {
+   "req": "Wrap an async generator function; verify that calling await result.aclose() closes the generator correctly."
+  },
+  {
+   "req": "Wrap a regular async function (async def without yield); verify inspect.isasyncgenfunction(wrapped) is False."
+  },
+  {
+   "req": "Wrap a regular generator function (def with yield); verify inspect.isasyncgenfunction(wrapped) is False."
+  }
+ ],
+ "python_storage_1275": [
+  {
+   "req": "Call `bucket.list_blobs(page_size=10)` and verify it does not raise a `TypeError` for an unexpected keyword argument."
+  },
+  {
+   "req": "Verify that the `page_size` argument passed to `bucket.list_blobs` is correctly forwarded to the underlying API request."
+  },
+  {
+   "req": "Call `bucket.list_blobs()` without the `page_size` argument and verify it still functions correctly with default behavior."
+  },
+  {
+   "req": "Verify that `bucket.list_blobs(page_size=1)` correctly paginates results, returning items in chunks of the specified size."
+  }
+ ],
+ "robotframework_5188": [
+  {
+   "req": "Result object created from output.xml with generated=\"2023-01-01T12:00:00.000\" should have a .generated attribute equal to \"2023-01-01T12:00:00.000\"."
+  },
+  {
+   "req": "Result object created from output.xml missing the generated attribute should have a .generated attribute equal to None."
+  }
+ ],
+ "scadnano_python_package_284": [
+  {
+   "req": "Add a 5' modification and a 3' modification with the same vendor code (e.g., '[BIOTEG]'); verify both are stored and accessible."
+  },
+  {
+   "req": "Add a 5' modification and an internal modification with the same vendor code (e.g., '[BIOTEG]'); verify both are stored and accessible."
+  },
+  {
+   "req": "Add a 3' modification and an internal modification with the same vendor code (e.g., '[BIOTEG]'); verify both are stored and accessible."
+  },
+  {
+   "req": "Add 5', 3', and internal modifications all sharing the same vendor code (e.g., '[BIOTEG]'); verify all three are stored and accessible."
+  },
+  {
+   "req": "Add modifications with different vendor codes at different positions; verify they are stored correctly without interference."
+  },
+  {
+   "req": "Update a 5' modification with a specific vendor code; verify it does not affect a 3' or internal modification with the same code."
+  }
+ ],
+ "scitacean_262": [
+  {
+   "req": "Uploading a file with a simple filename (e.g., 'file.txt') within the source folder should succeed."
+  },
+  {
+   "req": "Uploading a file with a path containing '..' that resolves outside the source folder (e.g., '../outside.txt') should raise a ValueError."
+  },
+  {
+   "req": "Uploading a file with an absolute path (e.g., '/tmp/file.txt') should raise a ValueError."
+  },
+  {
+   "req": "Uploading a file with a nested path that resolves outside the source folder (e.g., 'folder/../../outside.txt') should raise a ValueError."
+  },
+  {
+   "req": "Uploading a file to a valid subdirectory within the source folder (e.g., 'subdir/file.txt') should succeed."
+  },
+  {
+   "req": "Uploading a file with a path containing '..' that still resolves inside the source folder (e.g., 'subdir/../file.txt') should succeed."
+  }
+ ],
+ "sievelib_113": [
+  {
+   "req": "Calling factory.FiltersSet.addfilter with an integer argument (e.g., ':days', 7) should not raise AttributeError."
+  },
+  {
+   "req": "Calling factory.FiltersSet.addfilter with a float argument should not raise AttributeError."
+  },
+  {
+   "req": "Calling factory.FiltersSet.addfilter with standard string arguments should continue to work as expected."
+  },
+  {
+   "req": "Verify that numeric values passed via addfilter are correctly passed to the underlying command (e.g., VacationCommand) as numbers."
+  }
+ ],
+ "starlette_exporter_70": [
+  {
+   "req": "A synchronous label callback returns a value; verify the metric label is correctly set to that value."
+  },
+  {
+   "req": "An asynchronous label callback returns a value; verify the metric label is correctly set to that value."
+  },
+  {
+   "req": "An asynchronous label callback awaits `request.body()` and returns a value; verify the metric label is correctly set."
+  },
+  {
+   "req": "An asynchronous label callback returns a dictionary of labels; verify all labels are correctly applied to the metric."
+  },
+  {
+   "req": "A mix of synchronous and asynchronous label callbacks are provided; verify all labels are correctly resolved."
+  }
+ ],
+ "text2num_113": [
+  {
+   "req": "alpha2digit('forty five hundred thirty dollars and ninety cents') == '4530 dollars and 90 cents'"
+  },
+  {
+   "req": "alpha2digit('forty five hundred thirty') == '4530'"
+  },
+  {
+   "req": "alpha2digit('twelve hundred') == '1200'"
+  },
+  {
+   "req": "alpha2digit('twenty one hundred fifty') == '2150'"
+  },
+  {
+   "req": "alpha2digit('forty five hundred') == '4500'"
+  },
+  {
+   "req": "alpha2digit('one thousand five hundred') == '1500'"
+  },
+  {
+   "req": "alpha2digit('two thousand one hundred') == '2100'"
+  }
+ ]
+}

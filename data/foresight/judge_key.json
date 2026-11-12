@@ -1,0 +1,250 @@
+{
+ "actualpy_117": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "c_star_227": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "canopen_613": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "cfn_python_lint_4368": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "conan_19750": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "copier_2646": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "dissect_cstruct_120": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "edk2_pytool_library_698": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "foamlib_315": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "gitpython_2075": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "hats_648": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "isort_2491": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "lmstudio_python_110": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "loguru_1306": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "microsoft_authentication_library_for_python_795": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "moto_9903": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "nested_pandas_261": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "py_webauthn_241": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "python_markdownify_230": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "qupulse_900": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "sdg_461": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "sql_metadata_625_interface": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "sqlglot_7457": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "sqlglot_7479": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "stationbench_41": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "streamlink_6439": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "sympy_28660": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "toqito_1538": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "twine_1309": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "uxarray_1423": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "valohai_cli_321": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "xsdata_1126": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "alpenhorn_196": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "alpenhorn_226": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "alpenhorn_269": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "auth0_python_500": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "aws_doc_sdk_examples_tools_39": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "borgstore_87": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "ccflow_24": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "csv2md_16": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "dakara_base_63": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "dfindexeddb_50": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "fitbenchmarking_1336": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "fitbenchmarking_1338": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "herepy_84": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "ipykernel_1271": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "leo_editor_3678": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "lkml_74": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "m3u8_290": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "mobilus_client_18": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "monty_635": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "operator_1024": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "operator_1268": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "py3status_2286": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "python_makefun_78": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "python_storage_1275": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "robotframework_5188": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "scadnano_python_package_284": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "scitacean_262": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "sievelib_113": {
+  "X": "claude",
+  "Y": "gemma"
+ },
+ "starlette_exporter_70": {
+  "X": "gemma",
+  "Y": "claude"
+ },
+ "text2num_113": {
+  "X": "claude",
+  "Y": "gemma"
+ }
+}

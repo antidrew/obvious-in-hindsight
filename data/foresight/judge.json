@@ -1,0 +1,1306 @@
+{
+ "actualpy_117": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "valohai_cli_321": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  }
+ ],
+ "lkml_74": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  }
+ ],
+ "python_markdownify_230": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "foamlib_315": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "partial"
+  }
+ ],
+ "robotframework_5188": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "partial"
+  }
+ ],
+ "ipykernel_1271": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "yes"
+  }
+ ],
+ "sympy_28660": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  }
+ ],
+ "py3status_2286": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "no"
+  }
+ ],
+ "ccflow_24": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "yes"
+  }
+ ],
+ "streamlink_6439": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "partial"
+  }
+ ],
+ "sqlglot_7457": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "yes"
+  }
+ ],
+ "sql_metadata_625_interface": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "yes"
+  }
+ ],
+ "starlette_exporter_70": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  }
+ ],
+ "microsoft_authentication_library_for_python_795": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "yes"
+  }
+ ],
+ "twine_1309": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  }
+ ],
+ "conan_19750": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "auth0_python_500": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "partial"
+  }
+ ],
+ "sqlglot_7479": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "python_storage_1275": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "partial"
+  }
+ ],
+ "c_star_227": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "mobilus_client_18": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "herepy_84": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "no"
+  }
+ ],
+ "csv2md_16": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "partial"
+  }
+ ],
+ "gitpython_2075": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "fitbenchmarking_1336": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "xsdata_1126": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "loguru_1306": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "text2num_113": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "uxarray_1423": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "monty_635": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "no"
+  }
+ ],
+ "cfn_python_lint_4368": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "canopen_613": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "partial"
+  }
+ ],
+ "hats_648": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "stationbench_41": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  }
+ ],
+ "moto_9903": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "yes"
+  }
+ ],
+ "borgstore_87": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "partial"
+  }
+ ],
+ "nested_pandas_261": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "partial",
+   "Y": "yes"
+  }
+ ],
+ "scitacean_262": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "sievelib_113": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "dissect_cstruct_120": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "m3u8_290": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 6,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "python_makefun_78": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "scadnano_python_package_284": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "isort_2491": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 6,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "sdg_461": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "yes"
+  }
+ ],
+ "qupulse_900": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "alpenhorn_269": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "partial"
+  }
+ ],
+ "fitbenchmarking_1338": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "aws_doc_sdk_examples_tools_39": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "operator_1024": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "no"
+  }
+ ],
+ "copier_2646": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "edk2_pytool_library_698": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "toqito_1538": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 6,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 7,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 8,
+   "X": "partial",
+   "Y": "no"
+  }
+ ],
+ "alpenhorn_226": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 4,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 5,
+   "X": "yes",
+   "Y": "yes"
+  }
+ ],
+ "dfindexeddb_50": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 6,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "dakara_base_63": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "lmstudio_python_110": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "alpenhorn_196": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 3,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 6,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 7,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "py_webauthn_241": [
+  {
+   "n": 1,
+   "X": "partial",
+   "Y": "yes"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "yes"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  }
+ ],
+ "operator_1268": [
+  {
+   "n": 1,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 2,
+   "X": "yes",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "yes",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 6,
+   "X": "yes",
+   "Y": "yes"
+  }
+ ],
+ "leo_editor_3678": [
+  {
+   "n": 1,
+   "X": "no",
+   "Y": "partial"
+  },
+  {
+   "n": 2,
+   "X": "partial",
+   "Y": "partial"
+  },
+  {
+   "n": 3,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 4,
+   "X": "no",
+   "Y": "no"
+  },
+  {
+   "n": 5,
+   "X": "no",
+   "Y": "no"
+  }
+ ]
+}
