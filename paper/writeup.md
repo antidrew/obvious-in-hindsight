@@ -8,7 +8,7 @@ Small, open coding agents are attractive – they are cheap to run and can be de
 
 Coding agents – a language model in a loop with tools that read, edit, and run code – have become a popular way to automate software repair, with SWE-bench (Jimenez et al. 2023, arXiv 2310.06770) and its descendants serving as the standard testbed. Most of the progress on these benchmarks has come from large, closed models. The Gemma 4 Developer Agent competition asks what a small, open model can do. The model is fixed (`gemma-4-31b-it-qat-w4a16-ct`, a 4-bit quantized 31B model), the harness is fixed (Google ADK, configured through declarative YAML), and the hardware is fixed (4×L4 GPUs, 12 hours for about 120 hidden tasks). The only thing a competitor can change is the agent itself – its prompts, tools, sub-agents, budgets and, optionally, a LoRA adapter.
 
-Over 67 agent versions we did exactly that. Fifteen pre-registered design changes showed no gain beyond noise, and our best Kaggle submissions clustered at 8-10 of 58 tasks regardless of the design. Rather than try a sixteenth change, we stepped back and asked what the agent is actually missing:
+Over 67 agent versions we did exactly that. Fifteen pre-registered design changes showed no gain beyond noise, and our best Kaggle submissions clustered at 7-10 of 58 tasks regardless of the design. Rather than try a sixteenth change, we stepped back and asked what the agent is actually missing:
 
 1. Which information, if supplied, makes the agent succeed?
 2. How little of that information suffices?
@@ -106,7 +106,7 @@ The gap is mostly behavior that looks inferable once the tests are seen, but is 
 
 *Table 3: Process changes, their results, and the minimum detectable effect where a null was the outcome.*
 
-A larger budget mostly converts empty attempts into wrong ones (empties 29 → 13 of 256, wrong 127 → 133). Of the wrong patches, 81-88% fail only the new tests and break nothing else, and on H36, 20 of 46 such misses involve an interface the tests expect but the issue does not state. Put simply, the agent finds the right place, keeps the code working, and implements a plausible behavior – which happens to differ from the hidden one. Process changes buy more chances at the same guess. Consistent with this, our Kaggle submissions drew 4-10 of 58 over 15 draws, and our best file (8-10 per draw) is not distinguishable from our first working agent.
+A larger budget mostly converts empty attempts into wrong ones (empties 29 → 13 of 256, wrong 127 → 133). Of the wrong patches, 81-88% fail only the new tests and break nothing else, and on H36, 20 of 46 such misses involve an interface the tests expect but the issue does not state. Put simply, the agent finds the right place, keeps the code working, and implements a plausible behavior – which happens to differ from the hidden one. Process changes buy more chances at the same guess. Consistent with this, our Kaggle submissions drew 4-10 of 58 over 17 draws, and our best file (7-10 per draw) is not distinguishable from our first working agent.
 
 ### At 4B the information wall becomes an ability wall
 
