@@ -1,4 +1,4 @@
-# Obvious in Hindsight: What a Small Quantized Coding Agent Is Missing on Hard Repair Tasks
+# Obvious in Hindsight: What a Small Quantized Coding Agent Misses on Hard Tasks
 
 ## Abstract
 

@@ -1,7 +1,7 @@
 # Obvious in Hindsight
 
 Code, pre-registrations and per-attempt results for the Kaggle Gemma 4 Developer Agent paper-track Writeup
-**"Obvious in Hindsight: What a Small Quantized Coding Agent Is Missing on Hard Repair Tasks"**
+**"Obvious in Hindsight: What a Small Quantized Coding Agent Misses on Hard Tasks"**
 (`paper/writeup.md`).
 
 **The short version.** On hard SWE-bench-style repair tasks, Gemma 4 31B (4-bit) lacks the intended *behaviour*, not the
