@@ -38,7 +38,7 @@ Within this competition, other entries have focused on where the fix lives and h
 
 - *rb64* – 64 SWE-rebench tasks from 57 repositories, converted to the competition sandbox with date-pinned wheels and validated (the gold patch passes, the empty patch fails). The agent solves about 36% of them.
 - *N32* – the 32 rb64 tasks with a historical solve rate under 0.1, which account for 78% of all failures (this set is selected on outcomes).
-- *H36* – 36 tasks chosen by features alone (one failed gold validation, leaving 35) (no code in the issue, at least 3 gold hunks), with a control solve rate near Kaggle's level (about 20%). This is the replication that does not share N32's selection bias.
+- *H36* – 36 tasks chosen by features alone (no code in the issue, at least 3 gold hunks), of which one failed gold validation, leaving 35, with a control solve rate near Kaggle's level (about 20%). This is the replication that does not share N32's selection bias.
 - *OOD-45* – an external set of 45 bug fixes, used to check for regressions.
 
 **Noise.** On rb64, the task explains 71% of the variance between attempts, while the identity of the agent explains just 0.17%. The pass-to-pass standard deviation (2.08 tasks) equals the binomial value (2.06), i.e., the variation is what one would expect from coin flips.
