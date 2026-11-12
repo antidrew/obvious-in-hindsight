@@ -59,7 +59,7 @@ for ax, sname, idx, title in ((axes[0], "N32", 1, "N32: 32 tasks the agent almos
     ax.spines["bottom"].set_color(GRID)
     ax.tick_params(colors=MUTED, labelsize=8, length=0)
 axes[0].set_yticks(range(len(ROWS)), [r[0] for r in ROWS], fontsize=8.5, color=INK)
-fig.suptitle("What the agent is missing on hard tasks is behavioural, and not in the issue", fontsize=11, color=INK, x=0.02, ha="left")
+fig.suptitle("What the agent is missing on hard tasks is behavioral, and not in the issue", fontsize=11, color=INK, x=0.02, ha="left")
 fig.text(0.02, 0.01, "Gemma 4 31B (4-bit), agent_e18, 28 tool calls. Within-task differences; task bootstrap CIs. Gold fix (not shown): +31 and +23.5.",
          fontsize=7.5, color=MUTED)
 fig.tight_layout(rect=(0, 0.03, 1, 0.95))
