@@ -1,0 +1,1 @@
+{"instance_id": "conan_19750", "repo": "conan-io/conan", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 484.2, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 27, "total_llm_calls": 27, "task_index": 1}

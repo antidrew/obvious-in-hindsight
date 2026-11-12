@@ -1,0 +1,1 @@
+{"instance_id": "filesystem_spec_2169", "repo": "fsspec/filesystem_spec", "resolved": true, "agent_patch_size": 781, "test_exit_code": 0, "duration_seconds": 81.88, "error": null, "tool_calls": 12, "total_llm_calls": 14, "task_index": 1}

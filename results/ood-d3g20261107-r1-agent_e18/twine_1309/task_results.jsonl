@@ -1,0 +1,1 @@
+{"instance_id": "twine_1309", "repo": "pypa/twine", "resolved": false, "agent_patch_size": 595, "test_exit_code": 1, "duration_seconds": 199.48, "error": null, "tool_calls": 8, "total_llm_calls": 10, "task_index": 1}

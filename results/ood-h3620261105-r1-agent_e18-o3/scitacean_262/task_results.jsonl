@@ -1,0 +1,1 @@
+{"instance_id": "scitacean_262", "repo": "SciCatProject/scitacean", "resolved": false, "agent_patch_size": 4776, "test_exit_code": 1, "duration_seconds": 259.21, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 26, "total_llm_calls": 80, "task_index": 1}

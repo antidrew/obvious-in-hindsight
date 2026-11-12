@@ -1,0 +1,1 @@
+{"instance_id": "canopen_613", "repo": "canopen-python/canopen", "resolved": false, "agent_patch_size": 1740, "test_exit_code": 1, "duration_seconds": 398.42, "error": null, "tool_calls": 25, "total_llm_calls": 28, "task_index": 1}

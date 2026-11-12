@@ -1,0 +1,1 @@
+{"instance_id": "python_storage_1275", "repo": "googleapis/python-storage", "resolved": true, "agent_patch_size": 1249, "test_exit_code": 0, "duration_seconds": 123.06, "error": null, "tool_calls": 24, "total_llm_calls": 26, "task_index": 1}

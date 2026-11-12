@@ -1,0 +1,1 @@
+{"instance_id": "sqlglot_7457", "repo": "tobymao/sqlglot", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 315.58, "error": "Agent exceeded turns budget (100 turns)", "tool_calls": 40, "total_llm_calls": 100, "task_index": 1}

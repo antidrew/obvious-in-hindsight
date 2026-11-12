@@ -1,0 +1,1 @@
+{"instance_id": "ccflow_24", "repo": "Point72/ccflow", "resolved": true, "agent_patch_size": 2269, "test_exit_code": 0, "duration_seconds": 203.41, "error": null, "tool_calls": 14, "total_llm_calls": 16, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "foamlib_315", "repo": "gerlero/foamlib", "resolved": false, "agent_patch_size": 1789, "test_exit_code": 1, "duration_seconds": 241.04, "error": null, "tool_calls": 27, "total_llm_calls": 48, "task_index": 1}

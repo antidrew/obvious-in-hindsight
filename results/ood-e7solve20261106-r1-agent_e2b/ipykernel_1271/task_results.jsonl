@@ -1,0 +1,1 @@
+{"instance_id": "ipykernel_1271", "repo": "ipython/ipykernel", "resolved": false, "agent_patch_size": 669, "test_exit_code": 1, "duration_seconds": 215.52, "error": null, "tool_calls": 15, "total_llm_calls": 17, "task_index": 1}

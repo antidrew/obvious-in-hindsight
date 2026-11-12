@@ -1,0 +1,1 @@
+{"instance_id": "loguru_1306", "repo": "Delgan/loguru", "resolved": true, "agent_patch_size": 499, "test_exit_code": 0, "duration_seconds": 176.56, "error": null, "tool_calls": 10, "total_llm_calls": 12, "task_index": 1}

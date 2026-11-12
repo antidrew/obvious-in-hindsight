@@ -1,0 +1,1 @@
+{"instance_id": "pyjanitor_1739", "repo": "pyjanitor-devs/pyjanitor", "resolved": true, "agent_patch_size": 3514, "test_exit_code": 0, "duration_seconds": 281.54, "error": null, "tool_calls": 18, "total_llm_calls": 21, "task_index": 1}

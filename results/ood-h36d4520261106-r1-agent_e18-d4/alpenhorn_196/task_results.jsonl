@@ -1,0 +1,1 @@
+{"instance_id": "alpenhorn_196", "repo": "radiocosmology/alpenhorn", "resolved": false, "agent_patch_size": 1322, "test_exit_code": 1, "duration_seconds": 125.88, "error": null, "tool_calls": 16, "total_llm_calls": 18, "task_index": 1}

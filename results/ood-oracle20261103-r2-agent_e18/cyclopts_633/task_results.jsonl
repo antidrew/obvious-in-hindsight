@@ -1,0 +1,1 @@
+{"instance_id": "cyclopts_633", "repo": "BrianPugh/cyclopts", "resolved": true, "agent_patch_size": 411, "test_exit_code": 0, "duration_seconds": 155.28, "error": null, "tool_calls": 24, "total_llm_calls": 27, "task_index": 1}

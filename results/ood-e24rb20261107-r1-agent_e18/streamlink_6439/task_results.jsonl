@@ -1,0 +1,1 @@
+{"instance_id": "streamlink_6439", "repo": "streamlink/streamlink", "resolved": false, "agent_patch_size": 1320, "test_exit_code": 1, "duration_seconds": 387.29, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 11, "total_llm_calls": 80, "task_index": 1}

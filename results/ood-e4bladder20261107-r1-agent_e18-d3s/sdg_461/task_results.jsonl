@@ -1,0 +1,1 @@
+{"instance_id": "sdg_461", "repo": "instructlab/sdg", "resolved": false, "agent_patch_size": 1086, "test_exit_code": 1, "duration_seconds": 102.06, "error": null, "tool_calls": 6, "total_llm_calls": 8, "task_index": 1}

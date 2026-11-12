@@ -1,0 +1,1 @@
+{"instance_id": "gabbi_342", "repo": "cdent/gabbi", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 163.46, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 28, "total_llm_calls": 80, "task_index": 1}

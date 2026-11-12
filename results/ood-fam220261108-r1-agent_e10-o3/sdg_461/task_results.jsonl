@@ -1,0 +1,1 @@
+{"instance_id": "sdg_461", "repo": "instructlab/sdg", "resolved": false, "agent_patch_size": 7321, "test_exit_code": 1, "duration_seconds": 527.31, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 28, "total_llm_calls": 32, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "isort_2491", "repo": "PyCQA/isort", "resolved": false, "agent_patch_size": 1733, "test_exit_code": 1, "duration_seconds": 484.93, "error": null, "tool_calls": 28, "total_llm_calls": 39, "task_index": 1}

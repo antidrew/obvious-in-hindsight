@@ -1,0 +1,1 @@
+{"instance_id": "stellarphot_526", "repo": "feder-observatory/stellarphot", "resolved": true, "agent_patch_size": 562, "test_exit_code": 0, "duration_seconds": 175.23, "error": null, "tool_calls": 21, "total_llm_calls": 23, "task_index": 1}

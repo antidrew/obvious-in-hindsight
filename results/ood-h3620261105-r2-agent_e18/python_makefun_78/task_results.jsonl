@@ -1,0 +1,1 @@
+{"instance_id": "python_makefun_78", "repo": "smarie/python-makefun", "resolved": false, "agent_patch_size": 544, "test_exit_code": 1, "duration_seconds": 250.91, "error": null, "tool_calls": 28, "total_llm_calls": 31, "task_index": 1}

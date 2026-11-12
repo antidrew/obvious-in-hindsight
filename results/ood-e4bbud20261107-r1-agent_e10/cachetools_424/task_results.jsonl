@@ -1,0 +1,1 @@
+{"instance_id": "cachetools_424", "repo": "tkem/cachetools", "resolved": false, "agent_patch_size": 516, "test_exit_code": 1, "duration_seconds": 111.76, "error": null, "tool_calls": 14, "total_llm_calls": 18, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "xsdata_1126", "repo": "tefra/xsdata", "resolved": false, "agent_patch_size": 4770, "test_exit_code": 1, "duration_seconds": 244.53, "error": null, "tool_calls": 28, "total_llm_calls": 34, "task_index": 1}

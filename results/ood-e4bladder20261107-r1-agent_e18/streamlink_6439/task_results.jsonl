@@ -1,0 +1,1 @@
+{"instance_id": "streamlink_6439", "repo": "streamlink/streamlink", "resolved": false, "agent_patch_size": 544, "test_exit_code": 1, "duration_seconds": 41.81, "error": null, "tool_calls": 3, "total_llm_calls": 6, "task_index": 1}

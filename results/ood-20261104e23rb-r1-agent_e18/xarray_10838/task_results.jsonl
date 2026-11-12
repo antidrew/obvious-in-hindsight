@@ -1,0 +1,1 @@
+{"instance_id": "xarray_10838", "repo": "pydata/xarray", "resolved": true, "agent_patch_size": 5395, "test_exit_code": 0, "duration_seconds": 258.88, "error": null, "tool_calls": 28, "total_llm_calls": 35, "task_index": 1}

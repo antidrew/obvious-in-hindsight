@@ -1,0 +1,1 @@
+{"instance_id": "toqito_1484_interface", "repo": "vprusso/toqito", "resolved": true, "agent_patch_size": 4179, "test_exit_code": 0, "duration_seconds": 422.31, "error": null, "tool_calls": 21, "total_llm_calls": 37, "task_index": 1}

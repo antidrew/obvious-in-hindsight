@@ -1,0 +1,1 @@
+{"instance_id": "herepy_84", "repo": "abdullahselek/HerePy", "resolved": false, "agent_patch_size": 1471, "test_exit_code": 1, "duration_seconds": 140.89, "error": null, "tool_calls": 24, "total_llm_calls": 26, "task_index": 1}

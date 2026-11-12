@@ -1,0 +1,1 @@
+{"instance_id": "mobilus_client_18", "repo": "zpieslak/mobilus-client", "resolved": true, "agent_patch_size": 2631, "test_exit_code": 0, "duration_seconds": 300.44, "error": null, "tool_calls": 23, "total_llm_calls": 44, "task_index": 1}

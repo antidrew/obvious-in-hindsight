@@ -1,0 +1,1 @@
+{"instance_id": "dissect_cstruct_120", "repo": "fox-it/dissect.cstruct", "resolved": false, "agent_patch_size": 1588, "test_exit_code": 1, "duration_seconds": 219.64, "error": null, "tool_calls": 23, "total_llm_calls": 25, "task_index": 1}

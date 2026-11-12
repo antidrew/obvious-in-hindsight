@@ -1,0 +1,1 @@
+{"instance_id": "dakara_base_63", "repo": "DakaraProject/dakara-base", "resolved": false, "agent_patch_size": 979, "test_exit_code": 1, "duration_seconds": 123.74, "error": null, "tool_calls": 22, "total_llm_calls": 25, "task_index": 1}

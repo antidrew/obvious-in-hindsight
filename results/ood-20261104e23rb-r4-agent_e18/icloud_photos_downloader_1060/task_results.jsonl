@@ -1,0 +1,1 @@
+{"instance_id": "icloud_photos_downloader_1060", "repo": "icloud-photos-downloader/icloud_photos_downloader", "resolved": true, "agent_patch_size": 664, "test_exit_code": 0, "duration_seconds": 74.55, "error": null, "tool_calls": 10, "total_llm_calls": 12, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "copier_2646", "repo": "copier-org/copier", "resolved": true, "agent_patch_size": 4563, "test_exit_code": 0, "duration_seconds": 142.74, "error": null, "tool_calls": 18, "total_llm_calls": 23, "task_index": 1}

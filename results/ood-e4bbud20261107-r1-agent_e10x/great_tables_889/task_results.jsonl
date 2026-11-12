@@ -1,0 +1,1 @@
+{"instance_id": "great_tables_889", "repo": "posit-dev/great-tables", "resolved": false, "agent_patch_size": 1324, "test_exit_code": 4, "duration_seconds": 192.83, "error": null, "tool_calls": 21, "total_llm_calls": 25, "task_index": 1}

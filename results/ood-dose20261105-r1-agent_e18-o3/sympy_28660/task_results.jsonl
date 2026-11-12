@@ -1,0 +1,1 @@
+{"instance_id": "sympy_28660", "repo": "sympy/sympy", "resolved": false, "agent_patch_size": 1039, "test_exit_code": 1, "duration_seconds": 490.42, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 23, "total_llm_calls": 23, "task_index": 1}

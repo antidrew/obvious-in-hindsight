@@ -1,0 +1,1 @@
+{"instance_id": "iceberg_python_3295", "repo": "apache/iceberg-python", "resolved": false, "agent_patch_size": 1562, "test_exit_code": 4, "duration_seconds": 169.53, "error": null, "tool_calls": 19, "total_llm_calls": 21, "task_index": 1}

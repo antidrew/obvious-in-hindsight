@@ -1,0 +1,1 @@
+{"instance_id": "py3status_2286", "repo": "ultrabug/py3status", "resolved": false, "agent_patch_size": 862, "test_exit_code": 1, "duration_seconds": 47.84, "error": null, "tool_calls": 8, "total_llm_calls": 10, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "dfindexeddb_50", "repo": "google/dfindexeddb", "resolved": false, "agent_patch_size": 448, "test_exit_code": 1, "duration_seconds": 487.53, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 28, "total_llm_calls": 30, "task_index": 1}

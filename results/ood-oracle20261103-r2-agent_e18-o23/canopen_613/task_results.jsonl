@@ -1,0 +1,1 @@
+{"instance_id": "canopen_613", "repo": "canopen-python/canopen", "resolved": false, "agent_patch_size": 3342, "test_exit_code": 2, "duration_seconds": 488.62, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 19, "total_llm_calls": 20, "task_index": 1}

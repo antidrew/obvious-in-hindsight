@@ -1,0 +1,1 @@
+{"instance_id": "dishka_512", "repo": "reagento/dishka", "resolved": true, "agent_patch_size": 541, "test_exit_code": 0, "duration_seconds": 145.45, "error": null, "tool_calls": 16, "total_llm_calls": 18, "task_index": 1}

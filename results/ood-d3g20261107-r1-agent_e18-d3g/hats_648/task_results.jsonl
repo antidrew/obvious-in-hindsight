@@ -1,0 +1,1 @@
+{"instance_id": "hats_648", "repo": "astronomy-commons/hats", "resolved": false, "agent_patch_size": 1309, "test_exit_code": 1, "duration_seconds": 230.86, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 23, "total_llm_calls": 80, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "actualpy_117", "repo": "bvanelli/actualpy", "resolved": false, "agent_patch_size": 867, "test_exit_code": 1, "duration_seconds": 91.69, "error": null, "tool_calls": 12, "total_llm_calls": 14, "task_index": 1}

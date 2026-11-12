@@ -1,0 +1,1 @@
+{"instance_id": "starlette_exporter_70", "repo": "stephenhillier/starlette_exporter", "resolved": true, "agent_patch_size": 1549, "test_exit_code": 0, "duration_seconds": 163.54, "error": null, "tool_calls": 22, "total_llm_calls": 24, "task_index": 1}

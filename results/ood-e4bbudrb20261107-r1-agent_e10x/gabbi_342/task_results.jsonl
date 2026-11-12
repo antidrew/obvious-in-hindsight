@@ -1,0 +1,1 @@
+{"instance_id": "gabbi_342", "repo": "cdent/gabbi", "resolved": false, "agent_patch_size": 3503, "test_exit_code": 1, "duration_seconds": 143.9, "error": null, "tool_calls": 10, "total_llm_calls": 12, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "smolagents_285", "repo": "huggingface/smolagents", "resolved": true, "agent_patch_size": 5172, "test_exit_code": 0, "duration_seconds": 433.84, "error": null, "tool_calls": 28, "total_llm_calls": 42, "task_index": 1}

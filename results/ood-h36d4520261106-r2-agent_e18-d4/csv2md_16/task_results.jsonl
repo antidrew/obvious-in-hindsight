@@ -1,0 +1,1 @@
+{"instance_id": "csv2md_16", "repo": "lzakharov/csv2md", "resolved": false, "agent_patch_size": 4758, "test_exit_code": 1, "duration_seconds": 184.84, "error": null, "tool_calls": 13, "total_llm_calls": 15, "task_index": 1}

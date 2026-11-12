@@ -1,0 +1,1 @@
+{"instance_id": "pyinfra_1665", "repo": "pyinfra-dev/pyinfra", "resolved": true, "agent_patch_size": 1663, "test_exit_code": 0, "duration_seconds": 228.74, "error": null, "tool_calls": 10, "total_llm_calls": 12, "task_index": 1}

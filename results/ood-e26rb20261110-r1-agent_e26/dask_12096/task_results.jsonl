@@ -1,0 +1,1 @@
+{"instance_id": "dask_12096", "repo": "dask/dask", "resolved": true, "agent_patch_size": 967, "test_exit_code": 0, "duration_seconds": 177.87, "error": null, "tool_calls": 27, "total_llm_calls": 31, "task_index": 1}

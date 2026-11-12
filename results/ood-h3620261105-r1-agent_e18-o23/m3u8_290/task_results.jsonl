@@ -1,0 +1,1 @@
+{"instance_id": "m3u8_290", "repo": "globocom/m3u8", "resolved": false, "agent_patch_size": 6381, "test_exit_code": 2, "duration_seconds": 452.75, "error": null, "tool_calls": 28, "total_llm_calls": 31, "task_index": 1}

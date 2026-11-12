@@ -1,0 +1,1 @@
+{"instance_id": "pint_2437", "repo": "hgrecco/pint", "resolved": false, "agent_patch_size": 707, "test_exit_code": 1, "duration_seconds": 133.23, "error": null, "tool_calls": 14, "total_llm_calls": 16, "task_index": 1}

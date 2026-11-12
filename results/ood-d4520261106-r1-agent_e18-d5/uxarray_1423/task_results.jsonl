@@ -1,0 +1,1 @@
+{"instance_id": "uxarray_1423", "repo": "UXARRAY/uxarray", "resolved": false, "agent_patch_size": 1189, "test_exit_code": 2, "duration_seconds": 439.77, "error": null, "tool_calls": 27, "total_llm_calls": 43, "task_index": 1}

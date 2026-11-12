@@ -1,0 +1,1 @@
+{"instance_id": "dfindexeddb_50", "repo": "google/dfindexeddb", "resolved": false, "agent_patch_size": 1980, "test_exit_code": 1, "duration_seconds": 249.29, "error": null, "tool_calls": 28, "total_llm_calls": 31, "task_index": 1}

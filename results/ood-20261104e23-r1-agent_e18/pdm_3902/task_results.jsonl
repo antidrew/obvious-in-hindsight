@@ -1,0 +1,1 @@
+{"instance_id": "pdm_3902", "repo": "pdm-project/pdm", "resolved": true, "agent_patch_size": 864, "test_exit_code": 0, "duration_seconds": 108.85, "error": null, "tool_calls": 6, "total_llm_calls": 8, "task_index": 1}

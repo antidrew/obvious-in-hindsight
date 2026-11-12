@@ -1,0 +1,1 @@
+{"instance_id": "streamlink_6439", "repo": "streamlink/streamlink", "resolved": false, "agent_patch_size": 1138, "test_exit_code": 1, "duration_seconds": 497.01, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 25, "total_llm_calls": 25, "task_index": 1}

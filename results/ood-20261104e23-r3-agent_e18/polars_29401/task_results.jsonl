@@ -1,0 +1,1 @@
+{"instance_id": "polars_29401", "repo": "pola-rs/polars", "resolved": true, "agent_patch_size": 707, "test_exit_code": 0, "duration_seconds": 144.29, "error": null, "tool_calls": 10, "total_llm_calls": 13, "task_index": 1}

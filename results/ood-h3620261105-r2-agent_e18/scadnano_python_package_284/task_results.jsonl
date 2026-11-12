@@ -1,0 +1,1 @@
+{"instance_id": "scadnano_python_package_284", "repo": "UC-Davis-molecular-computing/scadnano-python-package", "resolved": false, "agent_patch_size": 6141, "test_exit_code": 1, "duration_seconds": 414.7, "error": null, "tool_calls": 27, "total_llm_calls": 80, "task_index": 1}

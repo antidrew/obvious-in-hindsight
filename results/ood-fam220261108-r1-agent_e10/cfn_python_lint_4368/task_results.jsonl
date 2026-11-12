@@ -1,0 +1,1 @@
+{"instance_id": "cfn_python_lint_4368", "repo": "aws-cloudformation/cfn-python-lint", "resolved": true, "agent_patch_size": 665, "test_exit_code": 0, "duration_seconds": 177.99, "error": null, "tool_calls": 28, "total_llm_calls": 31, "task_index": 1}

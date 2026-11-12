@@ -1,0 +1,1 @@
+{"instance_id": "dead_204", "repo": "asottile/dead", "resolved": false, "agent_patch_size": 1456, "test_exit_code": 1, "duration_seconds": 487.14, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 7, "total_llm_calls": 7, "task_index": 1}

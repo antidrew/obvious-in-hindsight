@@ -1,0 +1,1 @@
+{"instance_id": "lkml_74", "repo": "joshtemple/lkml", "resolved": true, "agent_patch_size": 1235, "test_exit_code": 0, "duration_seconds": 211.67, "error": null, "tool_calls": 28, "total_llm_calls": 32, "task_index": 1}

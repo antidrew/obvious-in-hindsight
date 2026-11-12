@@ -1,0 +1,1 @@
+{"instance_id": "conan_19750", "repo": "conan-io/conan", "resolved": true, "agent_patch_size": 1330, "test_exit_code": 0, "duration_seconds": 45.11, "error": null, "tool_calls": 1, "total_llm_calls": 3, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "aws_doc_sdk_examples_tools_39", "repo": "awsdocs/aws-doc-sdk-examples-tools", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 484.2, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 17, "total_llm_calls": 17, "task_index": 1}

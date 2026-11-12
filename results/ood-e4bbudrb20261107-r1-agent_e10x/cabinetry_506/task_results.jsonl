@@ -1,0 +1,1 @@
+{"instance_id": "cabinetry_506", "repo": "scikit-hep/cabinetry", "resolved": true, "agent_patch_size": 612, "test_exit_code": 0, "duration_seconds": 53.41, "error": null, "tool_calls": 4, "total_llm_calls": 6, "task_index": 1}

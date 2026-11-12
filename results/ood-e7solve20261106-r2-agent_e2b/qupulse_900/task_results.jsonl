@@ -1,0 +1,1 @@
+{"instance_id": "qupulse_900", "repo": "qutech/qupulse", "resolved": false, "agent_patch_size": 1145, "test_exit_code": 1, "duration_seconds": 185.99, "error": null, "tool_calls": 28, "total_llm_calls": 36, "task_index": 1}

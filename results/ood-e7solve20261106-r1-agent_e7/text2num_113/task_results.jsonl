@@ -1,0 +1,1 @@
+{"instance_id": "text2num_113", "repo": "allo-media/text2num", "resolved": true, "agent_patch_size": 1403, "test_exit_code": 0, "duration_seconds": 312.01, "error": null, "tool_calls": 28, "total_llm_calls": 30, "task_index": 1}

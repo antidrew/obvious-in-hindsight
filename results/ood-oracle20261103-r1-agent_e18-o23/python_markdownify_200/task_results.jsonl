@@ -1,0 +1,1 @@
+{"instance_id": "python_markdownify_200", "repo": "matthewwithanm/python-markdownify", "resolved": false, "agent_patch_size": 894, "test_exit_code": 1, "duration_seconds": 487.61, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 28, "total_llm_calls": 30, "task_index": 1}

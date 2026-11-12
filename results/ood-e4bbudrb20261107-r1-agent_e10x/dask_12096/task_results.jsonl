@@ -1,0 +1,1 @@
+{"instance_id": "dask_12096", "repo": "dask/dask", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 408.83, "error": "Agent completed execution without calling submit_patch.", "tool_calls": 26, "total_llm_calls": 34, "task_index": 1}

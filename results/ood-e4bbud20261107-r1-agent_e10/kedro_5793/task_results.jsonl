@@ -1,0 +1,1 @@
+{"instance_id": "kedro_5793", "repo": "kedro-org/kedro", "resolved": false, "agent_patch_size": 792, "test_exit_code": 1, "duration_seconds": 93.46, "error": null, "tool_calls": 4, "total_llm_calls": 6, "task_index": 1}

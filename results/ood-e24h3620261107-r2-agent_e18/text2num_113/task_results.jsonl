@@ -1,0 +1,1 @@
+{"instance_id": "text2num_113", "repo": "allo-media/text2num", "resolved": false, "agent_patch_size": 555, "test_exit_code": 1, "duration_seconds": 283.55, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 25, "total_llm_calls": 80, "task_index": 1}

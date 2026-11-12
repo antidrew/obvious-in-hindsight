@@ -1,0 +1,1 @@
+{"instance_id": "edk2_pytool_library_698", "repo": "tianocore/edk2-pytool-library", "resolved": false, "agent_patch_size": 1010, "test_exit_code": 1, "duration_seconds": 94.81, "error": null, "tool_calls": 10, "total_llm_calls": 13, "task_index": 1}

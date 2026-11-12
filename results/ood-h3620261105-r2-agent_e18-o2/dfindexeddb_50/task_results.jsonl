@@ -1,0 +1,1 @@
+{"instance_id": "dfindexeddb_50", "repo": "google/dfindexeddb", "resolved": false, "agent_patch_size": 994, "test_exit_code": 1, "duration_seconds": 395.44, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 24, "total_llm_calls": 80, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "monty_635", "repo": "materialsvirtuallab/monty", "resolved": false, "agent_patch_size": 3395, "test_exit_code": 1, "duration_seconds": 301.17, "error": null, "tool_calls": 21, "total_llm_calls": 24, "task_index": 1}

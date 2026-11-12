@@ -1,0 +1,1 @@
+{"instance_id": "skpro_574", "repo": "sktime/skpro", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 73.99, "error": "Agent completed execution without calling submit_patch.", "tool_calls": 0, "total_llm_calls": 4, "task_index": 1}

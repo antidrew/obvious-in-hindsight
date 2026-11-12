@@ -1,0 +1,1 @@
+{"instance_id": "sql_metadata_625_interface", "repo": "macbre/sql-metadata", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 336.78, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 28, "total_llm_calls": 80, "task_index": 1}

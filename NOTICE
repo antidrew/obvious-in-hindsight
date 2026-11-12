@@ -1,0 +1,11 @@
+Obvious in Hindsight: code, pre-registrations and per-attempt results.
+Copyright 2026 the authors. Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material:
+- agents/agent_e18 is derived from the public "budget-aware coding agent v2" Kaggle bundle
+  (Igor Zharov, Apache 2.0), see agents/agent_e18/SOURCE-pub22.md.
+- The rb64, N32 and H36 task lists refer to tasks from SWE-rebench (nebius, CC-BY-4.0).
+  No SWE-rebench content (issues, patches, tests) is redistributed here;
+  scripts/build_rebench.py rebuilds the tasks from the public dataset.
+- OOD-45 task ids refer to fixes in public open-source projects under their own licences;
+  no project code is redistributed.

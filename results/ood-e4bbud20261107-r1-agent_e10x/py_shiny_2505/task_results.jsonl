@@ -1,0 +1,1 @@
+{"instance_id": "py_shiny_2505", "repo": "posit-dev/py-shiny", "resolved": false, "agent_patch_size": 726, "test_exit_code": 1, "duration_seconds": 207.96, "error": null, "tool_calls": 13, "total_llm_calls": 17, "task_index": 1}

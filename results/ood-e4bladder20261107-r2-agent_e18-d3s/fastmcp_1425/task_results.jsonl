@@ -1,0 +1,1 @@
+{"instance_id": "fastmcp_1425", "repo": "jlowin/fastmcp", "resolved": false, "agent_patch_size": 6353, "test_exit_code": 1, "duration_seconds": 56.1, "error": null, "tool_calls": 6, "total_llm_calls": 7, "task_index": 1}

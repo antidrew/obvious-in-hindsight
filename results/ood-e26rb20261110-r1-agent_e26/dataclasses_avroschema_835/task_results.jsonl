@@ -1,0 +1,1 @@
+{"instance_id": "dataclasses_avroschema_835", "repo": "marcosschroh/dataclasses-avroschema", "resolved": false, "agent_patch_size": 3580, "test_exit_code": 1, "duration_seconds": 401.52, "error": null, "tool_calls": 21, "total_llm_calls": 30, "task_index": 1}

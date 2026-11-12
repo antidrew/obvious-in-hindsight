@@ -1,0 +1,1 @@
+{"instance_id": "sqlglot_7457", "repo": "tobymao/sqlglot", "resolved": false, "agent_patch_size": 28636, "test_exit_code": 2, "duration_seconds": 233.18, "error": null, "tool_calls": 33, "total_llm_calls": 35, "task_index": 1}

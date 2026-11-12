@@ -1,0 +1,1 @@
+{"instance_id": "meson_14291", "repo": "mesonbuild/meson", "resolved": true, "agent_patch_size": 652, "test_exit_code": 0, "duration_seconds": 250.09, "error": null, "tool_calls": 31, "total_llm_calls": 33, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "hats_648", "repo": "astronomy-commons/hats", "resolved": false, "agent_patch_size": 1510, "test_exit_code": 4, "duration_seconds": 212.65, "error": null, "tool_calls": 11, "total_llm_calls": 13, "task_index": 1}

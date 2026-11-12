@@ -1,0 +1,1 @@
+{"instance_id": "py_webauthn_241", "repo": "duo-labs/py_webauthn", "resolved": false, "agent_patch_size": 1152, "test_exit_code": 1, "duration_seconds": 23.11, "error": null, "tool_calls": 3, "total_llm_calls": 5, "task_index": 1}

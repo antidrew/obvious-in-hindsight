@@ -1,0 +1,1 @@
+{"instance_id": "python_markdownify_200", "repo": "matthewwithanm/python-markdownify", "resolved": true, "agent_patch_size": 912, "test_exit_code": 0, "duration_seconds": 253.09, "error": null, "tool_calls": 19, "total_llm_calls": 24, "task_index": 1}

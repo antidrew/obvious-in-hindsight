@@ -1,0 +1,1 @@
+{"instance_id": "toqito_1538", "repo": "vprusso/toqito", "resolved": false, "agent_patch_size": 8206, "test_exit_code": 2, "duration_seconds": 612.46, "error": "Agent exceeded session timeout (10.0 min)", "tool_calls": 21, "total_llm_calls": 43, "task_index": 1}

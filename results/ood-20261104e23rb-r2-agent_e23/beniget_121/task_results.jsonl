@@ -1,0 +1,1 @@
+{"instance_id": "beniget_121", "repo": "serge-sans-paille/beniget", "resolved": true, "agent_patch_size": 475, "test_exit_code": 0, "duration_seconds": 116.23, "error": null, "tool_calls": 16, "total_llm_calls": 30, "task_index": 1}

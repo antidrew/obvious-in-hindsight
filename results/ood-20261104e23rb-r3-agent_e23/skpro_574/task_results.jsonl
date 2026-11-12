@@ -1,0 +1,1 @@
+{"instance_id": "skpro_574", "repo": "sktime/skpro", "resolved": true, "agent_patch_size": 1289, "test_exit_code": 0, "duration_seconds": 180.08, "error": null, "tool_calls": 36, "total_llm_calls": 41, "task_index": 1}

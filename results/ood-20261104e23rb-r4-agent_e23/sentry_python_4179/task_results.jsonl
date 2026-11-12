@@ -1,0 +1,1 @@
+{"instance_id": "sentry_python_4179", "repo": "getsentry/sentry-python", "resolved": true, "agent_patch_size": 911, "test_exit_code": 0, "duration_seconds": 138.56, "error": null, "tool_calls": 8, "total_llm_calls": 22, "task_index": 1}

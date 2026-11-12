@@ -1,0 +1,1 @@
+{"instance_id": "operator_1268", "repo": "canonical/operator", "resolved": false, "agent_patch_size": 2746, "test_exit_code": 2, "duration_seconds": 328.06, "error": null, "tool_calls": 28, "total_llm_calls": 34, "task_index": 1}

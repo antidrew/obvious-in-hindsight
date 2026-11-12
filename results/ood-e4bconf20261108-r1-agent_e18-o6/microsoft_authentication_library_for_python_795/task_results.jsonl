@@ -1,0 +1,1 @@
+{"instance_id": "microsoft_authentication_library_for_python_795", "repo": "AzureAD/microsoft-authentication-library-for-python", "resolved": true, "agent_patch_size": 632, "test_exit_code": 0, "duration_seconds": 31.91, "error": null, "tool_calls": 3, "total_llm_calls": 5, "task_index": 1}

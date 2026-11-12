@@ -1,0 +1,1 @@
+{"instance_id": "tox_4097", "repo": "tox-dev/tox", "resolved": true, "agent_patch_size": 907, "test_exit_code": 0, "duration_seconds": 81.54, "error": null, "tool_calls": 8, "total_llm_calls": 10, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "python_markdownify_230", "repo": "matthewwithanm/python-markdownify", "resolved": false, "agent_patch_size": 787, "test_exit_code": 1, "duration_seconds": 254.29, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 23, "total_llm_calls": 80, "task_index": 1}

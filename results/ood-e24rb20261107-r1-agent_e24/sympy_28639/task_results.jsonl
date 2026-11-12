@@ -1,0 +1,1 @@
+{"instance_id": "sympy_28639", "repo": "sympy/sympy", "resolved": false, "agent_patch_size": 508, "test_exit_code": 1, "duration_seconds": 184.32, "error": null, "tool_calls": 28, "total_llm_calls": 31, "task_index": 1}

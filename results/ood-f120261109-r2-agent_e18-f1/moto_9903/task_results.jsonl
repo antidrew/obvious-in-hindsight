@@ -1,0 +1,1 @@
+{"instance_id": "moto_9903", "repo": "getmoto/moto", "resolved": true, "agent_patch_size": 1838, "test_exit_code": 0, "duration_seconds": 211.99, "error": null, "tool_calls": 17, "total_llm_calls": 20, "task_index": 1}

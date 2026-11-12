@@ -1,0 +1,1 @@
+{"instance_id": "scitacean_262", "repo": "SciCatProject/scitacean", "resolved": false, "agent_patch_size": 1026, "test_exit_code": 1, "duration_seconds": 304.49, "error": null, "tool_calls": 26, "total_llm_calls": 48, "task_index": 1}

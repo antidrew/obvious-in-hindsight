@@ -1,0 +1,1 @@
+{"instance_id": "py_webauthn_241", "repo": "duo-labs/py_webauthn", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 195.61, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 7, "total_llm_calls": 80, "task_index": 1}

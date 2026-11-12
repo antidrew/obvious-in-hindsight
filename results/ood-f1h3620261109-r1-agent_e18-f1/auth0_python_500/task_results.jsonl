@@ -1,0 +1,1 @@
+{"instance_id": "auth0_python_500", "repo": "auth0/auth0-python", "resolved": true, "agent_patch_size": 957, "test_exit_code": 0, "duration_seconds": 130.39, "error": null, "tool_calls": 14, "total_llm_calls": 16, "task_index": 1}

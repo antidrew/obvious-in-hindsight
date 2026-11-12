@@ -1,0 +1,1 @@
+{"instance_id": "leo_editor_3678", "repo": "leo-editor/leo-editor", "resolved": false, "agent_patch_size": 1140, "test_exit_code": 1, "duration_seconds": 262.58, "error": null, "tool_calls": 23, "total_llm_calls": 25, "task_index": 1}

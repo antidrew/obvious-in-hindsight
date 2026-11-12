@@ -1,0 +1,1 @@
+{"instance_id": "dead_204", "repo": "asottile/dead", "resolved": false, "agent_patch_size": 2434, "test_exit_code": 1, "duration_seconds": 259.09, "error": null, "tool_calls": 26, "total_llm_calls": 28, "task_index": 1}

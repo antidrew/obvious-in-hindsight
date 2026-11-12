@@ -1,0 +1,1 @@
+{"instance_id": "borgstore_87", "repo": "borgbackup/borgstore", "resolved": false, "agent_patch_size": 2767, "test_exit_code": 1, "duration_seconds": 388.01, "error": null, "tool_calls": 28, "total_llm_calls": 32, "task_index": 1}

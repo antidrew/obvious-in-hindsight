@@ -1,0 +1,1 @@
+{"instance_id": "valohai_cli_321", "repo": "valohai/valohai-cli", "resolved": false, "agent_patch_size": 1121, "test_exit_code": 1, "duration_seconds": 361.74, "error": null, "tool_calls": 23, "total_llm_calls": 42, "task_index": 1}

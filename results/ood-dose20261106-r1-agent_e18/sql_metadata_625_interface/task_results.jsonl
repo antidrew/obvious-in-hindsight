@@ -1,0 +1,1 @@
+{"instance_id": "sql_metadata_625_interface", "repo": "macbre/sql-metadata", "resolved": false, "agent_patch_size": 1807, "test_exit_code": 2, "duration_seconds": 167.47, "error": null, "tool_calls": 27, "total_llm_calls": 43, "task_index": 1}

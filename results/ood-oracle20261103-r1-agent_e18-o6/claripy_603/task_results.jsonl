@@ -1,0 +1,1 @@
+{"instance_id": "claripy_603", "repo": "angr/claripy", "resolved": true, "agent_patch_size": 828, "test_exit_code": 0, "duration_seconds": 35.56, "error": null, "tool_calls": 4, "total_llm_calls": 6, "task_index": 1}

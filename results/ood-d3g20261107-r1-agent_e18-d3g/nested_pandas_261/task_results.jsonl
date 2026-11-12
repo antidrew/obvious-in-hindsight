@@ -1,0 +1,1 @@
+{"instance_id": "nested_pandas_261", "repo": "lincc-frameworks/nested-pandas", "resolved": true, "agent_patch_size": 2274, "test_exit_code": 0, "duration_seconds": 329.0, "error": null, "tool_calls": 25, "total_llm_calls": 28, "task_index": 1}

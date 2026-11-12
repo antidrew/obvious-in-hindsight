@@ -1,0 +1,1 @@
+{"instance_id": "airbrakesv2_118", "repo": "NCSU-High-Powered-Rocketry-Club/AirbrakesV2", "resolved": false, "agent_patch_size": 3425, "test_exit_code": 4, "duration_seconds": 235.88, "error": null, "tool_calls": 21, "total_llm_calls": 23, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "valohai_cli_321", "repo": "valohai/valohai-cli", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 483.88, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 21, "total_llm_calls": 22, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "aws_doc_sdk_examples_tools_39", "repo": "awsdocs/aws-doc-sdk-examples-tools", "resolved": false, "agent_patch_size": 2514, "test_exit_code": 1, "duration_seconds": 443.97, "error": null, "tool_calls": 28, "total_llm_calls": 52, "task_index": 1}

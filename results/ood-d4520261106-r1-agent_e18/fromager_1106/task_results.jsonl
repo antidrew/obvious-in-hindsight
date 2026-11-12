@@ -1,0 +1,1 @@
+{"instance_id": "fromager_1106", "repo": "python-wheel-build/fromager", "resolved": false, "agent_patch_size": 1657, "test_exit_code": 1, "duration_seconds": 168.38, "error": null, "tool_calls": 24, "total_llm_calls": 26, "task_index": 1}

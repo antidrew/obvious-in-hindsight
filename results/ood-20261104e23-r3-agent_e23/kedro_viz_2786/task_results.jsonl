@@ -1,0 +1,1 @@
+{"instance_id": "kedro_viz_2786", "repo": "kedro-org/kedro-viz", "resolved": true, "agent_patch_size": 589, "test_exit_code": 0, "duration_seconds": 70.22, "error": null, "tool_calls": 8, "total_llm_calls": 10, "task_index": 1}

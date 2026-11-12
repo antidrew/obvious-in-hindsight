@@ -1,0 +1,1 @@
+{"instance_id": "qupulse_900", "repo": "qutech/qupulse", "resolved": false, "agent_patch_size": 1161, "test_exit_code": 2, "duration_seconds": 428.61, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 28, "total_llm_calls": 80, "task_index": 1}

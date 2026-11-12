@@ -1,0 +1,1 @@
+{"instance_id": "feast_6874", "repo": "feast-dev/feast", "resolved": false, "agent_patch_size": 602, "test_exit_code": 1, "duration_seconds": 131.07, "error": null, "tool_calls": 7, "total_llm_calls": 9, "task_index": 1}

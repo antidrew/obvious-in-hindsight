@@ -1,0 +1,1 @@
+{"instance_id": "airbrakesv2_118", "repo": "NCSU-High-Powered-Rocketry-Club/AirbrakesV2", "resolved": false, "agent_patch_size": 4854, "test_exit_code": 2, "duration_seconds": 494.32, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 21, "total_llm_calls": 40, "task_index": 1}

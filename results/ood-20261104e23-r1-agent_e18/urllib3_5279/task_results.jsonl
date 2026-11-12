@@ -1,0 +1,1 @@
+{"instance_id": "urllib3_5279", "repo": "urllib3/urllib3", "resolved": true, "agent_patch_size": 556, "test_exit_code": 0, "duration_seconds": 97.22, "error": null, "tool_calls": 6, "total_llm_calls": 8, "task_index": 1}

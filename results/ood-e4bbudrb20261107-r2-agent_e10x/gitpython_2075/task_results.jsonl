@@ -1,0 +1,1 @@
+{"instance_id": "gitpython_2075", "repo": "gitpython-developers/GitPython", "resolved": false, "agent_patch_size": 637, "test_exit_code": 2, "duration_seconds": 68.93, "error": null, "tool_calls": 6, "total_llm_calls": 8, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "stationbench_41", "repo": "juaAI/stationbench", "resolved": false, "agent_patch_size": 544, "test_exit_code": 1, "duration_seconds": 176.78, "error": null, "tool_calls": 12, "total_llm_calls": 14, "task_index": 1}

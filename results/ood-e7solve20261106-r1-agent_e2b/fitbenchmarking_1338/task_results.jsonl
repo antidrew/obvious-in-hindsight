@@ -1,0 +1,1 @@
+{"instance_id": "fitbenchmarking_1338", "repo": "fitbenchmarking/fitbenchmarking", "resolved": false, "agent_patch_size": 1046, "test_exit_code": 1, "duration_seconds": 318.22, "error": null, "tool_calls": 28, "total_llm_calls": 30, "task_index": 1}

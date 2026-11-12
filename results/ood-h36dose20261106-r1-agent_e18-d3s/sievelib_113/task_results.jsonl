@@ -1,0 +1,1 @@
+{"instance_id": "sievelib_113", "repo": "tonioo/sievelib", "resolved": false, "agent_patch_size": 1100, "test_exit_code": 1, "duration_seconds": 146.2, "error": null, "tool_calls": 23, "total_llm_calls": 31, "task_index": 1}

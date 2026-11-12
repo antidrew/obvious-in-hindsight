@@ -1,0 +1,1 @@
+{"instance_id": "ome_zarr_models_py_206", "repo": "ome-zarr-models/ome-zarr-models-py", "resolved": true, "agent_patch_size": 526, "test_exit_code": 0, "duration_seconds": 65.41, "error": null, "tool_calls": 16, "total_llm_calls": 18, "task_index": 1}

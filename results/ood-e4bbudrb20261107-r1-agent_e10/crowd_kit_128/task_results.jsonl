@@ -1,0 +1,1 @@
+{"instance_id": "crowd_kit_128", "repo": "Toloka/crowd-kit", "resolved": true, "agent_patch_size": 782, "test_exit_code": 0, "duration_seconds": 99.07, "error": null, "tool_calls": 7, "total_llm_calls": 14, "task_index": 1}

@@ -1,0 +1,1 @@
+{"instance_id": "robotframework_5188", "repo": "robotframework/robotframework", "resolved": false, "agent_patch_size": 1149, "test_exit_code": 1, "duration_seconds": 296.12, "error": null, "tool_calls": 27, "total_llm_calls": 52, "task_index": 1}

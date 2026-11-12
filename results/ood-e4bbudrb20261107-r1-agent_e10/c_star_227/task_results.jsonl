@@ -1,0 +1,1 @@
+{"instance_id": "c_star_227", "repo": "CWorthy-ocean/C-Star", "resolved": false, "agent_patch_size": 572, "test_exit_code": 1, "duration_seconds": 60.46, "error": null, "tool_calls": 7, "total_llm_calls": 9, "task_index": 1}

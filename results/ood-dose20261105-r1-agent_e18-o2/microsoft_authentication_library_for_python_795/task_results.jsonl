@@ -1,0 +1,1 @@
+{"instance_id": "microsoft_authentication_library_for_python_795", "repo": "AzureAD/microsoft-authentication-library-for-python", "resolved": false, "agent_patch_size": 0, "test_exit_code": -1, "duration_seconds": 337.96, "error": "Agent exceeded turns budget (80 turns)", "tool_calls": 6, "total_llm_calls": 80, "task_index": 1}

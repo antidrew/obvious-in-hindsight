@@ -1,0 +1,1 @@
+{"instance_id": "dissect_cstruct_120", "repo": "fox-it/dissect.cstruct", "resolved": false, "agent_patch_size": 3455, "test_exit_code": 1, "duration_seconds": 489.16, "error": "Agent exceeded session timeout (8.0 min)", "tool_calls": 18, "total_llm_calls": 19, "task_index": 1}

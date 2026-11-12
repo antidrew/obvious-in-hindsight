@@ -1,0 +1,1 @@
+{"instance_id": "lmstudio_python_110", "repo": "lmstudio-ai/lmstudio-python", "resolved": false, "agent_patch_size": 870, "test_exit_code": 1, "duration_seconds": 105.78, "error": null, "tool_calls": 19, "total_llm_calls": 21, "task_index": 1}
